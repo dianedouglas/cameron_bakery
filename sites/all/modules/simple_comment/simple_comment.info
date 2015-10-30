@@ -1,0 +1,5 @@
+name = Simple Comment
+description = Simplifies comment section of article posted to front page.
+package = Cameron Modules
+core = 7.x
+files[] = simple_comment.module
