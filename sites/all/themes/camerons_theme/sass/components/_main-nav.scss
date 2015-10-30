@@ -1,0 +1,15 @@
+#navigation {
+  background: $sand;
+
+  .links  {
+    a, a:visited {
+      color: $white;
+      text-decoration: none;
+
+      &:hover {
+        color: $brown;
+        @include transition(color, 0.5s, ease-out, 0.5s);
+      }
+    }
+  }
+}
