@@ -20,3 +20,39 @@
 /* SMACSS theme rules */
 /* @import "theme-A.css"; */
 /* @import "theme-B.css"; */
+
+
+body {
+  font-family: "PT Sans Narrow";
+  font-color: #B7B6C1;
+  background-color: #5A0909;
+}
+
+h3, h1 {
+  font-family: "PT Sans";
+}
+
+.region-sidebar-first .block-system {
+    border-style: dotted;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: #f5f5f5;
+}
+
+.header__logo-image {
+    height: 100px;
+    width: 130px;
+}
+
+#site-name {
+    background-color: #f5f5f5;
+}
+
+.header {
+    text-shadow: 40px;
+    text-align: center;
+}
