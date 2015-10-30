@@ -72,3 +72,6 @@ html{
 	-moz-border-radius: 150px;
 	background: url("../images/CameronBakery.jpg") no-repeat;
 }
+#header{
+	margin-bottom: 25px;
+}
