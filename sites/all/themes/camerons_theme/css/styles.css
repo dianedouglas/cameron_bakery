@@ -1720,15 +1720,6 @@ tr.selected td {
   transition: color, 0.5s, ease-out, 0.5s;
 }
 
-/* line 1, ../sass/components/_main-header.scss */
-header#header {
-  background: #ff0000;
-}
-/* line 4, ../sass/components/_main-header.scss */
-header#header #logo {
-  display: hidden;
-}
-
 /**
  * @file
  * Print styling
