@@ -1,0 +1,5 @@
+name = Article Module
+description = Hides the subject form line from comment section of articles.
+package = Custom Modules
+core = 7.x
+files[] = article_module.module
