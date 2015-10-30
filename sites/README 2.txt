@@ -8,3 +8,12 @@ PDOException: SQLSTATE[HY000] [1045] Access denied for user 'cameron'@'localhost
 
 6. tried fixing errors in module, maybe that was the reason for the error?
 7. made a new user with all privs named u:cameron/p:cameron
+
+
+
+
+Sub theme
+
+1. in sites/all/themes moved starterkit file over and renamed myzen
+2. renamed everything to my zen in theme settings, template php and just the name in info.text
+3. sub theme not showing up in my modules 
