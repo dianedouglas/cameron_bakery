@@ -20,3 +20,35 @@
 /* SMACSS theme rules */
 /* @import "theme-A.css"; */
 /* @import "theme-B.css"; */
+
+body {
+  font-size:14px;
+  font-family:Helvetica, sans-serif;
+  background-image:url('http://pixelatedcrumb.com/wp-content/uploads/2011/08/Cherry_Almond_Muffins-3.jpg');
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:100%;
+}
+
+#page {
+  background-color:#f3f4f6;
+  opacity:0.95;
+}
+
+article {
+  border: 1px solid gray;
+  background-color:#dac6b7;
+  padding:10px;
+  margin:4px;
+  border-radius:6px;
+}
+
+a {
+  color:#781027;
+  font-style:italic;
+  text-decoration:none;
+}
+
+a:hover {
+text-decoration:underline;
+}
