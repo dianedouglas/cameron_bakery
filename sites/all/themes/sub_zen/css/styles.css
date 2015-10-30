@@ -36,22 +36,19 @@ body {
     background-color: #E1DABD;
 }
 
-h2, #site-name, #site-slogan {
+h2, #site-name, #site-slogan, .title {
     font-family: Daisy;
 }
 
 #name-and-slogan {
     width: 70%;
     height: 150px;
-    /*background-color: #EACB7E;*/
     margin-left: 3%;
     text-align:center;
-    /*border-radius: 5px;*/
-    /*border: dashed 2px black;*/
 }
 
-#site-name {
-    color: #651D0A;
+#site-name, h1 {
+    /*color: #651D0A;*/
     font-size: 60px;
 }
 
@@ -65,13 +62,13 @@ h2, #site-name, #site-slogan {
     text-align: center;
 }
 
-.block-title, .sidebar, .node-article, .node-title, #name-and-slogan, #navigation {
+ .contact-form, .breadcrumb, .title, .node, .block-title, .sidebar, .node-article, .node-title, #name-and-slogan, #navigation {
     border: dashed 2px black;
     border-radius: 5px;
     background-color: #EACB7E;
 }
 
-.node-title, #navigation, .block-title {
+.node-title, #navigation, .block-title, .title {
     background-color: #AA8573;
     text-align: center;
 }
@@ -84,14 +81,28 @@ h2, #site-name, #site-slogan {
     margin-top: 1%;
 }
 
+.node {
+    margin-top: 1%;
+}
+
 .submitted {
     font-style: italic;
     font-size: 10px;
     margin: 1px;
 }
 
-.node-article {
+.node-article, .node, .breadcrumb {
     margin-top: 3%;
+    padding: 1%;
+}
+
+.breadcrumb {
+    margin-top: 2.5%;
+    margin-bottom: 1%;
+}
+
+.contact-form {
+    margin-top: 1%;
     padding: 1%;
 }
 
@@ -105,4 +116,9 @@ a:hover {
 
 .sidebar {
     margin-top: 3%;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 5%;
 }
