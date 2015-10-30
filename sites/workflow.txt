@@ -8,6 +8,10 @@ PDOException: SQLSTATE[HY000] [1045] Access denied for user 'cameron'@'localhost
 
 6. tried fixing errors in module, maybe that was the reason for the error?
 7. made a new user with all privs named u:cameron/p:cameron
+8. yay its working
+
+custom mod
+1. still not sure how to target the exact spot i want to hide or deny access to. 
 
 
 
