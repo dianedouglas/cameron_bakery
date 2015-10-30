@@ -78,14 +78,16 @@ a {
 }
 
 /*
+** content styling
+*/
+.node-article {
+  margin-top: 5px;
+  border-top: 1px solid black;
+}
+
+/*
 ** footer stying
 */
 #footer {
   text-align: center;
-}
-
-
-.node-article {
-  margin-top: 5px;
-  border-top: 1px solid black;
 }
