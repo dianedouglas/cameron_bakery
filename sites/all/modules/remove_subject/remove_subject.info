@@ -1,0 +1,5 @@
+name = Remove Subject
+description = To remove the subject field for all comments on main page article
+package = Epicodus Modules
+core = 7.x
+files[] = remove_subject.module
