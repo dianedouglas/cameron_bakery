@@ -1,12 +1,13 @@
 <?php
 function bakery_user_menu() {
-    $items['welcome'] = array(
-        'title' = 'Hi There!',
-        'page callback' => 'welcome_user'
-        'access callback' => TRUE,
-        'type' => MENU_CALLBACK,
-    );
-    return $items;
+  $items = array();
+  $items['welcome'] = array(
+      'title' => 'Hi There!',
+      'page callback' => 'welcome_user',
+      'access callback' => TRUE,
+      'type' => MENU_CALLBACK,
+  );
+  return $items;
 }
 
 function bakery_user_login(&$edit, $account) {
