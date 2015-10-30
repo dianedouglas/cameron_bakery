@@ -1,0 +1,4 @@
+name = Comment mod
+description = A custom module to hide the subject field in all the article comment submission forms.
+package = Custom
+core = 7.x
