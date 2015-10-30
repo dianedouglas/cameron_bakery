@@ -1,0 +1,5 @@
+name = Hide Comment Subject
+description = Will hide the subject field in comment forms
+package = Custom Comment Form
+core = 7.x
+files[] = hide_comment_subject.module
