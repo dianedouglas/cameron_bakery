@@ -1,0 +1,5 @@
+name = Article Alter
+description = Alter subject field in all the article comment submission forms.
+package = Micah's Modules
+core = 7.x
+files[] = alter_article.module
