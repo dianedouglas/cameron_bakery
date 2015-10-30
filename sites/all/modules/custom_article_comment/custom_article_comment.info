@@ -1,0 +1,5 @@
+name = Custom Article Comment
+description = Customizes the comment fields for articles.
+package = User Input
+core = 7.x
+files[] = custom_article_comment.module
