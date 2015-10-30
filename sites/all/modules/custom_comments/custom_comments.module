@@ -1,0 +1,13 @@
+<?php
+
+/*
+** Hides subject field of comments.
+** Used devel module function dpm() to find form_id & subject field.
+*/
+
+function custom_comments_form_alter(&$form, $form_state, $form_id) {
+
+  if($form_id = 'comment_node_article_form') {
+    $form['subject']['#type'] = 'hidden';
+  }
+}
