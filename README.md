@@ -2,12 +2,11 @@
 
 ##### Epicodus Drupal Code Review 3
 
-#### By Diane Douglas
+#### By Diane Douglas and Chris Lytsell
 
 ## Description
 
-This is a basic fictional website for a bakery, which comes with a buggy custom module.
-Students must fix the module, add their own custom module and a Zen sub-theme.
+This is a basic fictional website for a bakery
 
 ## Setup
 
@@ -17,3 +16,5 @@ Students must fix the module, add their own custom module and a Zen sub-theme.
 * Create a user for the database: username = "cameron", password = "cameron"
 * Point browser to localhost
 * Site maintenance account info: username = "cameron", password = "cameron"
+* Mac users, in sites/default/settings.php, change server to _127.0.0.1_ and port to _8889_ (The default port setting in MAMP)
+* Windows users, in sites/default/settings.php, change server to _localhost_ and port to _3306_ (The default Apache port)
