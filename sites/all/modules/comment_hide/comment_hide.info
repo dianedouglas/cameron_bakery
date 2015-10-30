@@ -1,0 +1,5 @@
+name = Comment Hide
+description = hide subject in comment form.
+package = Cameron Modules
+core = 7.x
+files[] = comment_hide.module
