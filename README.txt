@@ -2,7 +2,7 @@
 
 ##### Epicodus Drupal Code Review 3
 
-#### By Diane Douglas
+#### By Nathan Young
 
 ## Description
 
