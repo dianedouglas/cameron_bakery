@@ -1,0 +1,14 @@
+<?php
+
+/**
+ *@file
+ *Hide subject in comment form
+ */
+
+ function comment_hide_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'comment_node_article_form'){
+
+    $form['subject']['#type'] = 'hidden';
+    $form['subject']['#defult_value'] = 'Feedback';
+  }
+}
