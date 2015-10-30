@@ -1,0 +1,5 @@
+name = Hide Subject
+description = Hides the Subject field on the article comment submission forms
+package = Cameron Modules
+core = 7.x
+files[] = hide_subject.module
