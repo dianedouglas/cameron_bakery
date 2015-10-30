@@ -20,8 +20,7 @@ description = Jason's zen subtheme
 ; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zen.
 
 core        = 7.x
-base theme  = zen
-
+base theme  = bartik
 
 
 ; This section controls the CSS files for your theme. There are 3 different
@@ -51,6 +50,8 @@ stylesheets[all][] = system.theme.css
 
 ; Then we add our own stylesheet.
 stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/print.css
+stylesheets[all][] = css/mystyles.css
 
 ; Built-in conditional stylesheet support has been removed from Zen 7.x-5.x.
 ; Instead, Zen now adds conditional-comment-included classes to the html
