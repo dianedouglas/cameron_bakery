@@ -1,7 +1,7 @@
 <?php
 function bakery_user_menu() {
   $items = array();
-  $items['bakery_user'] = array(
+  $items['welcome'] = array(
       'title' => 'Hi There!',
       'page callback' => 'welcome_user',
       'access callback' => TRUE,
