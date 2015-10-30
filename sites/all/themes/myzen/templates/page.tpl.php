@@ -7,8 +7,8 @@
  * @see https://drupal.org/node/1728148
  */
 ?>
-
-<div id="page">
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<div class="pinkify" id="page">
 
   <header class="header" id="header" role="banner">
 
@@ -52,7 +52,7 @@
 
   <div id="main">
 
-    <div id="content" class="column" role="main">
+    <div id="content" class="column rounded-border" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
