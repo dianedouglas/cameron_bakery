@@ -1,0 +1,25 @@
+body {
+  background: #D7F2FF;
+}
+
+a {
+  color: #297B29;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.text-format-wrapper {
+  background: #C9C9C9;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+#site-slogan {
+  font-style: italic;
+}
+
+#site-name {
+  text-shadow: 2px 2px 4px #FFFFFF;
+}
