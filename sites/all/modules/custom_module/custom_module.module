@@ -3,8 +3,8 @@
 function custom_module_form_alter(&$form, &$form_state, $form_id) {
     if($form_id == "comment_node_article_form") {
         $form['subject'] = FALSE;
-        print '<pre>';
-        print_r($form);
-        print '</pre>';
+        // print '<pre>';
+        // print_r($form);
+        // print '</pre>';
 }
 }
