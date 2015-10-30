@@ -1,0 +1,5 @@
+name = Custom Comments
+description = Removes subject line from comment form.
+package = Cameron Modules
+core = 7.x
+files[] = custom_comments.module
