@@ -1,0 +1,5 @@
+name = Simplified Comments
+description = Hides the subject field in all the article comment submission forms
+package = Cameron Modules
+core = 7.x
+files[] = simplified_comments.module
