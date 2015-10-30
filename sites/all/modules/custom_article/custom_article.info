@@ -1,0 +1,5 @@
+name = Custom Article
+description = Disallows comments on articles
+package = Cameron Modules
+core = 7.x
+files[] = custom_article.module
