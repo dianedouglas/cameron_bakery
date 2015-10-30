@@ -1,0 +1,5 @@
+name = Simple Comment
+description = Removes the Subject fields in comment submission form
+package = Bethel Modules
+core = 7.x
+files[] = jb_simple_comment.module
