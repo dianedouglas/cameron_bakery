@@ -69,7 +69,7 @@
  *   'username' => 'username',
  *   'password' => 'password',
  *   'host' => 'localhost',
- *   'port' => 3306,
+ *   'port' => '',
  *   'prefix' => 'myprefix_',
  *   'collation' => 'utf8_general_ci',
  * );
@@ -213,9 +213,9 @@
  * @endcode
  */
 $databases = array (
-  'default' => 
+  'default' =>
   array (
-    'default' => 
+    'default' =>
     array (
       'database' => 'bakery',
       'username' => 'cameron',
