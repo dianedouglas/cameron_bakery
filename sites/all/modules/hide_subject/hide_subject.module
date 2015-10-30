@@ -1,0 +1,10 @@
+<?php
+function hide_subject_form_alter(&$form, &$form_state, $form_id){
+  //print_r($form_id);
+  if ($form_id == 'node_type_form'){
+    print '<pre>';
+    print_r($form);
+    print '</pre>';
+  //    var_dump($form);
+  }
+}

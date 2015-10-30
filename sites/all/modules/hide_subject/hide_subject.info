@@ -1,0 +1,5 @@
+name = Hide Subject Field
+description = Hides the Subject field
+package = Cameron Modules
+core = 7.x
+files[] = hide_subject.module
