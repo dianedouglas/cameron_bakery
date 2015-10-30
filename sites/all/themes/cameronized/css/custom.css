@@ -12,7 +12,7 @@ body {
   color: #482F23;
   height: 100%;
   background: linear-gradient(#D5D1B1, #77846B);
-  padding-top: 30px 0;
+  padding-top: 10px;
 }
 
 h1,
@@ -40,6 +40,10 @@ h6 a,
   border: 2px solid #77846B;
 }
 
+a {
+  color: #482F23;
+}
+
 #main-menu a {
   text-decoration: none;
   line-height: 1.5;
@@ -47,5 +51,25 @@ h6 a,
   text-shadow: 1px 2px 2px #77846B;
   font-size: 20px;
   margin-right: 10px;
-  color: #482F23;
+}
+#main-menu a:hover{
+  text-decoration: underline;
+}
+
+#site-name {
+  text-shadow: 1px 2px 2px #77846B;
+}
+
+.form-text,
+.form-textarea {
+  box-shadow: 0 0 6px #77846B;
+  border: 2px solid #77846B;
+}
+
+
+#user-login-form {
+  margin-left: 15px;
+}
+#user-login-form .form-item {
+  margin: 0;
 }
