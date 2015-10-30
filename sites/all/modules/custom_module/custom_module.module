@@ -1,0 +1,6 @@
+<?php
+
+function custom_module_form_alter(&$form, &$form_state, $form_id) {
+    print_r($form_id);
+}
+ ?>
