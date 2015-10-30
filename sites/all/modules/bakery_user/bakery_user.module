@@ -10,7 +10,7 @@ function bakery_user_menu() {
 }
 
 function bakery_user_login(&$edit, $account) {
-    $_GET['destination'] = 'welcome_user';
+    $_GET['destination'] = 'welcom3';
 }
 
 function welcome_user() {
