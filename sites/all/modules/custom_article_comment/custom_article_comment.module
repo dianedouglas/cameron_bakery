@@ -1,0 +1,7 @@
+<?php
+
+
+function custom_article_comment_form_alter(&$form, &$form_state, $form_id) {
+
+  $form['subject']['#access'] = 0;
+}
