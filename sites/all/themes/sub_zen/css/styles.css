@@ -1,0 +1,124 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+
+@font-face {
+    font-family: Daisy;
+    src: url(Daisys_Delights.ttf);
+}
+
+#logo {
+    border: dashed 2px black;
+}
+
+body {
+    margin-top: 15px;
+    background-color: #E1DABD;
+}
+
+h2, #site-name, #site-slogan, .title {
+    font-family: Daisy;
+}
+
+#name-and-slogan {
+    width: 70%;
+    height: 150px;
+    margin-left: 3%;
+    text-align:center;
+}
+
+#site-name, h1 {
+    /*color: #651D0A;*/
+    font-size: 60px;
+}
+
+#site-slogan {
+    color: #A1674A;
+    font-size: 45px;
+}
+
+#navigation {
+    margin-top: 10px;
+    text-align: center;
+}
+
+ .contact-form, .breadcrumb, .title, .node, .block-title, .sidebar, .node-article, .node-title, #name-and-slogan, #navigation {
+    border: dashed 2px black;
+    border-radius: 5px;
+    background-color: #EACB7E;
+}
+
+.node-title, #navigation, .block-title, .title {
+    background-color: #AA8573;
+    text-align: center;
+}
+
+.node-title {
+    font-size: 35px;
+}
+
+.block-title {
+    margin-top: 1%;
+}
+
+.node {
+    margin-top: 1%;
+}
+
+.submitted {
+    font-style: italic;
+    font-size: 10px;
+    margin: 1px;
+}
+
+.node-article, .node, .breadcrumb {
+    margin-top: 3%;
+    padding: 1%;
+}
+
+.breadcrumb {
+    margin-top: 2.5%;
+    margin-bottom: 1%;
+}
+
+.contact-form {
+    margin-top: 1%;
+    padding: 1%;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #E1DABD;
+}
+
+.sidebar {
+    margin-top: 3%;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 5%;
+}
