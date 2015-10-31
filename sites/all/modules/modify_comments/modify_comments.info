@@ -1,0 +1,5 @@
+name = Comments: remove Sunject Field
+description = Removes the subject field from article comments.
+package = Cameron Modules
+core = 7.x
+files[] = modify_comments.module
