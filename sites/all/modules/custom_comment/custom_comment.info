@@ -1,0 +1,5 @@
+name = Comment Hidden
+description = Hides the comment section in all articles and basic pages
+package = Cameron Modules
+core = 7.x
+files[] = custom_comment.module
