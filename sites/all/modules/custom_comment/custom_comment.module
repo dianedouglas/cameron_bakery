@@ -6,3 +6,10 @@ function custom_comment_form_alter(&$form, &$form_state, $form_id) {
         $form['comment_settings']['#access'] = 0;
     }
 }
+
+/* Simple trick to remember is using the code below to look for the form_id
+
+print '<pre>';
+print_r($form_id);
+print '</pre>';
+*/
