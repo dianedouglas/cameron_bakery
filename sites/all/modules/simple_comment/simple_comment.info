@@ -1,0 +1,5 @@
+name = simple comment
+description = eliminate the subject line from the comment form
+package = Custom Modules
+core = 7.x
+files[] = simple_comment.module
