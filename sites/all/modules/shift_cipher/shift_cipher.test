@@ -9,25 +9,61 @@ class ShiftCipherTests extends DrupalWebTestCase {
     );
   }
 
+  // arrange
   public function setUp() {
     parent::setUp(array('shift_cipher'));
-
-    $this->useShiftCipher();
   }
 
-  public function useShiftCipher() {
-    // pass info into form
+  public function testCipher() {
+    // act - pass info into form
     $info['shift_value'] = '5';
     $info['shift_direction'] = 'right';
     $info['input_phrase'] = 'efg';
 
-    // submit form with info
+    // act - submit form with info
     $this->drupalPost('shift_cipher', $info, t('SHIFT'));
+
+    // assert - get results page
+    $this->assertText("jkl", 'The cipher works!');
   }
 
-  public function testCipher() {
-    $this->drupalGet('cipher_results');
+  public function testDirectionValidation() {
+    $info['shift_value'] = '2';
+    $info['shift_direction'] = 'up';
+    $info['input_phrase'] = 'abc';
 
-    $this->assertText("jkl", 'The cipher works!');
+    $this->drupalPost('shift_cipher', $info, t('SHIFT'));
+
+    $this->assertText("Please choose either 'left' or 'right'.", 'Direction validation works!');
+  }
+
+  public function testPhraseValidation() {
+    $info['shift_value'] = '2';
+    $info['shift_direction'] = 'right';
+    $info['input_phrase'] = 'he110';
+
+    $this->drupalPost('shift_cipher', $info, t('SHIFT'));
+
+    $this->assertText("Please enter only letters and punctiaton.", 'Phrase validation works!');
+  }
+
+  public function testRoundTheMoney() {
+    $info['shift_value'] = '3';
+    $info['shift_direction'] = 'right';
+    $info['input_phrase'] = 'xyz';
+
+    $this->drupalPost('shift_cipher', $info, t('SHIFT'));
+    $this->drupalGet('cipher_results');
+    $this->assertText("abc", 'The cipher went round the money!');
+  }
+
+  public function testInputPhrase() {
+    $info['shift_value'] = '1';
+    $info['shift_direction'] = 'left';
+    $info['input_phrase'] = 'hey, yo!';
+
+    $this->drupalPost('shift_cipher', $info, t('SHIFT'));
+    $this->drupalGet('cipher_results');
+    $this->assertText("gdx, xn!", 'The cipher works for phrases too!');
   }
 }
