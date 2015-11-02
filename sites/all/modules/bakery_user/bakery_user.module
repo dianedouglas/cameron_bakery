@@ -1,16 +1,20 @@
 <?php
 function bakery_user_menu() {
-    $items['welcome'] = array(
-        'title' = 'Hi There!',
-        'page callback' => 'welcome_user'
+    $items = array();
+
+    $items['welcome_user'] = array(
+        'title' => 'Hi There!',
+        'page callback' => 'welcome_user',
         'access callback' => TRUE,
         'type' => MENU_CALLBACK,
     );
+
     return $items;
 }
 
-function bakery_user_login(&$edit, $account) {
+function bakery_user_user_login() {
     $_GET['destination'] = 'welcome_user';
+    // bakery_perform_redirect('welcome_user');
 }
 
 function welcome_user() {
