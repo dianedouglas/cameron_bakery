@@ -1,0 +1,125 @@
+<?php
+
+function shift_cipher_menu() {
+  $items['shift_cipher'] = array(
+    'title' => 'Shift Cipher',
+    'type' => MENU_NORMAL_ITEM,
+    'access callback' => TRUE,
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('shift_cipher_form'),
+  );
+  $items['cipher_results'] = array(
+    'title' => 'Results',
+    'type' => MENU_CALLBACK,
+    'access callback' => TRUE,
+    'page callback' => 'cipher_results',
+  );
+  return $items;
+}
+
+function shift_cipher_form() {
+  $form['shift_value'] = array(
+    '#title' => 'Shift Value',
+    '#type' => 'textfield',
+    '#descripton' => t("Enter the amount of characters you would like your letters to shift."),
+    '#element_validate' => array('element_validate_integer_positive'),
+    '#required' => TRUE,
+  );
+  $form['shift_direction'] = array(
+    '#title' => 'Shift Direction',
+    '#type' => 'textfield',
+    '#description' => t("Would you like to shift left or right?"),
+    '#element_validate' => array('element_validate_direction'),
+    '#required' => TRUE,
+  );
+  $form['input_phrase'] = array(
+    '#title' => 'Phrase',
+    '#type' => 'textfield',
+    '#description' => t("Enter the phrase you would like to be encrypted."),
+    '#element_validate' => array('element_validate_phrase'),
+    '#required' => TRUE,
+  );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => 'SHIFT',
+  );
+  return $form;
+}
+
+function shift_cipher_form_submit($form, &$form_state) {
+  $shift_value = $form_state['values']['shift_value'];
+  $shift_direction = $form_state['values']['shift_direction'];
+  $input_phrase = $form_state['values']['input_phrase'];
+
+  // make an array of letters from a-z
+  $letters = range('a', 'z');
+  // split the user's phrase into an array of lowercase letters
+  $input_phrase_as_array = str_split(strtolower($input_phrase));
+  // make an empty array to hold the cipher results
+  $cipher_phrase = array();
+
+  foreach ($input_phrase_as_array as $letter) {
+    // if a space or punctiaton character, just push to array
+    if (!in_array($letter, $letters)) {
+      array_push($cipher_phrase, $letter);
+    }
+    // else, do all the things
+    else {
+      // find the key of the letter in the letters array
+      $letter_key = array_search($letter, $letters);
+
+      // if user enters right, add the shift value
+      // otherwise (only allow two options) subtract
+      if (strtolower($shift_direction) == "right") {
+        $letter_key += $shift_value;
+        // if letter key is greater than the length of the array
+        if ($letter_key > 25) {
+          // subtract the new value of the key by the length of the alphabet
+          // 26 because the array starts on 0
+          $letter_key -= 26;
+        }
+      }
+      else {
+        $letter_key -= $shift_value;
+        // if letter key is less than the length of the array
+        if ($letter_key < 0) {
+          // add length of alphabet to new value of key
+          $letter_key += 26;
+        }
+      }
+
+      // select the new letter based off the shift value added to the original key
+      $cipher_letter = $letters[$letter_key];
+      // push the new letter into the empty cipher phrase array
+      array_push($cipher_phrase, $cipher_letter);
+    }
+  }
+
+  // turn the cipher phrase array into a string and store it in the SESSION variable
+  $_SESSION['cipher_phrase'] = implode($cipher_phrase);
+  $form_state['redirect'] = 'cipher_results';
+}
+
+function cipher_results() {
+  return $_SESSION['cipher_phrase'];
+}
+
+/*
+** custom validation
+*/
+function element_validate_direction($element) {
+  $direction_choice = array("left", "right");
+  if (!in_array(strtolower($element['#value']), $direction_choice)) {
+    form_error($element, t("Please choose either 'left' or 'right'."));
+  }
+}
+
+function element_validate_phrase($element) {
+  $input_phrase_as_array = str_split($element['#value']);
+
+  foreach ($input_phrase_as_array as $character) {
+    if (!preg_match('/([A-z .,!?:;()-])/', $character)) {
+      form_error($element, t("Please enter only letters and punctiaton."));
+    }
+  }
+}

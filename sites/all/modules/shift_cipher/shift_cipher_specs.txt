@@ -1,0 +1,25 @@
+Shifting right beyond the bounds of alphabet
+1.
+  Input: 'y'
+  Shift value = 3
+  Shift direction = right
+  Output: 'b'
+
+2.
+  Input: 'x'
+  Shift value = 10
+  Shift direction = right
+  Output: 'h'
+
+Shifting left beyond the bounds of alphabet
+1.
+  Input: 'b'
+  Shift value = 3
+  Shift direction = left
+  Output: 'y'
+
+2.
+  Input: 'c'
+  Shift value = 10
+  Shift direction = left
+  Output: 's'

@@ -1,0 +1,7 @@
+name = Shift Cipher
+description = Encrypts a phrase using a shift cipher with parameters supplied by the user
+package = Shift Cipher
+core = 7.x
+files[] = shift_cipher.module
+files[] = shift_cipher.test
+dependencies[] = simpletest
