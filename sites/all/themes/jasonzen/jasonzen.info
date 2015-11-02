@@ -20,7 +20,7 @@ description = Jason's zen subtheme
 ; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zen.
 
 core        = 7.x
-base theme  = bartik
+base theme  = zen
 
 
 ; This section controls the CSS files for your theme. There are 3 different
@@ -94,6 +94,7 @@ regions[content]        = Content
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
 regions[footer]         = Footer
+regions[footer_jason]   = Jason footer
 regions[bottom]         = Page bottom
 
 ; The page_top and page_bottom regions are hidden, which means they will not
