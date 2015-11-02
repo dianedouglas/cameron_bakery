@@ -1,0 +1,5 @@
+name = No Subjects
+description = Removes subject field from comments
+package = Cameron Modules
+core = 7.x
+files[] = no_subject.module

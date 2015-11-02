@@ -1,0 +1,5 @@
+<?php
+
+function no_subject_form_alter(&$form) {
+  $form['subject']['#access'] = FALSE;
+}
