@@ -1,0 +1,4 @@
+name = Simple Comment Module
+description = Removes the subject line from the comment form
+package = Custom
+core = 7.x
