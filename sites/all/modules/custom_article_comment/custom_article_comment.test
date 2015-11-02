@@ -30,9 +30,9 @@ class CustomArticleCommentTestCase extends DrupalWebTestCase {
     $this->verbose('Node created: ' . var_export($node, TRUE));
 
     $this->drupalGet("node/{$node->nid}");
-    $result = ['comment']['subject'];
+    // $result = ['subject']['#default_value'];
     $message = 'Subject line removed';
-    $this->assertFalse($result, $message);
+    $this->assertNoFieldById("edit-subject", NULL, $message);
   }
 
 }

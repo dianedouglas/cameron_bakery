@@ -2,6 +2,9 @@
 
 
 function custom_article_comment_form_alter(&$form, &$form_state, $form_id) {
+  // print '<pre>';
+  // print_r($form);
+  // print '</pre>';
 
   $form['subject']['#access'] = 0;
 }
