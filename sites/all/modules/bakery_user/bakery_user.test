@@ -1,0 +1,40 @@
+<?php
+
+class BakeryUserTests extends DrupalWebTestCase {
+
+  // info to display in Testing UI
+  public static function getInfo() {
+    return array(
+      'name' => 'Bakery User Tests',
+      'description' => 'Tests for the Bakery User module.',
+      'group' => 'Epicodus Examples Tests',
+    );
+  }
+
+  // enable modules
+  public function setUp() {
+    parent::setUp(array('bakery_user'));
+  }
+
+  public function testLoginWelcome() {
+    // create an authenticated user
+    $user = $this->drupalCreateAuthenticatedUser();
+    // log the new user in
+    $this->drupalLogin($user);
+    // verify they were redirected to the page with the text below
+    $this->assertText("Welcome to Cameron's Bakery!", 'The user was successfully redirected.');
+  }
+
+  public function drupalCreateAuthenticatedUser(array $permissions = array()) {
+    // gets a list of available user roles
+    $roles = user_roles();
+    // finds authenticated role in roles array
+    $index = array_search('authenticated', $roles);
+    // create a new user (drupalCreateUser is a native Drupal function)
+    $user = $this->drupalCreateUser($permissions);
+    // give new user authenticated role
+    $user->roles[$index] = 'authenticated';
+    // save and return user with role
+    return user_save($user);
+  }
+}
