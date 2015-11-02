@@ -1,0 +1,5 @@
+name = Hide Subject
+description = Hides the subject when commenting on articles
+package = Cameron Modules
+core = 7.x
+files[] = hide_subject.module
