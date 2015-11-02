@@ -9,7 +9,7 @@ class BakeryUserTestCase extends DrupalWebTestCase {
     return array(
       'name' => 'Bakery User',
       'description' => 'Ensure that Bakery User displays welcome message',
-      'group' => 'Cameron\'s Modules',
+      'group' => 'Cameron Modules',
     );
   }
 
@@ -24,10 +24,4 @@ class BakeryUserTestCase extends DrupalWebTestCase {
     $this->assertText(t('Hi There!'), 'Login message title');
     $this->assertText(t('Welcome to Cameron\'s Bakery!'), 'Login message main text');
   }
-
-
-
-
-
-
 }
