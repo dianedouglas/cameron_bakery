@@ -26,19 +26,13 @@
 /* SMACSS theme rules */
 /* @import "theme-A.css"; */
 /* @import "theme-B.css"; */
-
 body {
-  /*background: #CCC;*/
   color: #333;
   font-size: 14px;
   line-height: 1.5;
   font-family: Helvetica, Verdana, Arial, sans-serif;
 }
 
-/*a, a:link {
-  color: #DF2935;
-  text-decoration: none;
-}*/
 a:hover {
   text-decoration: underline;
 }
@@ -53,7 +47,10 @@ h1 {
 }
 
 #navigation {
-  padding-top: 200px;
+  padding-left: 250px;
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: center;
 }
 
 #name-and-slogan {
@@ -61,21 +58,13 @@ h1 {
   font-size: 28px;
 }
 
-#header {
-  margin: 0;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
-}
 
 #content {
-  padding-top: 200px;
+  padding-top: 80px;
 }
 
 .sidebars {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 #secondary-menu {
@@ -93,7 +82,7 @@ h1 {
 
 #block-system-navigation {
   border-style: dotted;
-    border-width: 1px;
+  border-width: 1px;
 }
 
 .breadcrumb {
