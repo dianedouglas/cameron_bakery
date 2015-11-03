@@ -63,3 +63,17 @@ class BakeryUserTests extends DrupalWebTestCase {
 
 
 }
+class BakeryUnitTests extends DrupalUnitTestCase{
+  public static function getInfo() {
+    return array(
+      'name' => 'Bakery Unit Test',
+      'description' => 'Test that a bakery function works.',
+      'group' => 'Bakery Function Tests',
+    );
+  }
+
+  public function setUp() {
+    drupal_load('module', 'bakery_user');
+    parent::setUp();
+  }
+}

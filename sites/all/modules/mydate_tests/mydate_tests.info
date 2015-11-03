@@ -1,0 +1,8 @@
+name = mydate tests
+description = an example of testing functions in the mydate module
+core = 7.x
+package = Features
+dependencies[] = mydate
+dependencies[] = simpletest
+dependencies[] = tests
+features[features_api][] = api:2
