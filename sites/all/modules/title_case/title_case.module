@@ -1,0 +1,17 @@
+<?php
+
+function make_title_case($input) {
+    $input_explode = explode(' ', $input);
+    $output_phrase = [];
+
+    $ignore = ['a', 'the', 'of'];
+
+    foreach($input_explode as $index => $word) {
+        if($index == 0 || !in_array($word, $ignore)) {
+            array_push($output_phrase, ucfirst($word));
+        } else {
+            array_push($output_phrase, $word);
+        }
+    }
+    return implode(' ', $output_phrase);
+}
