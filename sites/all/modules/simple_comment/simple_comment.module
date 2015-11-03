@@ -1,0 +1,16 @@
+<?php
+
+/*
+print $form_id;
+Finds id of form
+
+print '<pre>';
+print_r($form); Shows the entire structure of the form.
+print '</pre>';
+
+*/
+function simple_comment_form_alter(&$form, &$form_state, $form_id) {
+    if($form_id === 'comment_node_article_form') {
+        $form['subject']['#access'] = 0;
+    }
+}

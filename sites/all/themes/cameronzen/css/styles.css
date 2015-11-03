@@ -1,0 +1,67 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+    background-color: #808080;
+}
+
+.region-sidebar-first {
+    background-color: #A9A9A9;
+    border: 2px solid #C0C0C0;
+    border-radius: 4px;
+    padding-top: 2%;
+}
+
+.menu__item {
+    background-color: #708090;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+}
+
+.menu__link {
+    margin-left: 5%;
+}
+
+#name-and-slogan {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#content{
+    background-color: #A9A9A9;
+    border: 2px solid #C0C0C0;
+    border-radius: 4px;
+}
+
+.node-article {
+    background-color: #D3D3D3;
+    border: 2px solid #C0C0C0;
+    border-radius: 4px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+}
+
+.submitted {
+    margin-top: .5em;
+}
