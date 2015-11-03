@@ -1,0 +1,11 @@
+<?php
+
+function custom_form_alter(&$form, &$form_state, $form_id) {
+  // not sure how to tell it that im trying to target all articles
+  // even more specifically jus the comment subject only
+  if ($form_id == 'article_comments') {
+    // this is the spot for the field being hidden
+    $form['subject_field']['#access'] = FALSE;
+  }
+}
+// need some kind of return?!?!?!?!?

@@ -1,8 +1,13 @@
 <?php
+//nothing worng with.info file I believe
+
 function bakery_user_menu() {
-    $items['welcome'] = array(
-        'title' = 'Hi There!',
-        'page callback' => 'welcome_user'
+    // blank items array was missing
+    $items = array();
+    //should be welcome_user?
+    $items['welcome_user'] = array(
+        'title' => 'Hi There!',
+        'page callback' => 'welcome_user',
         'access callback' => TRUE,
         'type' => MENU_CALLBACK,
     );
@@ -10,6 +15,7 @@ function bakery_user_menu() {
 }
 
 function bakery_user_login(&$edit, $account) {
+  // not sure if this part should be =>
     $_GET['destination'] = 'welcome_user';
 }
 

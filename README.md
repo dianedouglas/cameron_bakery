@@ -8,6 +8,7 @@
 
 This is a basic fictional website for a bakery, which comes with a buggy custom module.
 Students must fix the module, add their own custom module and a Zen sub-theme.
+Stuff!
 
 ## Setup
 
