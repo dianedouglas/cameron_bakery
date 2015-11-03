@@ -1,0 +1,65 @@
+<?php
+class BakeryUserTests extends DrupalWebTestCase {
+  protected $priveledgedUser;
+
+  public static function getInfo(){
+    return array(
+      'name' => 'Bakery Login Page Test',
+      'description' => 'Make sure users are greeted with a special login page',
+      'group' => 'Cameron Modules',
+    );
+  }
+
+  public function setUp(){
+    parent::setUp(array('bakery_user'));
+          // TESTING FOR LANDING PAGE
+  // public function testLoginWelcome(){
+    // $user = $this->drupalCreateAuthenticatedUser();
+    $user = $this->drupalCreateAdminUser();
+    $this->drupalLogin($user);
+    $this->createTestingPage();
+    // $this->assertText("Welcome to Cameron's Bakery!!", 'The user was successfully redirected. Woot!');
+  // }
+  //
+  // public function drupalCreateAuthenticatedUser(array $permissions = array()){
+  //   $roles = user_roles();
+  //   $index = array_search('authenticated', $roles);
+  //   $user = $this->drupalCreateUser($permissions);
+  //   $user->roles[$index] = 'authenticated';
+  //   return user_save($user);
+  // }
+  }
+
+  public function createTestingPage(){
+    $info = array();
+    $info['title'] = 'Testing!';
+    $info["body[und][0][value]"] = "1, 2, 3!";
+    //save the page
+    $this->drupalPost('node/add/page', $info, t('Save'));
+    //set new opage to the correct path. It's node 1 because starting from scratch
+    $path['source'] = 'node/1';
+    $path['alias'] = 'pagetest';
+    path_save($path);
+  }
+
+  public function drupalCreateAdminUser(array $permissions = array()){
+    $roles = user_roles();
+    $index = array_search('administrator', $roles);
+    $user = $this->drupalCreateUser($permissions);
+    $user->roles[$index] = 'administrator';
+    return user_save($user);
+  }
+  /* test that the page at url 'pagetest' contains the text "1, 2, 3!"*/
+  public function testNewPage(){
+    //navigate to /pagetest
+    $this->drupalGet('/pagetest');
+    //verify the text "1, 2, 3!", exists on the page
+    $this->assertText("1, 2, 3!", 'The text on the page is correct. Yay!');
+  }
+  public function testCreateTest(){
+    $this->drupalGet('/admin/config/development/testing');
+    $this->assertText('Cameron Modules', "Bakery Test Is Showing");
+  }
+
+
+}

@@ -1,0 +1,8 @@
+name = Tests
+description = added some tests to the bakery module
+core = 7.x
+package = Features
+dependencies[] = bakery_user
+dependencies[] = ctools
+dependencies[] = features
+features[features_api][] = api:2
