@@ -1,0 +1,5 @@
+name = Hide Subject Field
+description = Hides the subject field in all article comment submission forms.
+package = Cameron Modules
+core = 7.x
+files[] = subject_field.module
