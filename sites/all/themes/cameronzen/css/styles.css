@@ -1,0 +1,101 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+@font-face {
+    font-family: Wisdom Script;
+    src: url(http://www.losttype.com/font/?name=wisdom_script);
+    font-weight: bold;
+}
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+body {
+  /*background: #CCC;*/
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
+/*a, a:link {
+  color: #DF2935;
+  text-decoration: none;
+}*/
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+#logo {
+  width: 240px;
+  height: 120px;
+}
+
+#navigation {
+  padding-top: 200px;
+}
+
+#name-and-slogan {
+  font-family: Wisdom Script, Helvetica, Verdana, Arial, sans-serif;
+  font-size: 28px;
+}
+
+#header {
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+#content {
+  padding-top: 200px;
+}
+
+.sidebars {
+  padding-top: 200px;
+}
+
+#secondary-menu {
+  padding-left: 100px;
+  padding-top: 20px;
+}
+
+.node {
+  padding-top: 20px;
+}
+
+#main-menu {
+  padding-top: 30px;
+}
+
+#block-system-navigation {
+  border-style: dotted;
+    border-width: 1px;
+}
+
+.breadcrumb {
+  display: none;
+}
