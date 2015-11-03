@@ -2,7 +2,7 @@
 
 ##### Epicodus Drupal Code Review 3
 
-#### By Diane Douglas
+#### By Logan Wu (11/03/2015)
 
 ## Description
 
