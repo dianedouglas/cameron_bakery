@@ -1,0 +1,7 @@
+name = Title Case
+description = A title case generator.
+package = Epicodus Modules
+core = 7.x
+files[] = title_case.module
+dependencies[] = simpletest
+files[] = title_case.test

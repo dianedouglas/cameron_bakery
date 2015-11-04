@@ -1,0 +1,27 @@
+<?php
+
+
+class BakeryUserTestCase extends DrupalWebTestCase {
+
+  protected $privilegedUser;
+
+  public static function getInfo() {
+    return array(
+      'name' => 'Bakery User',
+      'description' => 'Ensure that Bakery User displays welcome message',
+      'group' => 'Cameron Modules',
+    );
+  }
+
+  public function setUp() {
+    parent::setUp(array('bakery_user'));
+  }
+
+  public function testBakeryUserModule() {
+    $this->privilegedUser = $this->drupalCreateUser();
+    $this->drupalLogin($this->privilegedUser);
+
+    $this->assertText(t('Hi There!'), 'Login message title');
+    $this->assertText(t('Welcome to Cameron\'s Bakery!'), 'Login message main text');
+  }
+}

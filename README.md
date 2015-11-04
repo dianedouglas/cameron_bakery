@@ -1,13 +1,12 @@
 # Cameron's Bakery
 
-##### Epicodus Drupal Code Review 3
+##### Drupal Unit Testing
 
-#### By Diane Douglas
+#### By Sam Martinez & Phil Shannon
 
 ## Description
 
-This is a basic fictional website for a bakery, which comes with a buggy custom module.
-Students must fix the module, add their own custom module and a Zen sub-theme.
+This is a basic fictional website for a bakery, which contain basic unit testing for dates and other custom modules.
 
 ## Setup
 

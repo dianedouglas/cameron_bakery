@@ -1,0 +1,38 @@
+<?php
+
+
+class CustomArticleCommentTestCase extends DrupalWebTestCase {
+  protected $privilegedUser;
+
+  public static function getInfo() {
+    return array(
+      'name' => 'Custom Article Comment',
+      'description' => 'Ensure that the Custom Article Comment module removes subject line from comments',
+      'group' => 'Cameron Modules',
+    );
+  }
+
+  public function setUp() {
+    parent::setUp(array('custom_article_comment'));
+  }
+
+  public function testCustomArticleCommentModule() {
+    $this->privilegedUser = $this->drupalCreateUser();
+    $this->drupalLogin($this->privilegedUser);
+
+    $settings = array(
+      'type' => 'article',
+      'title' => $this->randomName(32),
+      'body' => array(LANGUAGE_NONE => array(array($this->randomName(64)))),
+    );
+    $node = $this->drupalCreateNode($settings);
+
+    $this->verbose('Node created: ' . var_export($node, TRUE));
+
+    $this->drupalGet("node/{$node->nid}");
+    // $result = ['subject']['#default_value'];
+    $message = 'Subject line removed';
+    $this->assertNoFieldById("edit-subject", NULL, $message);
+  }
+
+}

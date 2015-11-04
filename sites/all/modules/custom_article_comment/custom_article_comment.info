@@ -1,0 +1,7 @@
+name = Custom Article Comment
+description = Customizes the comment fields for articles.
+package = Cameron Modules
+core = 7.x
+files[] = custom_article_comment.module
+dependencies[] = simpletest
+files[] = custom_article_comment.test
