@@ -1,0 +1,5 @@
+name = Hide Comment Subject Field
+description = Hides comment subject field.
+package = Cameron Modules
+core = 7.x
+files[] = hide_comment.module
