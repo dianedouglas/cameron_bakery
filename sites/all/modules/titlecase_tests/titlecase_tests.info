@@ -1,0 +1,8 @@
+name = titlecase tests
+core = 7.x
+package = Features
+dependencies[] = simpletest
+dependencies[] = simpletest_example
+dependencies[] = tests
+dependencies[] = titlecase
+features[features_api][] = api:2
