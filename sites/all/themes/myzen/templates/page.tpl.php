@@ -113,7 +113,9 @@
 
   </div>
 
-  <?php print render($page['footer']); ?>
+  <?php //print render($page['footer']); ?>
+ 
+  <p class="footer"><?php print $footer_message; ?></p>
 
 </div>
 

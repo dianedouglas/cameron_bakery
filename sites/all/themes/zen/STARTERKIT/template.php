@@ -130,3 +130,6 @@ function STARTERKIT_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+function myzen_preprocess(&$variables, $hook){
+    kpr($hook);
+}

@@ -39,6 +39,11 @@ function render_example_menu() {
     'page callback' => 'render_example_arrays',
     'access callback' => TRUE,
   );
+  $items['examples/display_user'] = array(
+      'title' => 'User teaser test',
+      'page callback' => 'render_user_teaser',
+      'access callback' => TRUE 
+  );
 
   return $items;
 }

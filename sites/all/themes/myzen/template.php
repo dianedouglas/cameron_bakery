@@ -130,3 +130,36 @@ function myzen_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+function myzen_preprocess_page(&$variables){
+
+    $slogans = array(
+    t("Life is Chocolate"),
+    t("Life is Sweet"),
+    t("Life is Taffy"),
+    t("Life is a Candy Cane"),
+    t("Life is Lucky Charms"),
+    t("Life is Sprinkles"),
+    t("Life is Coffee Cake!"),
+    );
+    $variables['site_slogan'] = $slogans[array_rand($slogans)];   
+       
+    //Add new variables to page.tpl
+    if($variables['logged_in']){
+    $variables['footer_message'] = t('Cookies are your friend, @username', array('@username' => $variables['user']->name)) . '!';
+    }else{
+        $variables['footer_message'] = t('Cookies are your friend');
+    }
+
+    //kpr($variables); 
+}
+function myzen_preprocess_node(&$variables){
+    //kpr($variables);
+    if($variables['type'] == 'article'){
+        $node = $variables['node'];
+        //kpr($node);
+        $variables['submitted_day'] = format_date($node->created, 'custom', 'j');
+        $variables['submitted_month'] = format_date($node->created, 'custom', 'M');
+        $variables['submitted_year'] = format_date($node->created, 'custom', 'Y');
+        
+    }
+}
