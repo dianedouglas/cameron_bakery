@@ -149,6 +149,9 @@ function myzen_preprocess_page(&$variables){
     }else{
         $variables['footer_message'] = t('Cookies are your friend');
     }
+    if($variables['is_front'] == TRUE){
+        drupal_add_css(path_to_theme().'/css/styles.css', array('group' => CSS_THEME, 'weight' => -10));
+    }
 
     //kpr($variables); 
 }
@@ -161,5 +164,11 @@ function myzen_preprocess_node(&$variables){
         $variables['submitted_month'] = format_date($node->created, 'custom', 'M');
         $variables['submitted_year'] = format_date($node->created, 'custom', 'Y');
         
+    }
+    if ($variables['type'] == 'page'){
+        $today = strtolower(date('l'));
+        $variables['theme_hook_suggestions'][] = 'node__'.$today;
+        $variables['day_of_the_week'] = $today;
+        kpr($variables);
     }
 }
