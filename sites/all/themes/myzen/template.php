@@ -214,8 +214,15 @@ function myzen_css_alter(&$css){
     //kpr($css);
     //unset($css['modules/system/system.menus.css']);
 }
-
+// example of moving an element of a page (in this case, an image),
+// and moving it to another part of the page
 function myzen_page_alter(&$page){
     kpr($page);
+    if(arg(0) == 'node' && is_numeric(arg(1))){
+        $nid = arg(1);
+       $image = $page['content']['system_main']['nodes'][$nid]['field_field_images'];
+        array_unshift($page['sidebar_first'], array('image' => $image));
+        unset($page['content']['system_main']['nodes'][$nid]['field_field_images']);
+    }
 }
 
