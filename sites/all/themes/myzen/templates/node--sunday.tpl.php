@@ -4,9 +4,7 @@
 		<h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>">
 	<?php print $title; ?></a></h2>
 	<?php endif; ?>
-	<?php print render($title_suffix); ?>
-			
-	<div>Yippee, it is <?php print $day_of_the_week; ?>!!</div>
+	<?php print render($title_suffix); ?>			
 	<?php print render($content); ?>
-	
+	<div>Yippee, it is <?php print $day_of_the_week; ?>!!</div>	
 </div>

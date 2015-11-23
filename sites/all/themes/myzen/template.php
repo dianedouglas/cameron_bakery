@@ -130,6 +130,7 @@ function myzen_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+// adds a random custom slogan 
 function myzen_preprocess_page(&$variables){
 
     $slogans = array(
@@ -155,6 +156,7 @@ function myzen_preprocess_page(&$variables){
 
     //kpr($variables); 
 }
+//adds a custom message to a page when the day matched the name of the tpl file
 function myzen_preprocess_node(&$variables){
     //kpr($variables);
     if($variables['type'] == 'article'){
@@ -169,9 +171,10 @@ function myzen_preprocess_node(&$variables){
         $today = strtolower(date('l'));
         $variables['theme_hook_suggestions'][] = 'node__'.$today;
         $variables['day_of_the_week'] = $today;
-        kpr($variables);
+        //kpr($variables);
     }
 }
+// adds the path to the current page to the breadcrumb link
 function myzen_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
 
@@ -184,3 +187,35 @@ function myzen_breadcrumb($variables) {
     return $output;
   }
 }
+//theme_username()
+function myzen_preprocess_username(&$variables){
+    //kpr($variables);
+    $account = user_load($variables['account']->uid);
+    if(isset($account->field_real_name[LANGUAGE_NONE][0]['safe_value'])){
+        $variables['name'] = $account->field_real_name[LANGUAGE_NONE][0]['safe_value'];
+    }    
+}
+// changes output of taxonomy terms to be inline instead of vertically stacked
+function myzen_field__field_tags($variables) {
+  $output = '';  
+  //kpr($variables);  
+  $links = array();
+  foreach($variables['items'] as $delta => $item){
+      //kpr($item);
+      $item['#options']['attributes'] += $variables['item_attributes_array'][$delta];
+      //kpr($item);
+      $links[] = drupal_render($item);
+  }  
+  $output .=implode(' | ', $links);
+  return $output;
+}
+// example of removing a css file from the page source
+function myzen_css_alter(&$css){
+    //kpr($css);
+    //unset($css['modules/system/system.menus.css']);
+}
+
+function myzen_page_alter(&$page){
+    kpr($page);
+}
+
