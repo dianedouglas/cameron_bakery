@@ -219,7 +219,7 @@ $databases = array (
     array (
       'database' => 'bakery',
       'username' => 'ludichrislyts',
-      'password' => '4Beatkeeper$',
+      'password' => 'admin',
       'host' => '127.0.0.1',
       'port' => '3306',
       'driver' => 'mysql',
