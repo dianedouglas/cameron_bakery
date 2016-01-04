@@ -35,3 +35,26 @@ function custom_collection_update_7300(){
     }
   }  
 }
+
+function custom_collection_update_7315(){
+    $product = commerce_product_type_load('product');
+    $fields = field_info_instances('commerce_product', $product);
+    $fc = entity_create('field_collection_item', array('field_name' => 'custom_collection'));
+    foreach($fields as $field){
+        if($field['field_name'] == 'field_test_field_1'){
+            $values[LANGUAGE_NONE][0] = array();
+            foreach($field as $value){
+                $values[LANGUAGE_NONE][0][] = $value;
+            }
+            $fc->collection_field_test2 = $values;
+        }else if($field['field_name'] == 'field_test_field_2'){
+            $values[LANGUAGE_NONE][0] = array();
+            foreach($field as $value){
+                $values[LANGUAGE_NONE][0][] = $value;
+            }
+            $fc->collection_field_test2 = $values;
+        }
+    }
+    $fc->setHostEntity('commerce_product', $product);
+    $fc->save();
+}
