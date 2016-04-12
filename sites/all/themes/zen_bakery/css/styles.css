@@ -1,0 +1,93 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+
+/*
+** fonts
+*/
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+/*
+** global styling
+*/
+body {
+  font-family: 'Oswald';
+}
+
+a {
+  color: #E23D3D;
+}
+
+/*
+** header styling
+*/
+#slogan-wrap {
+  width: 600px;
+  margin: 0 auto;
+}
+
+#name-and-slogan {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#name-and-slogan a {
+  color: #E23D3D;
+}
+
+.header__logo-image {
+  max-width: 80px;
+}
+
+#header {
+  margin-top: 10px;
+}
+
+/*
+** navbar styling
+*/
+#main-menu {
+  width: 700px;
+  display: inline-block;
+}
+
+#secondary-menu {
+  display: inline-block;
+}
+
+/*
+** content styling
+*/
+.node-article {
+  margin-top: 5px;
+  border-top: 1px solid black;
+}
+
+/*
+** footer stying
+*/
+#footer {
+  text-align: center;
+}

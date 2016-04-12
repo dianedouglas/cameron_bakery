@@ -1,0 +1,7 @@
+name = Hide Subject
+description = Hides the subject line for all article comments
+package = Cameron Modules
+core = 7.x
+files[] = hide_subject.module
+files[] = hide_subject.test
+dependencies[] = simpletest
