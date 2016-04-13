@@ -1,0 +1,4 @@
+name = Custom Collection
+description = Attempt to create a field collection programmatically
+package = Custom
+core = 7.x

@@ -1,0 +1,77 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+#my-region{
+color: red;
+}
+
+/*body{
+	background-image: url("../images/background.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	z-index: 1;
+}*/
+a{
+	color: #E354D7;
+	text-decoration: none;
+	cursor: url("../images/cupcakeCursor.png"),
+			url("../images/cupcakeCursor.png"),
+			default;	
+}
+a.hover{
+	color: #FFFFFF;
+}
+html{
+	height: 100%;
+	background: linear-gradient(
+		rgba(255, 0, 0, 0.05), rgba(255, 0, 0, 0.3));
+	font-family: cursive;
+}
+.pinkify{
+	height: 100vh;
+	background-color: #FFEEEE;
+	padding-right: 15px;
+}
+.rounded-border{
+	border: 3px solid #EDB9B9;
+	border-radius: 10px;
+	color: #4A3E4A;
+	font-family: 'Indie Flower', cursive;
+}
+.rounded-border a{
+	color: lightslategrey;
+}
+.round-image{
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url("../images/CameronBakery.jpg") no-repeat;
+}
+#header{
+	margin-bottom: 25px;
+}

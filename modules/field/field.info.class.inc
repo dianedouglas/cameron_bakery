@@ -327,8 +327,7 @@ class FieldInfo {
       }
 
       return $field;
-    }
-    else {
+    } else {
       $this->unknownFields[$field_id] = TRUE;
     }
   }

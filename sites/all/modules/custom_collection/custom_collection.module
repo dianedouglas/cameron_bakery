@@ -1,0 +1,38 @@
+<?php
+function custom_collection_menu(){
+    $items = array();
+    $items['/'] = array(
+        'page callback' => 'custom_collection_node_load',
+        'access callback' => TRUE,
+    );
+    return $items;
+}
+xdebug_break();
+function custom_collection_node_load($nodes, $types){
+        //kpr(commerce_product_entity_info());
+        //kpr($nodes);
+        //kpr($types);    
+        //kpr(entity_get_info('commerce_product'));
+        //$product = commerce_product_type_load('product');
+        //kpr($product);
+        //kpr(entity_get_info($product));
+        $fields = field_info_instances('commerce_product', 'product');
+        foreach($fields as $field){
+	        if($field['field_name'] == 'field_test_field_1'){
+	        }else if($field['field_name'] == 'field_test_field_2'){
+	        }else{
+	            //kpr(entity_get_info('field_test_collection'));
+	        }
+    		}
+    		$instance = array(
+    				'field_name' => 'field_test_field_1',
+    				'entity_type' => 'field_collection_item',
+    				'bundle' => 'custom_collection',
+    				'label' => 'this better work',
+    				'description' => 'No, really, this better work',
+    		);
+  
+    		field_create_instance($instance);
+    		
+
+}

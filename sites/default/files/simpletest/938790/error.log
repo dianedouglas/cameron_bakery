@@ -1,0 +1,1 @@
+[02-Nov-2015 16:37:55 America/Los_Angeles] PHP Fatal error:  Call to undefined function assertFieldByName() in /Users/Guest/Desktop/cameron_bakery/sites/all/modules/bakery_user/bakery_user.test on line 62
