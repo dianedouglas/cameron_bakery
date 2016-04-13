@@ -9,6 +9,9 @@
 This is a basic fictional website for a bakery, which comes with a buggy custom module.
 Students must fix the module, add their own custom module and a Zen sub-theme.
 
+Micah Courey fixed cameron's buggy module, added a custom module to alter the article comment form and
+added a custom zen sub-theme.
+
 ## Setup
 
 * Clone this repository
