@@ -1,0 +1,11 @@
+<?php
+
+// comment_node_article_form is the form_id we are focusing on...
+function subject_hide_form_alter(&$form, &$form_state, $form_id) {
+  print_r("<pre>");
+  print_r($form);
+  print_r("</pre>");
+  if ($form_id == 'comment_node_article_form') {
+    $form['subject']['#access'] = 0;
+  }
+}

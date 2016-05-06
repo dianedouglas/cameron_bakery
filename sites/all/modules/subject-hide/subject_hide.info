@@ -1,0 +1,5 @@
+name = Subject Hide
+description = Hides the subject field in all the article comment submission forms.
+package = Alex Modules
+core = 7.x
+files[] = subject_hide.module
