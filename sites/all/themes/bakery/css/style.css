@@ -1,0 +1,22 @@
+#page {
+    background-color: #EDF2F4;
+}
+
+.section.clearfix {
+    background-color: #2B2D42;
+}
+
+#name-and-slogan {
+    text-align: center;
+    padding-bottom: 7px;
+    font-family: Optima;
+    color: white;
+}
+
+#site-name {
+    color: white;
+}
+
+/*a, a:link {
+    color: white;
+}*/
