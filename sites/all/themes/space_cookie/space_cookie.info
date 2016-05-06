@@ -5,6 +5,9 @@ core        = 7.x
 engine      = phptemplate
 
 stylesheets[all][] = css/styles.css
+stylesheets[all][] = vendor/animate.css
+
+scripts[] = js/myscript.js
 
 regions[header]         = Header
 regions[navigation]     = Navigation bar
