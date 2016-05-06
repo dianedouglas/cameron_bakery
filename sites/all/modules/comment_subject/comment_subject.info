@@ -1,0 +1,4 @@
+name = Comment Subject Removal
+description = Remove subject field in comment submission forms
+package = Custom
+core = 7.x
