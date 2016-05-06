@@ -100,7 +100,7 @@
 /* The name of the website. */
 .header__site-name {
   margin: 0;
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1.5em;
 }
 
@@ -137,6 +137,7 @@
 #navigation {
   /* Sometimes you want to prevent overlapping with main div. */
   /* overflow: hidden; */
+  background-color: #990000;
 }
 #navigation .block {
   margin-bottom: 0;
