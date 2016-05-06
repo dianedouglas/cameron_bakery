@@ -32,5 +32,9 @@ a:focus {
 
 a:visited {
   color: darkred;
-  
+
+}
+
+h3[property="dc:title"] {
+  display: none;
 }
