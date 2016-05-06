@@ -1,0 +1,73 @@
+@media only screen and (max-width: 1027px) {
+    img {
+        width: 50px;
+        height: auto;
+    }
+}
+
+body {
+  background-color: #CCA097;
+  color: #413C3B;
+}
+
+a {
+  color: #413C3B;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #D1C193;
+  border-radius: 2px;
+}
+
+#footer {
+  background-color: #D1C193;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  padding: 20px;
+  margin-left: -10px;
+}
+
+.section {
+  margin-left: 60px;
+}
+
+#navigation {
+  border-style: double;
+}
+
+.node-article {
+  text-align: center;
+  background-color: #D1C193;
+  padding: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.node-article img {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#site-slogan {
+  font-style: italic;
+}
+
+.nineties {
+  background-color: black;
+  color: #FF69FA;
+  font-family: fantasy;
+}
+
+.nineties a {
+  color: blue;
+  font-family: fantasy;
+}
+
+.nineties div {
+  background-color: black;
+}

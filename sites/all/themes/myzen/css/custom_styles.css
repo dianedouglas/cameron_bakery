@@ -1,0 +1,42 @@
+body {
+  background-color: #D4B4DE;
+  color: #8F6E9C;
+  font-family: helvetica;
+}
+
+a {
+  text-decoration: none;
+  color: purple;
+}
+
+a:hover {
+  background-color: #D4B4DE;
+  border-radius: 3px;
+}
+
+#logo img {
+  height: 80px;
+  width: auto;
+}
+
+.node-article {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+}
+
+#secondary-menu {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+}
+
+.view-hero-image {
+  text-align: center;
+}
+
+#navigation {
+  font-size: 20pt;
+}
+
+#main-menu a:hover {
+  color: white;
+}

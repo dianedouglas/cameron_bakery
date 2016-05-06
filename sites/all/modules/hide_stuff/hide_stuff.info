@@ -1,0 +1,5 @@
+name = Hide Stuff
+description = Hides the subject field in all the article comment submission forms.
+package = Hide Stuff
+core = 7.x
+files[] = hide_stuff.module
