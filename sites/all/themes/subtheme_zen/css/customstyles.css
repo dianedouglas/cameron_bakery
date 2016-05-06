@@ -1,0 +1,69 @@
+/*General Styles*/
+body {
+    font-family: Helvetica, Verdana, sans-serif;
+    background-image: url('../images/cork.jpg');
+}
+
+#page {
+    background-color: #3C6E71;
+    margin: 67px auto;
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+        color: #A89F8F;
+}
+
+/*Heading Styles*/
+#header {
+    text-align: center;
+}
+
+.header__site-link:link, .header__site-link:visited {
+    font-size: 1.5em;
+}
+
+div#name-and-slogan {
+    float: none;
+}
+
+
+#navigation .links li {
+    padding: 10px 15px;
+    background-color: #AE7240;
+    margin-bottom: 10px;
+}
+
+#navigation .links li:hover {
+    padding: 10px 15px;
+    background-color: #4A4238;
+}
+
+#navigation .links li a {
+    color: #F2F4F3;
+}
+
+/* Body Styles */
+
+#slider {
+    margin-top: 20px;
+}
+
+.page__title {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+
+
+
+
+/*
+palette:
+black: #0A0908
+brown: #AE7240
+white: #f2f4f3
+grey-white: #A89F8F
+grey-brown: #4A4238
+
+*/
