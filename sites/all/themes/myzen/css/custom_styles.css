@@ -27,3 +27,15 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 30px;
 }
+
+.view-hero-image {
+  text-align: center;
+}
+
+#navigation {
+  font-size: 20pt;
+}
+
+#main-menu a:hover {
+  color: white;
+}
