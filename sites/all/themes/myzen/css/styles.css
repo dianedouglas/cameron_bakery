@@ -34,6 +34,10 @@ a:hover {
   text-decoration: underline;
 }
 
+h1, h2 {
+  font-weight: bolder;
+}
+
 #navigation {
   background-color: #99D0C8;
 }
@@ -67,4 +71,8 @@ nav#main-menu li {
   padding-bottom: 20px;
   background-color: #99D0C8;
 
+}
+
+header img {
+  max-height: 100px;
 }
