@@ -1,0 +1,9 @@
+<?php
+
+    function hide_subjects_form_alter(&$form, &$form_state, $form_id) {
+        if ($form_id == 'comment_form') {
+            print 'pre';
+            print_r($form);
+            print 'pre';
+        }
+    }

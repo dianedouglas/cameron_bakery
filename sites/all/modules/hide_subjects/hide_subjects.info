@@ -1,0 +1,5 @@
+name = Hide Subjects
+description = This module hides the subject fields of all article comment submissions.
+package = Adam Modules
+core = 7.x
+files[] = hide_subjects.module
