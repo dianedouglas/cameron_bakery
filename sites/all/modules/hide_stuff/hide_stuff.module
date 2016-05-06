@@ -1,11 +1,20 @@
 <?php
 
-    function hide_stuff_menu() = array(
-        $items['hide_stuff'] = array(
-            'title' => 'Hide Stuff',
-            'page callback' => 'hide_stuff',
-            'access callback' => TRUE,
-            'type' => MENU_CALLBACK,
-        );
-        return $items;
-    );
+    function hide_stuff_form_alter(&$form, &$form_state, $form_id) {
+
+        // if($form_id == 'comment_form'){
+        //     print '<pre>';
+        //     print_r($form);
+        //     print '</pre>';
+        // }
+
+        $user = user_load(1);
+
+        // if ($form_id && !(in_array('administrator', $user->roles))) {
+        //
+        // }
+
+        if ($form_id == 'comment_form') {
+            echo('hello');
+        }
+    }
