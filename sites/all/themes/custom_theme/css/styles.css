@@ -36,7 +36,7 @@ a:hover {
     background-color: #A30B37;
     border-radius: 18px;
     padding: 20px;
-    margin-bottom: 15px;    
+    margin-bottom: 15px;
 }
 
 h1#site-name {
@@ -60,6 +60,18 @@ div#site-slogan {
 
 #main-menu ul li {
     margin: 20px;
+}
+
+/* Content Styles */
+
+
+/* Footer Styles */
+
+.region-footer {
+    text-align: center;
+    background-color: #FFFCF9;
+    padding: 5px 0px;
+    margin-top: 50px;
 }
 
 /* Home Image Slider styles */

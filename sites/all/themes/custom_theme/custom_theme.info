@@ -2,6 +2,9 @@ name = Cameron's Custom Theme
 core = 7.x
 engine = phptemplate
 stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/animate.css
+
+scripts[] = js/scripts.js
 
 regions[header]         = Header
 regions[slider]         = Image Slider
