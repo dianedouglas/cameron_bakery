@@ -1,0 +1,14 @@
+#logo img{
+    width:100px;
+}
+#footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    background-color: #bfbfbf;
+    height:100px;
+    text-align: center;
+}
+#block-system-powered-by{
+    margin-top: 45px;
+}
