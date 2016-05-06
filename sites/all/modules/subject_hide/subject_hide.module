@@ -4,9 +4,7 @@ function subject_hide_form_alter(&$form, &$form_state, &$form_id) {
 // print '<pre>';
 // print_r($form_id);
 // print '</pre>';
-
 	if($form_id == 'comment_node_article_form') {
-		unset($form['subject']);
 		$form['subject'] = array(
 			'#type' => 'hidden',
 		);
