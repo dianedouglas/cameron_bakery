@@ -1,0 +1,40 @@
+body {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  font-family: cursive;
+}
+#name-and-slogan {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#navigation .section {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: salmon;
+}
+
+a:hover {
+  color: red;
+}
+
+a:focus {
+  color: pink
+}
+
+a:visited {
+  color: darkred;
+
+}
+
+h3[property="dc:title"] {
+  display: none;
+}
