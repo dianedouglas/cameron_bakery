@@ -20,3 +20,25 @@
 /* SMACSS theme rules */
 /* @import "theme-A.css"; */
 /* @import "theme-B.css"; */
+
+body {
+    background-color: lightslategrey;
+}
+
+#navigation{
+    background-color: darkslategrey;
+
+}
+#navigation a {
+    color: #E2B2C2;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+#navigation a:hover {
+    color: lightblue;
+    text-decoration: underline;;
+}
+
+.container-inline{
+    margin-top: 30px;
+}
