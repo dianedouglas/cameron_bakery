@@ -17,7 +17,18 @@
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
-    // Place your code here.
+      jQuery(document).ready(function($){
+
+          $('.comment').hover(function(){
+              var color = $(this).css('background-color');
+              console.log(color);
+              if(color !== 'rgb(255, 249, 231)'){
+                  $(this).css( 'background-color', '#FFF9E7' );
+              }else{
+                  $(this).css( 'background-color', 'rgb(255, 253, 249)' );
+              }
+          });
+      });
 
   }
 };
