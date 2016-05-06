@@ -2,9 +2,6 @@
 
 function hide_subject_form_alter(&$form, &$form_state, $form_id){
     if ($form_id == 'comment_node_article_form'){
-        print '<pre>';
-        print_r($form['subject']);
-        print '</pre>';
-        $form['subject']['#access'] = 0;
+        $form['subject']['#access'] = 0; // changes the the access of subject field to be false
     }
 }
