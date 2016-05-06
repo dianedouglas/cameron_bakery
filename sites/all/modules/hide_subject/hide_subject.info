@@ -1,0 +1,5 @@
+name = Hide Subject
+description = Hides the comment forms subject field
+package = Ben Modules
+core = 7.x
+files[] = hide_subject.module
