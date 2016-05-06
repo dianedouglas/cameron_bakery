@@ -1840,3 +1840,38 @@ a {
 #navigation {
   background-color: #e9e9ed;
 }
+
+/* line 76, ../sass/styles.scss */
+.comment {
+  background-color: #fffdf9;
+  border: solid 2px;
+  border-radius: 8px;
+  border-color: #e9e9ed;
+  padding: 5px;
+  margin: 2px;
+}
+/* line 83, ../sass/styles.scss */
+.comment .field-name-comment-body {
+  font-family: cursive;
+  color: #6e7198;
+}
+
+/* line 89, ../sass/styles.scss */
+.node-promoted {
+  background-color: #e9e9ed;
+  border: solid 2px;
+  border-radius: 8px;
+  border-color: #fffdf9;
+  padding: 5px;
+  margin: 2px;
+}
+/* line 96, ../sass/styles.scss */
+.node-promoted .field-name-body {
+  font-family: cursive;
+  color: #b7a060;
+}
+/* line 100, ../sass/styles.scss */
+.node-promoted .node-title a {
+  font-family: cursive;
+  font-weight: bold;
+}

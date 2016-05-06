@@ -72,3 +72,33 @@ a{
 #navigation{
     background-color: $icing;
 }
+
+.comment{
+    background-color: $cream;
+    border: solid 2px;
+    border-radius: 8px;
+    border-color: $icing;
+    padding: 5px;
+    margin: 2px;
+    .field-name-comment-body{
+        font-family: cursive;
+        color: $blueberry-lite;
+    }
+
+}
+.node-promoted{
+    background-color: $icing;
+    border: solid 2px;
+    border-radius: 8px;
+    border-color: $cream;
+    padding: 5px;
+    margin: 2px;
+    .field-name-body{
+        font-family: cursive;
+        color: $crust;
+    }
+    .node-title a{
+        font-family: cursive;
+        font-weight: bold;
+    }
+}
