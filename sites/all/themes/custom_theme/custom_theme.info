@@ -1,0 +1,4 @@
+name = Mary's Custom Theme
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = css/style.css
