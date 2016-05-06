@@ -16,25 +16,58 @@ a:hover {
 }
 
 #page {
-    margin: 5%;
+    margin: 5% auto;
     padding: 3% 5%;
     background-color: #D6D2D2;
-    /*max-width: 1215px;*/
+    max-width: 1215px;
     border-radius: 30px;
+}
+
+.breadcrumb {
+    display: none;
+}
+
+#rule p{
+    border-bottom: 3px solid #A30B37;
+}
+
+/*Header styles */
+#header {
+    background-color: #A30B37;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 15px;    
+}
+
+h1#site-name {
+    font-size: 2.2em;
+    margin-bottom: 0px;
+}
+
+h1#site-name a {
+    color: #FFFCF9;
+}
+
+div#site-slogan {
+    padding-bottom: 20px;
 }
 
 /* Navigation Styles */
 
-#navigation .section {
-    margin-top: 20px;
-}
-
 #navigation h2 {
     display: none;
+}
+
+#main-menu ul li {
+    margin: 20px;
 }
 
 /* Home Image Slider styles */
 
 div#views_slideshow_cycle_main_featured_slider-block {
     text-align: center;
+}
+
+#slider {
+    margin-top: 20px;
 }
