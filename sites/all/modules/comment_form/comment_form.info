@@ -1,0 +1,5 @@
+name = Alter Comment Form
+description = Hides portions of comment form.
+package = Cameron Modules
+core = 7.x
+files[] = comment_form.module
