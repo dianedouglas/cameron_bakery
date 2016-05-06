@@ -1,0 +1,5 @@
+name = Simplify Comment
+description = Hides unnecessary bulk from comment form.
+package = Cameron Modules
+core = 7.x
+files[] = simplify_comment.module
