@@ -1,0 +1,5 @@
+name = Simple Form
+description = Hides subject field in article comment submission forms.
+package = Cameron Modules
+core = 7.x
+files[] = simple_form.module
