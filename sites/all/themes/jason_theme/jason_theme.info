@@ -1,0 +1,13 @@
+name = Jason Custom Theme
+description = Such a cool theme.
+core = 7.x
+stylesheets[all][] = style.css
+scripts[] = script.js
+
+regions[highlighted] = Highlighted
+regions[sidebar_first] = Sidebar First
+regions[sidebar_second] = Sidebar Second
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[content] = Content
+regions[help] = Help
