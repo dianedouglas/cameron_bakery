@@ -1,0 +1,8 @@
+<?php
+
+function hide_subject_form_alter(&$form, &$form_state, &$form_id) {
+  print_r($form_id);
+  print "<pre>";
+  print_r($form);
+  print '</pre>';
+}
