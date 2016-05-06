@@ -1,6 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
 body {
   background-color: black;
   color: white;
+  font-family: 'Fjalla One', sans-serif;
 }
   body a {
     color: white;
@@ -18,3 +21,35 @@ body {
   #header img {
     max-width: 300px;
   }
+
+#navigation {
+
+}
+#navigation ul {
+  display: flex;
+  justify-content: space-between;
+}
+  #navigation h2 {
+    color: black;
+  }
+
+#breadcrumb {
+  display: none;
+}
+
+#main-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+  #main-wrapper>#main {
+    border: dashed 2px green;
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+#block-system-main-menu {
+  display: none;
+}
+#block-system-navigation {
+  display: none;
+}
