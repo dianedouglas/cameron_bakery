@@ -1,0 +1,74 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* Import Sass mixins, variables, Compass modules, etc. */
+@import "init";
+
+/* HTML element (SMACSS base) rules */
+@import "normalize";
+
+/* Layout rules */
+@import "layouts/responsive";
+
+/* Component (SMACSS module) rules */
+@import "components/misc";
+// Optionally, add your own components here.
+@import "print";
+
+/* SMACSS theme rules */
+/* @import "theme-A"; */
+/* @import "theme-B"; */
+$muffin: #FFF2CE;	// Main Primary color */
+$cream: #FFFDF9;
+$glaze: #FFF9E7;
+$crumb: #DBC895;
+$crust: #B7A060;
+
+$main-blue: #9396B1;	// Main Complement color */
+$icing: #E9E9ED;
+$youngberry: #C0C1D1;
+$blueberry-lite: #6E7198;
+$blueberry: #4B4F7F;
+
+
+body{
+    background-color: $muffin;
+}
+
+a{
+    color: $blueberry;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.region-sidebar-first{
+    background-color: $crumb;
+    border-radius: 8px;
+    padding: 5px;
+}
+.region-sidebar-second{
+    background-color: $crumb;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#header{
+    background-color: $crust;
+    color: $youngberry;
+    font-family:cursive;
+
+}
+#header a {
+    background-color: $crust;
+    color: $blueberry-lite;
+    font-family:cursive;
+
+}
+#navigation{
+    background-color: $icing;
+}
