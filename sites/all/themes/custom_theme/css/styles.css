@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700);
+/*General Styles*/
+
+body {
+    background-color: #FFFCF9;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #0657A8;
+}
+
+a:hover {
+    color: #086CD1;
+}
+
+#page {
+    margin: 5%;
+    padding: 3% 5%;
+    background-color: #D6D2D2;
+    /*max-width: 1215px;*/
+    border-radius: 30px;
+}
+
+/* Navigation Styles */
+
+#navigation .section {
+    margin-top: 20px;
+}
+
+#navigation h2 {
+    display: none;
+}
+
+/* Home Image Slider styles */
+
+div#views_slideshow_cycle_main_featured_slider-block {
+    text-align: center;
+}
