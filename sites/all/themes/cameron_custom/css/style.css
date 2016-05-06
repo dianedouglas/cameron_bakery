@@ -1,3 +1,6 @@
+body {
+    background-color: lightblue;
+}
 #header a{
     text-decoration: none;
 }
@@ -26,6 +29,7 @@
     padding-right: 10px;
     padding-left: 10px;
     background-color: lightblue;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #navigation {
@@ -35,4 +39,9 @@
 
 #secondary-menu li{
     margin-bottom: 15px;
+    float: right;
 }
+
+/*#sidebar-first {
+    float: left;
+}*/
