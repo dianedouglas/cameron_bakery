@@ -87,6 +87,7 @@ stylesheets[all][] = css/customstyles.css
 ;   <?php print $header_top; ?>
 
 regions[header]         = Header
+regions[slider]         = Image Slider
 regions[navigation]     = Navigation bar
 regions[highlighted]    = Highlighted
 regions[help]           = Help
