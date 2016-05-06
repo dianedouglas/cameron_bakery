@@ -1,0 +1,75 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+body {
+    background-color: lightgray;
+    background-image: url('http://villagebakeries.com/wp-content/uploads/2012/11/village-bakery-home-retail.jpg');
+    background-repeat: no-repeat;
+    color: lightgray;
+}
+#logo {
+    display: none;
+}
+#sidebar-first {
+    float: right;
+}
+#content {
+    float: right;
+    margin-right: 100px;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+#name-and-slogan {
+    color: lightgray;
+    text-align: center;
+    padding-top: 100px;
+    height: 200px;
+    margin-left: 1.5px;
+    margin-right: 5px;
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+#site-name {
+    font-size: 60px;
+
+}
+#site-slogan {
+    font-size: 40px;
+}
+a span {
+    color: white;
+    text-decoration: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+#navigation {
+    font-size: 25px;
+    padding-left: 200px;
+    margin-bottom: 100px;
+}
