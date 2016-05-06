@@ -25,6 +25,10 @@
     float: right;
 }
 
+a:hover {
+    color: magenta;
+}
+
 a.header__site-link:link{
     color: #1C2541;
 }
@@ -45,6 +49,7 @@ a {
 
 body {
     background-color: #86BBD6;
+    font-family: helvetica;
 }
 
 .form-submit {
