@@ -17,6 +17,12 @@
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
+      jQuery(document).ready(function(){
+          $('#toggle').click(function(){
+              $('.region-sidebar-first').animate({width: 'toggle'});
+          });
+      });
+
     // Place your code here.
 
   }

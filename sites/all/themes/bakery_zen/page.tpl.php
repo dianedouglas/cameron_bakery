@@ -53,6 +53,7 @@
   <div id="main">
 
     <div id="content" class="column" role="main">
+      <button type="submit" id="toggle" name="button">Toggle Menu</button>
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
@@ -95,6 +96,7 @@
 
       <?php print render($page['navigation']); ?>
       <?php print $feed_icons; ?>
+
 
     </div>
 
