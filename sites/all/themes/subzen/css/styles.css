@@ -20,3 +20,44 @@
 /* SMACSS theme rules */
 /* @import "theme-A.css"; */
 /* @import "theme-B.css"; */
+
+#main-menu {
+    float: right;
+}
+
+a.header__site-link:link{
+    color: #1C2541;
+}
+
+
+h2, h1, h3, h4, p {
+    color: #1C2541;
+}
+
+h2 {
+    color: #1C2541;
+}
+
+a {
+    text-decoration: none;
+    color: #1C2541;
+}
+
+body {
+    background-color: #86BBD6;
+}
+
+.form-submit {
+    border-radius: 1em;
+    color: black;
+    background-color: magenta;
+}
+
+#footer {
+    text-align: center;
+}
+
+#content {
+    background-color: #CCC;
+    border-radius: 1em;
+}

@@ -18,7 +18,10 @@ Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
     // Place your code here.
-
+      $('.form-submit').addClass('animated');
+      $('.form-submit').click(function() {
+        $(this).addClass('shake');
+      })
   }
 };
 
