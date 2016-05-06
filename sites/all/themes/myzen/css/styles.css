@@ -33,9 +33,38 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+#navigation {
+  background-color: #99D0C8;
+}
+nav#main-menu li {
+  margin: 10px;
+}
   nav#main-menu a {
-    display: none;
-    /*border: 1px solid black;
+    /*display: none;*/
+    border: 1px solid black;
     border-radius: 5px;
-    padding: 10px 10px 5px 10px;*/
+    padding: 5px 10px 0px 10px;
+    background-color: #D1D1E4;
   }
+
+#block-system-main-menu li {
+  margin: 10px;
+  list-style: none;
+}
+  #block-system-main-menu a {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px 0px 10px;
+    list-style: none;
+    background-color: #D1D1E4;
+  }
+
+#page>header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #99D0C8;
+
+}
