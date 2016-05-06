@@ -1,5 +1,6 @@
 body {
     background-color: lightblue;
+    font-family: monospace;
 }
 #header a{
     text-decoration: none;
@@ -10,6 +11,10 @@ body {
 
 #site-name a{
     color: black;
+}
+
+#logo{
+    display: none;
 }
 
 #name-and-slogan {
@@ -47,6 +52,11 @@ body {
     margin-bottom: 15px;
     float: right;
 }
+
+/*#content {
+    width: 70%;
+    float: left;
+}*/
 
 /*#sidebar-first {
     float: left;

@@ -1,8 +1,23 @@
 jQuery(document).ready(function($) {
 
-    // $('#main-menu').slidedown('slow', function() {
-    //
+    // $('#site-slogan').click(function() {
+    //     $( "#site-slogan" ).animate({
+    //         opacity: 0.25,
+    //         left: "+=50",
+    //         height: "toggle"
+    //     }, 5000, function() {
+    //     // Animation complete.
+    //     });
     // });
+
+
+
+
+    $('#site-slogan').click(function() {
+        alert("Cookies for all!");
+    });
+
+
     $('#site-name').hover(function(){
         $(this).addClass("site-name-hover");
     },
