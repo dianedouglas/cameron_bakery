@@ -30,6 +30,8 @@ body {
 header {
     background: #99ccff;
     color: green;
+    border-width: 2px;
+    border-color: red;
 }
 
 header span {
