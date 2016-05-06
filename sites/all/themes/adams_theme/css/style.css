@@ -1,4 +1,4 @@
-h1 a{
+ #name-and-slogan a[href='/']{
   color: black;
   float: right;
   display: inline;
@@ -6,6 +6,8 @@ h1 a{
   margin-right: 5px;
   text-decoration: none;
   font-family: sans-serif;
+  text-shadow: 1px 1px 1px white;
+  font-size: 26px;
 }
 
 #logo {
@@ -13,6 +15,9 @@ h1 a{
   display: inline;
 }
 
+.field-name-body p {
+  font-family: fantasy;
+}
 
 #header {
   background-color: grey;
@@ -31,6 +36,8 @@ h1 a{
 
 h2 {
   color: green;
+  text-shadow: 1px 1px 1px black;
+
 }
 
 .node-article  {
@@ -41,4 +48,8 @@ h2 {
 
 .node-article h2{
   margin-top: 0px;
+}
+
+body {
+  background-color: #7a937e;
 }
