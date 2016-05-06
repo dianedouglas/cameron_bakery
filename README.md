@@ -2,12 +2,15 @@
 
 ##### Epicodus Drupal Code Review 3
 
-#### By Diane Douglas
+#### By Jason Awbrey
 
 ## Description
 
-This is a basic fictional website for a bakery, which comes with a buggy custom module.
-Students must fix the module, add their own custom module and a Zen sub-theme. Whatup!
+This is a code review for the Drupal Epicodus course. This demonstrates my ability to:
+* create custom themes from scratch
+* create sub-themes
+* troubleshoot PHP issues
+* create custom modules to alter built-in Drupal forms
 
 ## Setup
 
