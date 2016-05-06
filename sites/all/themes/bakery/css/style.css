@@ -1,4 +1,4 @@
-#page {
+#body {
     background-color: #EDF2F4;
 }
 
@@ -15,6 +15,20 @@
 
 #site-name {
     color: white;
+}
+
+h2 {
+    color: #EF233C;
+    font-family: Helvetica;
+}
+
+a {
+    color: #8D99AE;
+    font-family: Helvetica;
+}
+
+p, #page-title.title {
+    font-family: Geneva;
 }
 
 /*a, a:link {
