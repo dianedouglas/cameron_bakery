@@ -1,14 +1,12 @@
 jQuery(document).ready(function($) {
 
-    // $('#site-slogan').click(function() {
-    //     $( "#site-slogan" ).animate({
-    //         opacity: 0.25,
-    //         left: "+=50",
-    //         height: "toggle"
-    //     }, 5000, function() {
-    //     // Animation complete.
-    //     });
-    // });
+    $('#site-slogan').click(function() {
+        $( "#site-slogan" ).animate({
+            height: "toggle"
+        }, 5000, function() {
+        // Animation complete.
+        });
+    });
 
 
 
