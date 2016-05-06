@@ -6,7 +6,7 @@
 
 ## Description
 
-This is a week three code review.  This was a project forked from an existing site.  Bugs were remedied allowing access.  A custom module was created to hide the subject field in article comments.  Two custom themes were created.  On was written from scratch, the other was a sub theme of the Zen theme.  Javascript was included in the 
+This is a week three code review.  This was a project forked from an existing site.  Bugs were remedied allowing access.  A custom module was created to hide the subject field in article comments.  Two custom themes were created.  On was written from scratch, the other was a sub theme of the Zen theme.  Javascript was included in both the scratch custom theme and Zen sub theme.
 
 ## Requirements
 
