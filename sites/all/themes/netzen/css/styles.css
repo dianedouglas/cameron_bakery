@@ -1809,39 +1809,49 @@ a {
 }
 
 /* line 49, ../sass/styles.scss */
+h1, h2 {
+  color: #9396b1;
+}
+
+/* line 52, ../sass/styles.scss */
 .region-sidebar-first {
   background-color: #dbc895;
   border-radius: 8px;
   padding: 5px;
+  bottom-margin: 3px;
 }
 
-/* line 54, ../sass/styles.scss */
+/* line 58, ../sass/styles.scss */
 .region-sidebar-second {
   background-color: #dbc895;
   border-radius: 8px;
   padding: 5px;
+  bottom-margin: 3px;
 }
 
-/* line 60, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 #header {
   background-color: #b7a060;
   color: #c0c1d1;
   font-family: cursive;
 }
-
-/* line 66, ../sass/styles.scss */
+/* line 70, ../sass/styles.scss */
 #header a {
   background-color: #b7a060;
   color: #6e7198;
   font-family: cursive;
 }
+/* line 75, ../sass/styles.scss */
+#header img {
+  padding: 10px;
+}
 
-/* line 72, ../sass/styles.scss */
+/* line 80, ../sass/styles.scss */
 #navigation {
   background-color: #e9e9ed;
 }
 
-/* line 76, ../sass/styles.scss */
+/* line 84, ../sass/styles.scss */
 .comment {
   background-color: #fffdf9;
   border: solid 2px;
@@ -1850,13 +1860,13 @@ a {
   padding: 5px;
   margin: 2px;
 }
-/* line 83, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 .comment .field-name-comment-body {
   font-family: cursive;
   color: #6e7198;
 }
 
-/* line 89, ../sass/styles.scss */
+/* line 97, ../sass/styles.scss */
 .node-promoted {
   background-color: #e9e9ed;
   border: solid 2px;
@@ -1865,12 +1875,12 @@ a {
   padding: 5px;
   margin: 2px;
 }
-/* line 96, ../sass/styles.scss */
+/* line 104, ../sass/styles.scss */
 .node-promoted .field-name-body {
   font-family: cursive;
   color: #b7a060;
 }
-/* line 100, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .node-promoted .node-title a {
   font-family: cursive;
   font-weight: bold;

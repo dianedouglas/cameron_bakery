@@ -46,15 +46,20 @@ a{
     font-family: sans-serif;
 }
 
+h1, h2{
+    color: $main-blue;
+}
 .region-sidebar-first{
     background-color: $crumb;
     border-radius: 8px;
     padding: 5px;
+    bottom-margin: 3px;
 }
 .region-sidebar-second{
     background-color: $crumb;
     border-radius: 8px;
     padding: 5px;
+    bottom-margin: 3px;
 }
 
 #header{
@@ -62,13 +67,16 @@ a{
     color: $youngberry;
     font-family:cursive;
 
+    a {
+        background-color: $crust;
+        color: $blueberry-lite;
+        font-family:cursive;
+    }
+    img{
+        padding: 10px;
+    }
 }
-#header a {
-    background-color: $crust;
-    color: $blueberry-lite;
-    font-family:cursive;
 
-}
 #navigation{
     background-color: $icing;
 }
