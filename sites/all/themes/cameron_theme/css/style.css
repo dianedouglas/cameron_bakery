@@ -1,0 +1,14 @@
+body {
+  background-color: #CCA097;
+  color: #413C3B;
+}
+
+a {
+  color: #413C3B;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #D1C193;
+  border-radius: 2px;
+}
