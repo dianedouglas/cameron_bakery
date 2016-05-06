@@ -1,0 +1,5 @@
+name = Article Comment 
+description = Gets rid of subject line on article comments
+package = Cameron Modules
+core = 7.x
+files[] = article_comment.module
