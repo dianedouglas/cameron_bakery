@@ -1,0 +1,20 @@
+body {
+  background-color: black;
+  color: white;
+}
+  body a {
+    color: white;
+    text-decoration: none;
+  }
+  body a:hover {
+    text-decoration: underline;
+  }
+
+
+#page>#header>div {
+  display: flex;
+  justify-content: space-around;
+}
+  #header img {
+    max-width: 300px;
+  }
