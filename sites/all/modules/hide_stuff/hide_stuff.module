@@ -1,20 +1,10 @@
 <?php
 
     function hide_stuff_form_alter(&$form, &$form_state, $form_id) {
+        $form_id = 'comment_form';
+        print_r($form_id);
 
-        // if($form_id == 'comment_form'){
-        //     print '<pre>';
-        //     print_r($form);
-        //     print '</pre>';
-        // }
-
-        $user = user_load(1);
-
-        // if ($form_id && !(in_array('administrator', $user->roles))) {
-        //
-        // }
-
-        if ($form_id == 'comment_form') {
-            echo('hello');
+        if($form_id == 'comment_form'){
+            $form['subject']['#access'] = 0;
         }
     }
