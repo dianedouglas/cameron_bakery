@@ -56,3 +56,18 @@ a:hover {
 #site-slogan {
   font-style: italic;
 }
+
+.nineties {
+  background-color: black;
+  color: #FF69FA;
+  font-family: fantasy;
+}
+
+.nineties a {
+  color: blue;
+  font-family: fantasy;
+}
+
+.nineties div {
+  background-color: black;
+}

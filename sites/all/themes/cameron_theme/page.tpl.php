@@ -108,6 +108,11 @@
 
     </div></div> <!-- /.section, /#header -->
 
+
+    <div id="not-nineties">
+      <h2 id="fun-mode">90s MODE (click here to toggle)</h2>
+    </div>
+
     <?php if ($breadcrumb): ?>
       <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
