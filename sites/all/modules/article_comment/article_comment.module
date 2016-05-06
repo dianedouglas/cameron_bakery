@@ -1,16 +1,7 @@
 <?php
 
 function article_comment_form_alter(&$form, &$form_state, $form_id)  {
-
-    print_r($form_id);
     if($form_id == 'comment_node_article_form') {
-    $form['subject']['#type'] = 'hidden';
-    // $form['copy']['#default_value'] = 1;
-    // $form['subject']['#type'] = 'hidden';
-    // $form['subject']['#title'] = 'Feedback';
-    print '<pre>';
-    print_r($form);
-    print '</pre>';
-
-}
+        $form['subject']['#type'] = 'hidden';
+    }
 }
