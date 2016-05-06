@@ -2,8 +2,6 @@
 
 function custom_comment_form_form_alter(&$form, &$form_state, $form_id){
     if ($form_id === 'comment_node_article_form') {
-      print_r('<prev>');
-      print_r($form);
-      print_r('</prev>');
+      $form['subject']['#access'] = 0;
     }
 }
