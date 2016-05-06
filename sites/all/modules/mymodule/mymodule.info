@@ -1,0 +1,5 @@
+name = Customizer
+description = Customizes displays.
+package = Cameron Modules
+core = 7.x
+files[] = mymodule.module
