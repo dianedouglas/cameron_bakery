@@ -1,0 +1,11 @@
+<?php
+
+    function hide_stuff_menu() = array(
+        $items['hide_stuff'] = array(
+            'title' => 'Hide Stuff',
+            'page callback' => 'hide_stuff',
+            'access callback' => TRUE,
+            'type' => MENU_CALLBACK,
+        );
+        return $items;
+    );
