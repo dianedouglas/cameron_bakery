@@ -20,3 +20,22 @@
 /* SMACSS theme rules */
 /* @import "theme-A.css"; */
 /* @import "theme-B.css"; */
+
+body {
+  background-color: #B7F3EB;
+  font-family: fantasy;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+  nav#main-menu a {
+    display: none;
+    /*border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 10px 5px 10px;*/
+  }
