@@ -1,0 +1,14 @@
+<?php
+// $Id$
+
+function custom_comment_form_alter(&$form, $form_state, $form_id) {
+    // print_r($form_id);
+    // print '<pre>';
+    // print_r($form);
+    // print '</pre>';
+    ///Need to replace dash with underscore////
+    if($form_id == 'comment_node_article_form') {
+        $form['subject']['#access'] = 0;    
+    }
+
+}
