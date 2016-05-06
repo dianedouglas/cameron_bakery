@@ -1,0 +1,6 @@
+name = Cameron's Scratch Theme
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = style.css
+scripts[] = scripts.js
+screenshot: cameron.jpg

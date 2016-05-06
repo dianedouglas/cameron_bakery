@@ -29,6 +29,11 @@ body {
 }
 header {
     background: #99ccff;
+    color: green;
+}
+
+header span {
+    color: red;
 }
 
 aside.sidebars {
