@@ -1,0 +1,29 @@
+body {
+  background: #513B56;
+}
+
+.content {
+  background-color: #525174;
+  font-size: 25px;
+  font-family: cursive;
+}
+
+h1 {
+  color: #5DD39E;
+}
+
+h2 {
+  color: #BCE784;
+}
+a, a:link {
+  color: pink;
+}
+
+#site-slogan {
+  color: #348AA7;
+}
+
+#site-name {
+  font-size: 50px;
+  font-weight: 100;
+}
