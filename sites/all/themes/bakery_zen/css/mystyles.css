@@ -1,6 +1,28 @@
 #logo img{
     width:100px;
+    padding-top:25px;
+    padding-right: 15px;
 }
+#header{
+    height:150px;
+    background-color: #bfbfbf;
+}
+#name-and-slogan{
+    padding-top:40px;
+    margin:0px;
+}
+.region-sidebar-first{
+    height: 100vh;
+    background-color: #ffdab3;
+}
+#navigation{
+    background-color: #ffdab3;
+}
+#main-menu{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #footer{
     position: fixed;
     width: 100%;

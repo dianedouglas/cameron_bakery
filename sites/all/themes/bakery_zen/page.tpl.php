@@ -68,7 +68,6 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
-      <?php print $feed_icons; ?>
     </div>
 
     <div id="navigation">
@@ -95,6 +94,7 @@
       <?php endif; ?>
 
       <?php print render($page['navigation']); ?>
+      <?php print $feed_icons; ?>
 
     </div>
 
@@ -105,7 +105,7 @@
     ?>
 
     <?php if ($sidebar_first || $sidebar_second): ?>
-      <aside class="sidebars">
+      <aside id="sidebar" class="sidebars">
         <?php print $sidebar_first; ?>
         <?php print $sidebar_second; ?>
       </aside>
