@@ -12,3 +12,29 @@ a:hover {
   background-color: #D1C193;
   border-radius: 2px;
 }
+
+#footer {
+  background-color: #D1C193;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  padding: 20px;
+  margin-left: -10px;
+}
+
+.section {
+  margin-left: 60px;
+}
+
+#navigation {
+  border-style: double;
+}
+
+#content {
+  text-align: center;
+}
+
+#site-slogan {
+  font-style: italic;
+}

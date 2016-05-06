@@ -1,8 +1,6 @@
 <?php
 
     function hide_stuff_form_alter(&$form, &$form_state, $form_id) {
-        $form_id = 'comment_form';
-        print_r($form_id);
 
         if($form_id == 'comment_form'){
             $form['subject']['#access'] = 0;
