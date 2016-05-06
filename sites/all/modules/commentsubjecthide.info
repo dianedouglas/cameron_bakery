@@ -1,0 +1,5 @@
+name = Comment Subject Hide
+description = Hides subject box when leaving a comment on articles
+package = Jason Modules
+core = 7.x
+files[] = comment_subject_hide.module
