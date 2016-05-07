@@ -2,3 +2,15 @@
 	width: 57px;
 	height: 64px;
 }
+
+.main-menu {
+	float: left;
+}
+
+#navbar {
+	background-color: #aca;
+}
+
+.secondary-menu {
+	float: right;
+}
