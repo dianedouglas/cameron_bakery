@@ -6,10 +6,9 @@
 # file for more information.
 #
 
-
 # Change this to :production when ready to deploy the CSS to the live server.
 environment = :development
-#environment = :production
+environment = :production
 
 # If in development (set above), we can turn on the sourcemap file generation.
 # Requires sass 3.3+ and compass 1.0.1+
@@ -39,7 +38,9 @@ javascripts_dir = "js"
 
 # Require any additional compass plugins installed on your system.
 #require 'ninesixty'
-#require 'zen-grids'
+require 'rubygems'
+require 'zen-grids'
+
 
 # Assuming this theme is in sites/*/themes/THEMENAME, you can add the partials
 # included with a module by uncommenting and modifying one of the lines below:
