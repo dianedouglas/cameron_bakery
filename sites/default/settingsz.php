@@ -213,13 +213,13 @@
  * @endcode
  */
 $databases = array (
-  'default' => 
+  'default' =>
   array (
-    'default' => 
+    'default' =>
     array (
       'database' => 'bakery',
       'username' => 'cameron',
-      'password' => 'camerson',
+      'password' => 'cameron',
       'host' => '127.0.0.1',
       'port' => '3306',
       'driver' => 'mysql',
@@ -258,7 +258,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = 'fC5aBLTcWt2hiWYfjZSypuJI6_nRg5iI93bj88HtMBc';
+$drupal_hash_salt = 'qYFo-OXl4X582g_Yw7UNEaMYnrvtSLrKXlMZ-HLYRyI';
 
 /**
  * Base URL (optional).
