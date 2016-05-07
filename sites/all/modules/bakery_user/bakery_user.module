@@ -1,18 +1,21 @@
 <?php
-function bakery_user_menu() {
-    $items['welcome'] = array(
-        'title' => 'Hi There!',
-        'page callback' => 'welcome_user',
-        'access callback' => TRUE,
-        'type' => MENU_CALLBACK,
-    );
-    return $items;
+// function bakery_user_menu() {
+//     $items['welcome_user'] = array(
+//         'title' => 'Hi There!',
+//         'page callback' => 'bakery_user_welcome_user',
+//         'access callback' => TRUE,
+//         'type' => MENU_CALLBACK,
+//     );
+//     return $items;
+// }
+
+function bakery_user_user_login(&$edit, $account) {
+    $_GET['destination'] = '/bakery_user_welcome_user';
+    $message = "<p>Welcome to Cameron's Bakery!</p>";
+    return $message;
 }
 
-function bakery_user_login(&$edit, $account) {
-    $_GET['destination'] = 'welcome_user';
-}
-
-function welcome_user() {
-    return "<p>Welcome to Cameron's Bakery!</p>";
-}
+// function bakery_user_welcome_user() {
+//     $message = "<p>Welcome to Cameron's Bakery!</p>";
+//     return $message;
+// }
