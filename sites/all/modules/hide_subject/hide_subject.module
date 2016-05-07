@@ -1,5 +1,5 @@
 <?php
 
-function hide_subject_form_article_comment_form_alter(&$form, $form_state, $form_id) {
-
+function hide_subject_form_alter(&$form, $form_state, $form_id) {
+    print_r($form_id);
 }
