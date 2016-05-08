@@ -95,7 +95,7 @@
       <?php endif; ?>
 
       <?php print render($page['navigation']); ?>
-      <?php print render($page['mine']); ?>
+
 
     </div>
 
@@ -115,6 +115,7 @@
   </div>
 
   <?php print render($page['footer']); ?>
+  <?php print render($page['mine']); ?>
 
 </div>
 
