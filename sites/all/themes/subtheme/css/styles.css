@@ -24,3 +24,8 @@
 body {
     background-color: aqua;
 }
+
+#site-slogan {
+    font-size: 200%;
+    background: orange;
+}
