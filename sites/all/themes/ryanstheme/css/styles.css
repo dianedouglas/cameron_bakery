@@ -1,0 +1,49 @@
+#header {
+    width: 1000px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #ddd;
+}
+
+ #header h1 {
+     line-height: 150px;
+     padding: 0 0 0 60px;
+     font-size: 40px;
+ }
+
+#page-wrapper {
+    width: 1000px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+#sidebar {
+    width: 300px;
+    float: right;
+    border-left: 1px solid #ccc;  background-color: #eee;
+}
+
+* {
+    margin:0; padding: 0;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: #000; outline: none;
+}
+
+#navigation > div > h2:nth-child(1) {
+    padding: 20px;
+}
+
+#navigation {
+    padding: 20px;
+}

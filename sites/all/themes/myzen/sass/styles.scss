@@ -1,0 +1,50 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* Import Sass mixins, variables, Compass modules, etc. */
+@import "init";
+
+/* HTML element (SMACSS base) rules */
+@import "normalize";
+
+/* Layout rules */
+@import "layouts/responsive";
+
+/* Component (SMACSS module) rules */
+@import "components/misc";
+// Optionally, add your own components here.
+@import "print";
+
+/* SMACSS theme rules */
+/* @import "theme-A"; */
+/* @import "theme-B"; */
+
+@import "zen";
+
+  $zen-gutter-width: 40px;  // Set the gutter size. A half-gutter is used on
+                            // each side of each column.
+
+  .container {
+    @include zen-grid-container();  // Define the container for your grid items.
+  }
+
+  $zen-column-count: 12;  // Set the number of grid columns to use in this media
+                          // query. You'll likely want a different grid for
+                          // different screen sizes.
+
+  @media all and (min-width: 50em) {
+    .sidebar1 {
+      @include zen-grid-item(3, 1);   // Span 3 columns starting in 1st column.
+    }
+    .content {
+      @include zen-grid-item(6, 4);   // Span 6 columns starting in 4th column.
+    }
+    .sidebar2 {
+      @include zen-grid-item(3, 10);  // Span 3 columns starting in 10th column.
+    }
+  }
