@@ -1,5 +1,8 @@
 <?php
 
-fuction comment_subject_form_alter(&$form, &$form_state, $form_id) {
-  
+function comment_subject_form_alter(&$form, &$form_state,
+$form_id) {
+    if ($form_id == 'comment_node_article_form') {
+        $form['subject']['#type']= 'hidden';
+    }
 }
