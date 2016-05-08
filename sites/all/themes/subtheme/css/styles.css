@@ -20,3 +20,7 @@
 /* SMACSS theme rules */
 /* @import "theme-A.css"; */
 /* @import "theme-B.css"; */
+
+body {
+    background-color: aqua;
+}
