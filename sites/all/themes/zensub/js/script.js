@@ -17,7 +17,11 @@
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
-    // Place your code here.
+    jQuery(document).ready(function($) {
+      $('#navigation').click(function(){
+        alert('Contact us for catering!');
+      });
+    });
 
   }
 };

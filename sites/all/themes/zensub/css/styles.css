@@ -20,3 +20,65 @@
 /* SMACSS theme rules */
 /* @import "theme-A.css"; */
 /* @import "theme-B.css"; */
+
+body {
+  background: #778899;
+  font-family: Arial;
+  font-weight: lighter;
+}
+
+#page {
+  text-align: center;
+}
+
+#site-slogan {
+  padding-top: 10px;
+  color: #FFA500;
+}
+
+#site-name {
+  font-size: 50px;
+  font-weight: 100;
+  display: inline;
+  font-weight: 100;
+}
+
+.region-content {
+  border-width: 1px;
+  border-color: purple;
+  border-style: solid;
+  display: block;
+}
+
+.content {
+
+  font-size: 25px;
+  font-family: cursive;
+}
+
+.node-article {
+  border-width: 1px;
+  border-color: red;
+  border-style: solid;
+  display: block;
+}
+
+.section {
+  display: inline-block;
+}
+
+#sidebar-first {
+  display: list-item;
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: green;
+}
+a, a:link {
+  color: purple;
+  
+}
