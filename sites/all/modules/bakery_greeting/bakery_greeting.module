@@ -1,5 +1,5 @@
 <?php
-function bakery_user_menu() {
+function bakery_menu() {
     $items['welcome'] = array(
         'title' => 'Hi There!',
         'page callback' => 'welcome_user',
@@ -9,8 +9,8 @@ function bakery_user_menu() {
     return $items;
 }
 
-function bakery_user_login(&$edit, $account) {
-    $_GET['destination'] = 'welcome_user';
+function bakery_user_login() {
+    $_GET['destination'] = 'welcome';
 }
 
 function welcome_user() {
