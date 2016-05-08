@@ -1,0 +1,5 @@
+name = Comment Subject Line
+description = Hide subject input on article comments.
+package = Cameron Modules
+core = 7.x
+files[] = comment_subject.module
