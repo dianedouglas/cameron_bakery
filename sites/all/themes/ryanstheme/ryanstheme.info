@@ -1,0 +1,14 @@
+name = Ryan's Theme
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = css/styles.css
+scripts[] = js/scripts.js
+
+regions[search] = Search
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[content] = Content
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
