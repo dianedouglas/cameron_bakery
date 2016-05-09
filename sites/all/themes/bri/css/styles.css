@@ -57,3 +57,12 @@ a {
 #site-slogan {
   font-size: 23px;
 }
+
+#main.clearfix {
+  padding-top: 0px;
+}
+
+hr {
+  padding: 5px;
+  background-color: #d6e4ba;
+}
