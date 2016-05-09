@@ -29,6 +29,22 @@ img#logo_image {
   padding-top: 25px;
 }
 
-#navigation {
-  margin-top: 125px;
+#navigation{
+  margin-top: 275px;
+}
+
+.navigation_links {
+   float: right;
+}
+
+body {
+  background-color: #e0e8e5;
+}
+
+a {
+  color: #5a9696;
+}
+
+#site-slogan {
+  font-size: 23px;
 }
