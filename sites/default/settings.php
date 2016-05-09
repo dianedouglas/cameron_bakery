@@ -219,9 +219,9 @@ $databases = array (
     array (
       'database' => 'bakery',
       'username' => 'cameron',
-      'password' => 'cameron',
+      'password' => 'camerson',
       'host' => '127.0.0.1',
-      'port' => '8889',
+      'port' => '3306',
       'driver' => 'mysql',
       'prefix' => '',
     ),
@@ -258,7 +258,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = 'qYFo-OXl4X582g_Yw7UNEaMYnrvtSLrKXlMZ-HLYRyI';
+$drupal_hash_salt = 'fC5aBLTcWt2hiWYfjZSypuJI6_nRg5iI93bj88HtMBc';
 
 /**
  * Base URL (optional).

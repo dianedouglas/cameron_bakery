@@ -1,0 +1,68 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+img#logo_image {
+  max-width: 200px;
+  float: right;
+}
+
+#name-and-slogan, #site-name {
+  padding-top: 10px;
+}
+
+#name-and-slogan #site-slogan {
+  font-size: 35px;
+  border-bottom: 4px;
+}
+
+#navigation{
+  margin-top: 245px;
+  font-size: 17px;
+}
+
+.navigation_links {
+   float: right;
+}
+
+body,#page-wrapper {
+  background-color: #e0e8e5;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+  color: #0b272d;
+}
+
+a {
+  color: #5a9696;
+}
+
+#site-slogan {
+  font-size: 23px;
+}
+
+#main.clearfix {
+  padding-top: 0px;
+}
+
+hr {
+  padding: 5px;
+  background-color: #d6e4ba;
+}
