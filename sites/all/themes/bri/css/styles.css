@@ -25,20 +25,29 @@ img#logo_image {
   float: right;
 }
 
-#name-and-slogan {
-  padding-top: 25px;
+#name-and-slogan, #site-name {
+  padding-top: 10px;
+}
+
+#name-and-slogan #site-slogan {
+  font-size: 35px;
+  border-bottom: 4px;
 }
 
 #navigation{
-  margin-top: 275px;
+  margin-top: 245px;
+  font-size: 17px;
 }
 
 .navigation_links {
    float: right;
 }
 
-body {
+body,#page-wrapper {
   background-color: #e0e8e5;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+  color: #0b272d;
 }
 
 a {

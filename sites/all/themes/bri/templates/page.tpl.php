@@ -87,9 +87,11 @@
         <div id="name-and-slogan">
           <?php if ($site_name): ?>
             <?php if ($title): ?>
+              <h1>
               <div id="site-name"><strong>
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
               </strong></div>
+            </h1>
             <?php else: /* Use h1 when the content title is empty */ ?>
               <h1 id="site-name">
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
@@ -119,7 +121,7 @@
     <?php endif; ?>
 
     <?php print $messages; ?>
-
+    <hr>
     <div id="main-wrapper"><div id="main" class="clearfix">
 
       <div id="content" class="column"><div class="section">
