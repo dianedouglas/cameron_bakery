@@ -1,0 +1,21 @@
+body {
+  background-color: lightgray;
+  margin: 50px;
+  font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+
+h1#site-name {
+  font-size: 50px;
+  font-style: oblique;
+}
+
+#site-slogan {
+  font-size: 30px;
+  font-style: oblique;
+  margin-bottom: 30px;
+}
+
+.secondary-menu{
+  float: right;
+  margin-bottom: 15px;
+}
