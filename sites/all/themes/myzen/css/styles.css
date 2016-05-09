@@ -1,0 +1,78 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+body {
+  background-color: #B7F3EB;
+  font-family: fantasy;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2 {
+  font-weight: bolder;
+}
+
+#navigation {
+  background-color: #99D0C8;
+}
+nav#main-menu li {
+  margin: 10px;
+}
+  nav#main-menu a {
+    /*display: none;*/
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px 0px 10px;
+    background-color: #D1D1E4;
+  }
+
+#block-system-main-menu li {
+  margin: 10px;
+  list-style: none;
+}
+  #block-system-main-menu a {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px 0px 10px;
+    list-style: none;
+    background-color: #D1D1E4;
+  }
+
+#page>header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #99D0C8;
+
+}
+
+header img {
+  max-height: 100px;
+}
