@@ -1,0 +1,5 @@
+name = Hidden Subject
+description = Hide the subject line in all article comment submission forms.
+package = Cameron Modules
+core = 7.x
+files[] = hidden_subject.module
