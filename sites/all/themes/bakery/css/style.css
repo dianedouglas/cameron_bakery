@@ -6,6 +6,25 @@
     background-color: #2B2D42;
 }
 
+#sidebar-first {
+    float: left;
+}
+
+#sidebar-second {
+    float: right;
+}
+
+#block-user-login.block.block-user {
+    text-align: center;
+}
+
+.submitted, .field-label,
+.form-item.form-type-password.form-item-pass, .form-item.form-type-textfield.form-item-name, .form-item.form-type-textfield.form-item-mail, .form-item.form-type-textfield.form-item-subject,
+.form-item.form-type-textarea.form-item-message,
+#footer, .option {
+    font-family: Helvetica;
+}
+
 #name-and-slogan {
     text-align: center;
     padding-bottom: 7px;
@@ -13,8 +32,16 @@
     color: white;
 }
 
-#site-name {
-    color: white;
+.node-article{
+    border-width: 2px;
+    border-style: solid;
+    margin: 4px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.section {
+    text-align: center;
 }
 
 h2 {
@@ -27,7 +54,7 @@ a {
     font-family: Helvetica;
 }
 
-p, #page-title.title {
+p, #page-title.title, #field-label {
     font-family: Geneva;
 }
 
