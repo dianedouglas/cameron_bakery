@@ -20,3 +20,18 @@
 /* SMACSS theme rules */
 /* @import "theme-A.css"; */
 /* @import "theme-B.css"; */
+body {
+  font-family: sans-serif;
+  background-color: #d8cecc;
+}
+#content {
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #4f6561;
+}
+
+#header, #logo, #name-and-slogan, #navigation, #sidebar-first, #content, #sidebar-second, #footer {
+  border: solid red 1px;
+  /*padding: 20px;*/
+  margin: 10px;
+}
