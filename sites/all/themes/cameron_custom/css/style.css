@@ -1,0 +1,80 @@
+body {
+  text-align: center;
+  background-color: #e1e2d1;
+  color: #423151;
+  font-family: fantasy;
+}
+a {
+  color: #423151;
+  text-decoration: none;
+}
+
+#header, #logo, #name-and-slogan, #navigation, #sidebar-first, #content, #sidebar-second, #footer {
+  /*border: solid red 1px;*/
+  /*padding: 20px;*/
+  margin: 10px;
+}
+#header {
+  background-color: #51755c;
+}
+#logo {
+  padding: 20px;
+}
+
+#logo, #name-and-slogan {
+  clear: left;
+  padding: .5em;
+}
+h1#site-name {
+  font-size: 45px;
+}
+
+#navigation {
+  margin: 0;
+  color: #e1e2d1 !important;
+}
+#navigation ul {
+  font-size: 20px;
+  border: none;
+}
+#navigation ul#main-menu.links {
+}
+#navigation ul#secondary-menu {
+  color: #e1e2d1 !important;
+  font-size: 15px;
+}
+#navigation ul li {
+  border: none;
+}
+/*ul {
+  margin-top: 10px;
+}*/
+
+#content {
+  float: left;
+  width: 500px;
+  margin-left: 30px;
+  padding: 20px;
+}
+#sidebar-first, #content {
+  border: solid #423151 1px;
+}
+
+#sidebar-first {
+  width: 300px;
+  float: right;
+  margin-right: 30px;
+  padding: 20px;
+}
+
+
+#footer {
+  /*position: static;*/
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  margin-top: 10px;
+  background-color: #be9778;
+  padding: 20px;
+}

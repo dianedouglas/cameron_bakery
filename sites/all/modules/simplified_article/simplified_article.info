@@ -1,0 +1,5 @@
+name = Simplified Article
+description = removes subject section from an article
+package = Custom Modules
+core = 7.x
+files[] = simplified_article.module

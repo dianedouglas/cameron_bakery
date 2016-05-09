@@ -1,0 +1,66 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+body {
+  font-family: arial, sans-serif;
+  background-color: #d8cecc;
+  color: #47475b;
+}
+a, a:link {
+  color: #4f6561;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+#site-name {
+  font-weight: bold;
+  font-size: 45px;
+  color: #4f6561;
+}
+#site-slogan {
+  font-size: 30px;
+  color: #9f8682;
+  text-align: center;
+}
+#navigation {
+  margin-bottom: 20px;
+}
+article {
+  background-color: #928da3;
+  color: #47475b;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+#content {
+  text-align: center;
+  border-radius: 25px;
+  margin-right: 10px;
+  width: 450px;
+}
+
+#header, #logo, #name-and-slogan, #navigation, #sidebar-first, #content, #sidebar-second, #footer {
+  /*border: solid red 1px;*/
+  /*padding: 20px;*/
+  margin: 10px;
+}
