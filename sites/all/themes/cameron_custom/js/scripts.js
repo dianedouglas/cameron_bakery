@@ -4,11 +4,8 @@ jQuery(document).ready(function($) {
         $( "#site-slogan" ).animate({
             height: "toggle"
         }, 5000, function() {
-        // Animation complete.
         });
     });
-
-
 
 
     $('#site-slogan').click(function() {
