@@ -1,0 +1,13 @@
+name = Cameron's Awesome Theme
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = css/style.css
+scripts[] = js/scripts.js
+regions[deals] = Deals
+regions[page_top] = Page top
+regions[footer] = Footer
+regions[content] = Content
+regions[help] = Help
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[highlighted] = Highlighted
