@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+    color: yellow;
+}
+
+.sectionclearfix {
+    background-color: yellow;
+}
+
+#site-slogan {
+    font-size: 150%;
+    color: purple;
+}
