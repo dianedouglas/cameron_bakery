@@ -79,7 +79,7 @@
 
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="logo_color" />
         </a>
       <?php endif; ?>
 
@@ -112,10 +112,6 @@
         <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')))); ?>
         <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'secondary-menu', 'inline', 'clearfix')))); ?>
       </div></div> <!-- /.section, /#navigation -->
-    <?php endif; ?>
-
-    <?php if ($breadcrumb): ?>
-      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
 
     <?php print $messages; ?>
