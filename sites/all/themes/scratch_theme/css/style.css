@@ -1,0 +1,35 @@
+body {
+	padding-bottom: 50px;
+}
+
+#feed-icons {
+	float: left;
+}
+
+/*JUMBOTRON*/
+#logo img {
+	height: 200px;
+	width: 200px;
+}
+
+/*NAVBAR*/
+#main-menu {
+	float: left;
+	padding-top: 15px;
+}
+
+.navbar {
+	padding-bottom: -10px;
+}
+
+#navbar-logo {
+	height: inherit;
+	width: inherit;
+	margin-top: -5px;
+	padding-bottom: 20px;
+}
+
+#secondary-menu {
+	float: right;
+	padding-top: 15px;
+}
