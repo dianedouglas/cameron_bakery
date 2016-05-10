@@ -1,0 +1,35 @@
+body {
+    background-color: lightgray;
+}
+#logo {
+    display: none;
+}
+#sidebar-first {
+    float: right;
+}
+#content {
+    float: right;
+    margin-right: 200px;
+    margin-top: -100px;
+}
+#name-and-slogan {
+    text-align: center;
+    padding-top: 100px;
+    height: 400px;
+    background-image:
+     url('http://stmedia.startribune.com/images/ows_139233885938872.jpg');
+    margin-left: -10px;
+    margin-right: -10px;
+}
+#site-name {
+    font-size: 60px;
+    color: black;
+
+}
+#site-slogan {
+    font-size: 40px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
