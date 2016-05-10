@@ -1,5 +1,5 @@
-jQuery(document).jQuery(document).ready(function($) {
-	$("#comment_node_article_form").submit(function(event)) {
+jQuery(document).ready(function($) {
+	$("#comment-form").submit(function() {
 		alert("Thank you for your comment!");
-	}
+	});
 });
