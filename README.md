@@ -37,7 +37,7 @@ If you have any issues, questions, ideas, or concerns contact us through GitHub.
 
 ## Technologies Used
 
-• Drupal<br>
+• Drupal 7<br>
 • phpMyAdmin<br>
 • PHP<br>
 • GIT<br>
