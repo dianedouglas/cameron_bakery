@@ -1,14 +1,22 @@
-.header__logo-image {
+body {
+	padding-bottom: 70px;
+}
+
+#header-logo {
+	width: 200px;
+	height: 200px;
+}
+
+#navbar-logo {
 	width: 57px;
 	height: 64px;
+	transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
 }
 
 .main-menu {
 	float: left;
-}
-
-#navbar {
-	background-color: #aca;
 }
 
 .secondary-menu {
