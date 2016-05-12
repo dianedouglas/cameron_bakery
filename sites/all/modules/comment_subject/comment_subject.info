@@ -2,3 +2,6 @@ name = Comment Subject Removal
 description = Remove subject field in comment submission forms
 package = Custom
 core = 7.x
+files[] = comment_subject.module
+files[] = comment_subject.test
+dependencies[] = simpletest
