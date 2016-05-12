@@ -1,0 +1,40 @@
+<?php
+/**
+ * @file
+ * Functional tests for the simple Greeting module.
+ */
+class GreetingTests extends DrupalWebTestCase {
+
+
+  /**
+ * Controls info displayed about our test in the Drupal Testing UI
+ */
+
+    public static function getInfo() {
+        return array(
+            // Name your tests.
+            'name' => 'Greeting Tests',
+            // Describe the point of these tests.
+            'description' => 'Tests the greeting module',
+            // Assign these tests to a group, just like the "package" in the module's info page puts your modules into a group.
+            'group'=> 'Epicodus Examples',
+        );
+    }
+
+    public function setUp() {
+      //enable modules we need by putting their machine readable names into an array.
+        parent::setUp(array('greeting'));
+    }
+
+ /**
+ * Perform the tasks we are testing, and assert the result. "Act" and then "Assert".
+ */
+
+    public function testGreetingNavigation() {
+      // Navigate to the URL created by the Greeting module.
+      $this->drupalGet('hello_friend');
+      // Assert that the text we want to see is actually there on the page.
+      $this->assertText('Hello my dear friend!', 'The text on the page is correct.');
+    }
+
+}
