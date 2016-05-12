@@ -1,0 +1,38 @@
+<?php
+
+class BakeryUserTests extends DrupalWebTestCase {
+
+    public static function getInfo() {
+        return array(
+          'name' => 'Bakery User Tests',
+          'description' => 'Tests for the Bakery User module.',
+          'group' => 'Epicodus Examples Tests',
+        );
+    }
+
+    public function setUp() {
+        parent::setUp(array('bakery_user'));
+    }
+
+    public function testLoginWelcome() {
+          //first line calls a new public function, we named 'drupalCreateAuthenticatedUser', its purpose is to make a user object and store it in a new variable called $user.
+        $user = $this->drupalCreateAuthenticatedUser();
+          //this line calls the function drupalLogin and passes in $user object to log them in.
+        $this->drupalLogin($user);
+          //This method checks for text on the current page. First argument is what we're looking for. Second argument is the success message in Test results.
+        $this->assertText("Welcome to Cameron's Bakery!", 'The user was successfully redirected. Woot!');
+    }
+
+    public function drupalCreateAuthenticatedUser(array $permissions = array()) {
+        //gets a list of all available user roles.
+      $roles = user_roles();
+        //finds the index of the 'authenticated' role in the user roles.
+      $index = array_search('authenticated', $roles);
+        //creates a new user with the method drupalCreateUser and stores the user object into variable $user.
+      $user = $this->drupalCreateUser($permissions);
+        //set the role of user to 'authenticated'.
+      $user->roles[$index] = 'authenticated';
+      return user_save($user);
+    }
+
+}
