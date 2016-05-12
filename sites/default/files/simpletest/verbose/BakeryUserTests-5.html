@@ -1,4 +1,4 @@
-<hr />ID #1 (<a href="BakeryUserTests-0.html">Previous</a> | <a href="BakeryUserTests-2.html">Next</a>)<hr />GET request to: user<hr />Ending URL: http://localhost:8888/user<hr /><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+<hr />ID #5 (<a href="BakeryUserTests-4.html">Previous</a> | <a href="BakeryUserTests-6.html">Next</a>)<hr />GET request to: user/logout<hr />Ending URL: http://localhost:8888/<hr /><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
   "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -15,7 +15,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="http://localhost:8888/misc/favicon.ico" type="image/vnd.microsoft.icon" />
 <meta name="Generator" content="Drupal 7 (http://drupal.org)" />
-  <title>User account | Drupal</title>
+  <title>Welcome to Drupal | Drupal</title>
   <style type="text/css" media="all">
 @import url("http://localhost:8888/modules/system/system.base.css?o732na");
 @import url("http://localhost:8888/modules/system/system.menus.css?o732na");
@@ -50,11 +50,11 @@
 <script type="text/javascript" src="http://localhost:8888/misc/drupal.js?o732na"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bartik","theme_token":"ajrX2Zs9DSxLbNENmeI4zRw1bwAIVKrk2_dI6TIC-jY","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"themes\/bartik\/css\/layout.css":1,"themes\/bartik\/css\/style.css":1,"themes\/bartik\/css\/colors.css":1,"themes\/bartik\/css\/print.css":1,"themes\/bartik\/css\/ie.css":1,"themes\/bartik\/css\/ie6.css":1}},"urlIsAjaxTrusted":{"\/user":true}});
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bartik","theme_token":"w4X-ltPwI4UZ74DvumRycsOXMSpEhbJP4LAC8McFXTM","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"themes\/bartik\/css\/layout.css":1,"themes\/bartik\/css\/style.css":1,"themes\/bartik\/css\/colors.css":1,"themes\/bartik\/css\/print.css":1,"themes\/bartik\/css\/ie.css":1,"themes\/bartik\/css\/ie6.css":1}},"urlIsAjaxTrusted":{"\/node?destination=node":true}});
 //--><!]]>
 </script>
 </head>
-<body class="html not-front not-logged-in no-sidebars page-user" >
+<body class="html front not-logged-in one-sidebar sidebar-first page-node" >
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
   </div>
@@ -79,7 +79,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
     
     
           <div id="main-menu" class="navigation">
-        <h2 class="element-invisible">Main menu</h2><ul id="main-menu-links" class="links clearfix"><li class="menu-179 first last"><a href="/">Home</a></li>
+        <h2 class="element-invisible">Main menu</h2><ul id="main-menu-links" class="links clearfix"><li class="menu-179 first last active"><a href="/" class="active">Home</a></li>
 </ul>      </div> <!-- /#main-menu -->
     
     
@@ -89,36 +89,43 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   
   <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
 
-          <div id="breadcrumb"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a></div></div>
     
+          <div id="sidebar-first" class="column sidebar"><div class="section">
+          <div class="region region-sidebar-first">
+    <div id="block-user-login" class="block block-user">
+
+    <h2>User login</h2>
+  
+  <div class="content">
+    <form action="/node?destination=node" method="post" id="user-login-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required" />
+</div>
+<div class="item-list"><ul><li class="first"><a href="/user/register" title="Create a new user account.">Create new account</a></li>
+<li class="last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" value="form-DUS6yyDy5YwOkURVYumY4oOcN5QQG5S1rnhYtDnFIBw" />
+<input type="hidden" name="form_id" value="user_login_block" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Log in" class="form-submit" /></div></div></form>  </div>
+</div>
+  </div>
+      </div></div> <!-- /.section, /#sidebar-first -->
     
     <div id="content" class="column"><div class="section">
             <a id="main-content"></a>
                     <h1 class="title" id="page-title">
-          User account        </h1>
+          Welcome to Drupal        </h1>
                           <div class="tabs">
-          <h2 class="element-invisible">Primary tabs</h2><ul class="tabs primary"><li><a href="/user/register">Create new account</a></li>
-<li class="active"><a href="/user" class="active">Log in<span class="element-invisible">(active tab)</span></a></li>
-<li><a href="/user/password">Request new password</a></li>
-</ul>        </div>
+                  </div>
                           <div class="region region-content">
     <div id="block-system-main" class="block block-system">
 
     
   <div class="content">
-    <form action="/user" method="post" id="user-login" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
-  <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
- <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required" />
-<div class="description">Enter your Drupal username.</div>
-</div>
-<div class="form-item form-type-password form-item-pass">
-  <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
- <input type="password" id="edit-pass" name="pass" size="60" maxlength="128" class="form-text required" />
-<div class="description">Enter the password that accompanies your username.</div>
-</div>
-<input type="hidden" name="form_build_id" value="form-2GbAVEbEbuB0blLWjvyIZZlU2QLZ8IWeMwrO8talRm0" />
-<input type="hidden" name="form_id" value="user_login" />
-<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Log in" class="form-submit" /></div></div></form>  </div>
+    <div id="first-time"><p>No front page content has been created yet.</p></div>  </div>
 </div>
   </div>
       
