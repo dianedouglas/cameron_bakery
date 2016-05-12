@@ -1,0 +1,78 @@
+body {
+    background-image: url("https://static.pexels.com/photos/4289/sweet-almond-biscuits-cookies.jpg");
+    background-position: center;
+    background-color: lightblue;
+    font-family: monospace;
+}
+#header a{
+    text-decoration: none;
+}
+#header {
+    background-color: lightslategrey;
+}
+
+#site-name a{
+    color: black;
+}
+
+#logo{
+    display: none;
+}
+
+#name-and-slogan {
+    float: right;
+    margin-right: 10px;
+}
+
+#navigation h2 {
+    display: none;
+}
+
+#main-menu li a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 15px 15px 0px 0px;
+    margin: 10px -21px 0px 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: lightblue;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.site-name-hover {
+    text-shadow: 2px 2px 8px #FF0000;
+    text-decoration: underline;
+    color: #876543;
+}
+
+#navigation {
+    border-bottom: 3px solid black;
+    background-color: lightslategrey;
+}
+
+#secondary-menu li{
+    margin-bottom: 15px;
+    float: right;
+}
+
+#sidebar-first {
+    float: right;
+}
+
+#footer{
+    text-align: center;
+}
+
+/*#content {
+    width: 80%;
+    float: left;
+}*/
+
+.node-article{
+    background-color: rgba(71, 176, 202, 0.7);
+    background: rgba(71, 176, 202, 0.7);
+    /*color: rgba(71, 176, 202, 0.7);*/
+    padding: 12px;
+    margin-top: 15px;
+
+}
