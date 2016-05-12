@@ -1,0 +1,34 @@
+<?php
+
+/**
+* @file
+* Tests for the Bakery User2 Module
+*/
+
+class BakeryUser2Tests extends DrupalWebTestCase{
+    public static function getInfo() {
+        return array(
+            'name' => 'Bakery User2 Tests',
+            'description' => 'Tests for the Bakery User2 module.',
+            'group' => 'Epicodus Examples Tests',
+        );
+    }
+
+    public function setUp() {
+        parent::setUp(array('bakery_user2'));
+    }
+
+    public function testLoginWelcome() {
+        $user = $this->drupalCreateAuthenticatedUser();
+        $this->drupalLogin($user);
+        $this->assertText("Welcome to Cameron's Bakery!", 'The user was successfully redirected. Woot!');
+    }
+
+    public function drupalCreateAuthenticatedUser(array $permissions = array()) {
+        $roles = user_roles();
+        $index = array_search('authenticated', $roles);
+        $user = $this->drupalCreateuser($permissions);
+        $user->roles[$index] = 'authenticated';
+        return user_save($user);
+    }
+}
