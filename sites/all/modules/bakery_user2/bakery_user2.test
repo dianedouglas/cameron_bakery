@@ -16,6 +16,40 @@ class BakeryUser2Tests extends DrupalWebTestCase{
 
     public function setUp() {
         parent::setUp(array('bakery_user2'));
+
+        $user = $this->drupalCreateAdminUser();
+        $this->drupalLogin($user);
+        $this->createTestingPage();
+    }
+
+    public function createTestingPage() {
+        //$info = the information needed to create the basic page at the url 'pagetest'
+        $info = array();
+        $info['title'] = "Testing!";
+        $info["body[und][0][value]"] = "1, 2, 3!";
+
+        //save the new page
+        $this->drupalPost('node/add/page', $info, t('Save'));
+
+        //set new page to the correct path. We know this will be node/1 because we are starting from scratch
+        $path['source'] = 'node/1';
+        $path['alias'] = 'pagetest';
+        path_save($path);
+    }
+
+    public function drupalCreateAdminUser(array $permissions = array()) {
+        $roles = user_roles();
+        $index = array_search('administrator', $roles);
+        $user = $this->drupalCreateuser($permissions);
+        $user->roles[$index] = 'administrator';
+        return user_save($user);
+    }
+
+    public function testNewPage() {
+        // Navigate to /pagetest.
+        $this->drupalGet('pagetest');
+        // Verify that the text "1, 2, 3!" exists on the page.
+        $this->assertText("1, 2, 3!", 'The text on the page is correct. Hoorah!');
     }
 
     public function testLoginWelcome() {
