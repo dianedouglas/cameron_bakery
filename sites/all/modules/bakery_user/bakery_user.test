@@ -6,7 +6,7 @@ class BakeryUserLoginTestCase extends DrupalWebTestCase{
 
   }
 
-  public function testBakeryUserLogin
+  
 
 
 }

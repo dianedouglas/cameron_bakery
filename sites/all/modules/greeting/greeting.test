@@ -5,7 +5,7 @@
 * Functional tests for the simple Greeting module.
 */
 
-class GreetingTests extends DrupalWebTestCase {
+class GreetingTestCase extends DrupalWebTestCase {
     /**
     * Controls info displayed about our test in the Drupal Testing UI
     */
@@ -29,6 +29,6 @@ class GreetingTests extends DrupalWebTestCase {
         //Navigate to the URL created by the Greeting Module
         $this->drupalGet('hello_friend');
         //Assert that the text we want to see is actually there on the page
-        $this->assertText('Hello my dear friend', 'The text on the page is correct');
+        $this->assertText('Hello my dear friend!', 'The text on the page is correct');
     }
 }
