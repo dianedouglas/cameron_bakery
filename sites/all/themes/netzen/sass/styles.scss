@@ -110,3 +110,11 @@ h1, h2{
         font-weight: bold;
     }
 }
+
+.hovering{
+  background-color: $glaze;
+}
+
+.not-hovering{
+  background-color: rgb(255, 253, 249);
+}

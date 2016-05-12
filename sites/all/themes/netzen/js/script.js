@@ -19,17 +19,25 @@ Drupal.behaviors.my_custom_behavior = {
 
       jQuery(document).ready(function($){
 
-          $('.comment').hover(function(){
-              var color = $(this).css('background-color');
-              console.log(color);
-              if(color !== 'rgb(255, 249, 231)'){
-                  $(this).css( 'background-color', '#FFF9E7' );
-              }else{
-                  $(this).css( 'background-color', 'rgb(255, 253, 249)' );
-              }
+          // $('.comment').hover(function(){
+          //     var color = $(this).css('background-color');
+          //     console.log(color);
+          //     if(color !== 'rgb(255, 249, 231)'){
+          //         $(this).css( 'background-color', '#FFF9E7' );
+          //     }else{
+          //         $(this).css( 'background-color', 'rgb(255, 253, 249)' );
+          //     }
+          // });
+          $('.comment').mouseover(function(){
+            // $(this).css( 'background-color', '#FFF9E7' );
+            $(this).removeClass('not-hovering');
+            $(this).addClass('hovering');
+          }).mouseout(function(){
+            // $(this).css( 'background-color', 'rgb(255, 253, 249)' );
+            $(this).removeClass('hovering');
+            $(this).addClass('not-hovering');
           });
       });
-
   }
 };
 

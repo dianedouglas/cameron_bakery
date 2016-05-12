@@ -1704,7 +1704,7 @@ tr.selected td {
 /* line 804, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1448956908');
+  background-image: url('../images/progress.gif?1463066435');
 }
 
 /**
@@ -1884,4 +1884,14 @@ h1, h2 {
 .node-promoted .node-title a {
   font-family: cursive;
   font-weight: bold;
+}
+
+/* line 114, ../sass/styles.scss */
+.hovering {
+  background-color: #fff9e7;
+}
+
+/* line 118, ../sass/styles.scss */
+.not-hovering {
+  background-color: #fffdf9;
 }
