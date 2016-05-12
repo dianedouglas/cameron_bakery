@@ -1,0 +1,7 @@
+name = Greeting
+description = Display greetings.
+package = Epicodus Examples
+core = 7.x
+files[] = greeting.module
+files[] = greeting.test
+dependencies[] = simpletest
