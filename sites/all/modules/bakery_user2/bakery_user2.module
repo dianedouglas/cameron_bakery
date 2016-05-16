@@ -1,0 +1,18 @@
+<?php
+function bakery_user2_menu() {
+    $items['welcome'] = array(
+        'title' => 'Hi There!',
+        'page callback' => 'welcome_user2',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+    return $items;
+}
+
+function bakery_user2_user_login(&$edit, $account) {
+    $_GET['destination'] = 'welcome';
+}
+
+function welcome_user2() {
+    return "<p>Welcome to Cameron's Bakery!</p>";
+}

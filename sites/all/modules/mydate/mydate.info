@@ -1,0 +1,7 @@
+name = My Date
+description = Processes dates.
+package = Epicodus Examples
+core = 7.x
+files[] = mydate.module
+files[] = mydate.test
+dependencies[] = simpletest

@@ -1,0 +1,1 @@
+[12-May-2016 16:07:22 America/Los_Angeles] PHP Fatal error:  Call to undefined function assertText() in /Users/Guest/Desktop/cameron_bakery/sites/all/modules/comment_subject/comment_subject.test on line 53

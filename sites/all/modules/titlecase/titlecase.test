@@ -1,0 +1,68 @@
+<?php
+class TitleCaseTestCase extends DrupalUnitTestCase
+{
+
+    public static function getInfo()
+    {
+        return array(
+        'name' => 'Title Case Tests',
+        'description' => 'Test that my titlecase converter works properly.',
+        'group' => 'Epicodus Examples Tests',
+        );
+    }
+
+    function testTitleCase()
+    {
+
+        //English description
+        //displays desired result during test
+        $description = 'A title with a single letter is capitalized.';
+
+        //Arrange
+        //create input
+        $input = 'a';
+
+        //Act
+        //run the function we're testing with input and store output in $result.
+        $result = make_title_case($input);
+
+        //Assert
+        //This time we're using assertEqual
+        //If the first argument == second argument, test passes.
+        //Again pass in $description for display.
+        $expected_output = 'A';
+        $this->assertEqual($result, $expected_output, $description);
+
+        $description = 'A title with one word instead of one letter should be capitalized.';
+        $input = 'thor';
+        $result = make_title_case($input);
+        $expected_output = 'Thor';
+        $this->assertEqual($result, $expected_output, $description);
+
+        $description = 'A title with multiple words should be capitalized.';
+        $input = 'mad max';
+        $result = make_title_case($input);
+        $expected_output = 'Mad Max';
+        $this->assertEqual($result, $expected_output, $description);
+
+        $description = 'Small words should not be capitalized.';
+        $input = 'once upon a time';
+        $result = make_title_case($input);
+        $expected_output = 'Once Upon a Time';
+        $this->assertEqual($result, $expected_output, $description);
+
+        $description = 'Titles which start with a small word should still have that first word be capitalized.';
+        $input = 'a clockwork orange';
+        $result = make_title_case($input);
+        $expected_output = 'A Clockwork Orange';
+        $this->assertEqual($result, $expected_output, $description);
+
+        $description = 'A title with multiple words, some of which are small, should be put into title case.';
+        $input = 'the lord of the rings';
+        $result = make_title_case($input);
+        $expected_output = 'The Lord of the Rings';
+        $this->assertEqual($result, $expected_output, $description);
+
+    }
+
+}

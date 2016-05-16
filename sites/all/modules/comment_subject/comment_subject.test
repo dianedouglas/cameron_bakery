@@ -1,0 +1,63 @@
+<?php
+
+/**
+* @file
+* Tests for the Comment Subject Module
+*/
+
+class CommentSubjectTests extends DrupalWebTestCase{
+    public static function getInfo() {
+        return array(
+            'name' => 'Comment Subject Tests',
+            'description' => 'Tests for the Comment Subject module.',
+            'group' => 'Epicodus Examples Tests',
+        );
+    }
+
+    public function setUp() {
+        parent::setUp(array('comment_subject'));
+
+        $user = $this->drupalCreateAdminUser();
+        $this->drupalLogin($user);
+        $this->createTestingArticle();
+    }
+
+    public function createTestingArticle() {
+        //$info = the information needed to create the basic page at the url 'articletest'
+        $info = array();
+        $info['title'] = "Testing!";
+        $info["body[und][0][value]"] = "1, 2, 3!";
+
+        //save the new page
+        $this->drupalPost('node/add/article', $info, t('Save'));
+
+        //set new page to the correct path. We know this will be node/1 because we are starting from scratch
+        $path['source'] = 'node/1';
+        $path['alias'] = 'articletest';
+        path_save($path);
+    }
+
+    public function drupalCreateAdminUser(array $permissions = array()) {
+        $roles = user_roles();
+        $index = array_search('administrator', $roles);
+        $user = $this->drupalCreateuser($permissions);
+        $user->roles[$index] = 'administrator';
+        return user_save($user);
+    }
+
+    public function testNewArticle() {
+        // Navigate to /articletest.
+        $this->drupalGet('articletest');
+        // Verify that the text "1, 2, 3!" exists on the page.
+        // $this->assertTrue($form['subject']['#access'] = 0, 'The subject field is hidden!');
+        $this->assertNoField('subject', 'The subject field is hidden!');
+    }
+
+    public function drupalCreateAuthenticatedUser(array $permissions = array()) {
+        $roles = user_roles();
+        $index = array_search('authenticated', $roles);
+        $user = $this->drupalCreateuser($permissions);
+        $user->roles[$index] = 'authenticated';
+        return user_save($user);
+    }
+}
