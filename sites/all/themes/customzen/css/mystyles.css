@@ -1,0 +1,13 @@
+header#header.header {
+    background-color: red;
+}
+
+footer {
+    background-image: url(../images/cookies.png);
+    color: white;
+}
+
+#main {
+    background-color: grey;
+    color: white;
+}
