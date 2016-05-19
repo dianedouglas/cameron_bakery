@@ -1,0 +1,91 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+/*pink : #F7A597  light pink: #FEDEC7*/
+
+#page {
+    width: 100%;
+    margin: 0px;
+    max-width: 100%;
+    background-color: #4A1A10;
+}
+
+body {
+    color: #4A1A10 !important;
+}
+
+a {
+    color: #F7A597;
+}
+
+a:hover {
+    color: #FEDEC7;
+}
+
+#main {
+    background-color: white;
+    margin-bottom: 250px;
+}
+
+header {
+    height: 560px;
+    background-image: url('../images/cake.jpg');
+    background-position: 75%;
+    background-repeat: no-repeat;
+    background-color: #DBEFEE;
+    position: relative;
+}
+
+footer {
+    height: 150px;
+    background-color: #DBEFEE;
+    clear: both;
+}
+
+#navigation {
+    background-color: #4A1A10;
+}
+
+.breadcrumb {
+    display: none;
+}
+
+.header__site-link span {
+    position: absolute;
+    bottom: 250px;
+    left: 20%;
+    font-size: 2em;
+    color: #4A1A10;
+}
+
+.header__site-slogan {
+    position: absolute;
+    bottom: 190px;
+    left: 25%;
+    font-size: 2em;
+    color: #4A1A10;
+}
+
+.header__logo {
+    display: none;
+}
