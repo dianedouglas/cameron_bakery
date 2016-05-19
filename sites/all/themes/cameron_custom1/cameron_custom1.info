@@ -1,0 +1,19 @@
+name = Cameron Custom Part I
+description = Custom theme
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/style.css
+scripts[] = js/scripts.js
+
+regions[header]         = Header
+regions[navigation]     = Navigation bar
+regions[highlighted]    = Highlighted
+regions[help]           = Help
+regions[content]        = Content
+regions[sidebar_first]  = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[footer]         = Footer
+regions[bottom]         = Page bottom
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom

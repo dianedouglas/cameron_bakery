@@ -1,0 +1,33 @@
+.region.region-content {
+    width: 75%;
+    float: right;
+}
+
+#logo img {
+    width: 150px;
+    float: left;
+}
+
+a {
+    color: #F78CA6;
+}
+
+.container.jumbotron {
+    margin-bottom: 0px;
+}
+
+#site-name {
+    font-size: 2em;
+}
+
+#navigation {
+    background-color: #E3D33C;
+}
+
+#secondary-menu {
+    float: right;
+}
+
+#main-mennu li {
+    float: left;
+}
