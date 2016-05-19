@@ -2,12 +2,11 @@
 
 ##### Epicodus Drupal Code Review 3
 
-#### By Diane Douglas
+#### By Diane Douglas & Mollie Bootsma
 
 ## Description
 
-This is a basic fictional website for a bakery, which comes with a buggy custom module.
-Students must fix the module, add their own custom module and a Zen sub-theme.
+This is a basic fictional website for a bakery, which comes with a custom welcome page module, and a module for hiding the suject line on article comment forms. It also comes with two custom themes designed by Mollie.
 
 ## Setup
 
