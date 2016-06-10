@@ -1,0 +1,14 @@
+<?php
+function hide_comment_subject_form_alter(&$form, $form_state, $form_id){
+
+    // print '<pre>';
+    // print_r($form);
+    // print '</pre>';
+    if($form_id == 'comment_node_article_form'){
+        $form['subject'] = array(
+            '#type' => 'hidden',
+        );
+    }
+}
+
+//Jamie: This just hides the ability to submit a Subject with a comment, as per your instructions. There will still be a "subject" displayed for comments, but it will just be the first 25 characters of the message. If you'd like that removed, we can talk.

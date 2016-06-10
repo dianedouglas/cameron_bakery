@@ -1,0 +1,120 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* Import Sass mixins, variables, Compass modules, etc. */
+@import "init";
+
+/* HTML element (SMACSS base) rules */
+@import "normalize";
+
+/* Layout rules */
+@import "layouts/responsive";
+
+/* Component (SMACSS module) rules */
+@import "components/misc";
+// Optionally, add your own components here.
+@import "print";
+
+/* SMACSS theme rules */
+/* @import "theme-A"; */
+/* @import "theme-B"; */
+$muffin: #FFF2CE;	// Main Primary color */
+$cream: #FFFDF9;
+$glaze: #FFF9E7;
+$crumb: #DBC895;
+$crust: #B7A060;
+
+$main-blue: #9396B1;	// Main Complement color */
+$icing: #E9E9ED;
+$youngberry: #C0C1D1;
+$blueberry-lite: #6E7198;
+$blueberry: #4B4F7F;
+
+
+body{
+    background-color: $muffin;
+}
+
+a{
+    color: $blueberry;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+h1, h2{
+    color: $main-blue;
+}
+.region-sidebar-first{
+    background-color: $crumb;
+    border-radius: 8px;
+    padding: 5px;
+    bottom-margin: 3px;
+}
+.region-sidebar-second{
+    background-color: $crumb;
+    border-radius: 8px;
+    padding: 5px;
+    bottom-margin: 3px;
+}
+
+#header{
+    background-color: $crust;
+    color: $youngberry;
+    font-family:cursive;
+
+    a {
+        background-color: $crust;
+        color: $blueberry-lite;
+        font-family:cursive;
+    }
+    img{
+        padding: 10px;
+    }
+}
+
+#navigation{
+    background-color: $icing;
+}
+
+.comment{
+    background-color: $cream;
+    border: solid 2px;
+    border-radius: 8px;
+    border-color: $icing;
+    padding: 5px;
+    margin: 2px;
+    .field-name-comment-body{
+        font-family: cursive;
+        color: $blueberry-lite;
+    }
+
+}
+.node-promoted{
+    background-color: $icing;
+    border: solid 2px;
+    border-radius: 8px;
+    border-color: $cream;
+    padding: 5px;
+    margin: 2px;
+    .field-name-body{
+        font-family: cursive;
+        color: $crust;
+    }
+    .node-title a{
+        font-family: cursive;
+        font-weight: bold;
+    }
+}
+
+.hovering{
+  background-color: $glaze;
+}
+
+.not-hovering{
+  background-color: rgb(255, 253, 249);
+}
