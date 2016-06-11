@@ -1,0 +1,5 @@
+name = New Comment Form
+description = A module that hides subject field in article comments
+package = Cameron Modules
+core = 7.x
+files[] = newcomment_form.module
