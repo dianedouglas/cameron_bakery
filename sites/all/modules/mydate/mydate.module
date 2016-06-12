@@ -1,0 +1,61 @@
+<?php
+
+function mydate_menu() {
+    $items['date_validator'] = array(
+        'title' => 'Is this date string empty?',
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('mydate_form'),
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+    $items['mydate_success'] = array(
+        'title' => 'Checked the date',
+        'page callback' => 'mydate_display',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+    return $items;
+}
+
+function mydate_form() {
+
+    $form['input_date'] = array(
+        '#title' => 'Input Date',
+        '#type' => 'textfield',
+        '#description' => t("Input a date. My method will tell if it is empty or not. There is not much point to this, I would probably like to do something extra like put the date into a calendar, or write a second function to see if it is actually in the correct format or not. But for right now, if you enter either '0000-00-00 00:00:00', '0000-00-00', or leave it blank, then my function will display TRUE."),
+    );
+
+    $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => 'Is it empty?',
+    );
+
+    return $form;
+}
+
+function mydate_form_submit($form, &$form_state) {
+    $input_date = $form_state['values']['input_date'];
+    $result = mydate_empty_mysql_date($input_date);
+    $_SESSION['mydate_empty'] = $result;
+    $form_state['redirect'] = 'mydate_success';
+}
+
+
+function mydate_empty_mysql_date($date_string) {
+    if (empty($date_string) || $date_string == '0000-00-00' || $date_string == '0000-00-00 00:00:00') {
+        $date_is_empty = TRUE;
+    }
+    else {
+        $date_is_empty = FALSE;
+    }
+
+    return $date_is_empty;
+}
+
+function mydate_display() {
+    if ($_SESSION['mydate_empty']) {
+        return "<p>That date was empty!</p>";
+    } else {
+        return "<p>That date was not empty. Not sure if it's in the right format or not though. </p>";
+    }
+}

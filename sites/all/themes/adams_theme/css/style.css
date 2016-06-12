@@ -1,0 +1,59 @@
+ #name-and-slogan a[href='/']{
+  color: black;
+  float: right;
+  display: inline;
+  margin-top: -40px;
+  margin-right: 5px;
+  text-decoration: none;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 1px white;
+  font-size: 26px;
+}
+
+#logo {
+  padding-left: 5px;
+  display: inline;
+}
+
+.field-name-body p {
+  font-family: fantasy;
+}
+
+#header {
+  background-color: grey;
+  margin-left: -10px;
+  margin-top: -7px;
+  margin-right: -10px;
+  padding-top: 20px;
+}
+
+#site-slogan {
+  margin-left: 5px;
+  margin-top: -20px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+h2 {
+  color: green;
+  text-shadow: 1px 1px 1px black;
+
+}
+
+.node-article  {
+  border-style: solid;
+  margin: 5px 5px 5px 5px;
+  padding: 0 5px 5px 5px;
+}
+
+.node-article h2{
+  margin-top: 0px;
+}
+
+body {
+  background-color: #7a937e;
+}
+
+.animate {
+  
+}
