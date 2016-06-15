@@ -1,0 +1,79 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+/* ------------------------CUSTOM CSS STARTS HERE-----------------------------*/
+
+body {
+    background-image: url('http://www.wildtextures.com/wp-content/uploads/2011/11/wildtextures-wooden-chopping-board-texture.jpg');
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
+footer {
+    background-color: #333333;
+}
+
+.header {
+    background-color: #990000;
+    font-family: monospace;
+}
+
+.header img {
+    max-width: 100px;
+}
+
+.header_site-name {
+    font-size: 50px;
+    padding: 7px;
+}
+
+.header__name-and-slogan {
+    padding-left: 10px;
+}
+
+.region-sidebar-first {
+    background-color: #ffe680;
+    margin-left: 10px;
+}
+
+.sidebars {
+    padding-top: 10px;
+}
+
+#block-search-form {
+    padding-top: 10px;
+}
+
+#site_slogan {
+    font-size: 2em;
+}
+
+#navigaton {
+    background-color: #990000 !important;
+}
+
+#content {
+    margin-top: 10px;
+    background-color: #ffe680;
+}

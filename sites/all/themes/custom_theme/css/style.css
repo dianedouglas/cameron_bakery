@@ -1,0 +1,52 @@
+body {
+    background-color: green;
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+    background-color: #e0e0eb;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+}
+
+.container {
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #efeff5;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#highlighted {
+    text-align: center;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
+#navigation {
+    text-align: center;
+}
+
+#header {
+    height: 10em;
+    background-color: red;
+}
+
+#name-and-slogan {
+    text-align: center;
+}
+
+#sidebar-first {
+    background-color: red;
+}
+
+#skip-link {
+    color: red;
+}

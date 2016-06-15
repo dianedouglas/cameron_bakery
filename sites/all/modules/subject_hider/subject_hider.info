@@ -1,0 +1,5 @@
+name = Subject Hider
+description = Hides subject field in article comment submission forms
+package = Custom Modules
+core = 7.x
+files[] = subject_hider.module
