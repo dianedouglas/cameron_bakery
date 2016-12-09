@@ -1,16 +1,28 @@
 h1,
 h2 {
     font-family: 'Molle', cursive;
+    text-shadow: 2px 2px white;
 }
 
 h1 {
     font-size: 3em;;
-    text-shadow: 2px 2px white;
+}
+
+h2 {
+    font-size: 1.5em;
 }
 
 body {
     font-family: 'Lato', sans-serif;
     background-color: papayawhip;
+}
+
+.field-items img {
+    /*padding: 1em;
+    background-color: rgba(252, 246, 235, 0.75);*/
+    border-radius: 50%;
+    height: 18em;
+    width: 20em;
 }
 
 a:visited,
@@ -26,12 +38,27 @@ a {
 a:hover {
     color: #3B8DA8;
 }
+p a {
+    font-weight: bold;
+}
 
 hgroup.with-logo {
     clear: none;
     display: inline;
     float: left;
     margin-left: 10px;
+}
+
+li.node-readmore,
+li.comment-add {
+        font-family: 'Crete Round', serif;
+}
+
+.node-teaser {
+    background-color: rgba(252, 246, 235, 0.75);
+    padding: 0.4em;
+    margin: 0.6em;
+    border-radius: 5%;
 }
 
 #site-name {
@@ -45,8 +72,11 @@ hgroup.with-logo {
     float: left; }
 
 #site-slogan {
- font-size: 1.2rem;
+ font-size: 1.4rem;
  padding-left: 10em;
+ font-family: 'Crete Round', serif;
+ font-style: italic;
+ padding-top: 0;
 }
 
 /*Login Region*/
@@ -56,15 +86,41 @@ hgroup.with-logo {
 
 #sidebar-first {
     float: left;
-    width: 15em;
 }
 
 #sidebar-second {
     float: right;
+}
+
+#sidebar-first,
+#sidebar-second {
     width: 15em;
+    background-color: rgba(252, 246, 235, 0.75);
+    padding: 0.2em;
+    padding-top: 0.5em;
+    border-radius: 8%;
 }
 
 #content {
-    margin-left: 16em;
-    margin-right: 16em;
+    margin-left: 16.5em;
+    margin-right: 16.5em;
+}
+
+#navigation {
+    text-align: center;
+}
+
+#main-menu {
+    font-family: 'Crete Round', serif;
+    font-size: 1.2em;
+}
+
+#login h2,
+#navigation h2 {
+    text-decoration: underline;
+}
+
+#site-name {
+    margin-bottom: 0.2em;
+    text-shadow: 2px 2px white;
 }

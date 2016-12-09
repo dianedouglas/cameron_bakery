@@ -101,8 +101,6 @@
             <?php endif; ?>
           <?php endif; ?>
 
-
-
           <?php if ($site_slogan): ?>
             <div id="site-slogan"><?php print $site_slogan; ?></div>
           <?php endif; ?>
@@ -120,9 +118,7 @@
       </div></div> <!-- /.section, /#navigation -->
     <?php endif; ?>
 
-    <?php if ($breadcrumb): ?>
-      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-    <?php endif; ?>
+
 
     <?php print $messages; ?>
 
