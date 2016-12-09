@@ -9,3 +9,16 @@ a {
 a:visited {
     color: #45b1f9;
 }
+.breadcrumb {
+    display: none;
+}
+img {
+    margin-top: 20px;
+}
+.field-name-field-photo2 {
+    display: none;
+}
+.field-label {
+    margin-top: 1%;
+    text-align: center; 
+}
