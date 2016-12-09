@@ -44,13 +44,17 @@ summary {
   display: block;
 }
 
+h1.header__site-name.header__site-link {
+    font-size: 2em;
+}
+
 .header__site-slogan {
     color: #fff;
     font-style: italic;
 }
 
 h1.header {
-    color: #c0392b;
+    color: #fff;
 }
 
 .block.block-system {
@@ -77,6 +81,7 @@ h2.block__title {
 
 ul.navbar.clearfix {
     margin-top: 2em;
+    border-bottom: 1px solid #fff;
 }
 
 footer {
@@ -126,12 +131,12 @@ template,
 }
 
 a {
-  color: #ecf0f1;
+  color: #fff;
   -webkit-text-decoration-skip: objects;
 }
 
 :visited {
-  color: #bdc3c7;
+  color: #fff;
 }
 
 a:active {
@@ -145,6 +150,8 @@ a:active:not(.button) {
 a:active,
 a:hover {
   outline-width: 0;
+  color: #2ecc71;
+  transition: 1s ease;
 }
 
 @media print {
@@ -170,6 +177,7 @@ h1,
   line-height: 3rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  color: #fff;
 }
 
 h2 {
@@ -177,6 +185,7 @@ h2 {
   line-height: 2.25rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  text-decoration: underline;
 }
 
 h3 {
