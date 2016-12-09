@@ -1,0 +1,5 @@
+name = Simple Comments
+description = A module to simplify comment fields.
+package = Cameron Modules
+core = 7.x
+files[] = simple_comments.module
