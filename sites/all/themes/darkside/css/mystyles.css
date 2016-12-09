@@ -154,6 +154,10 @@ a:hover {
   transition: 1s ease;
 }
 
+h1.header__site-name {
+    color: #fff;
+}
+
 @media print {
   :link,
   :visited {
