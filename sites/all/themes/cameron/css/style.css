@@ -1,0 +1,37 @@
+h1,
+h2 {
+    font-family: 'Molle', cursive;
+}
+
+h1 {
+    font-size: 3em;;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+hgroup.with-logo {
+    clear: none;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+}
+
+#site-name {
+    font-size: 3em;
+    font-family: 'Molle', cursive;margin-top: 1em;
+}
+
+#logo {
+    display: inline;
+    float: left; }
+
+#site-slogan {
+ font-size: 1.2rem;
+}
