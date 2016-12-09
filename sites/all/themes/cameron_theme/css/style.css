@@ -1,0 +1,13 @@
+body {
+    background-color: #f2f2f2;
+}
+
+/*
+
+<head> : [core project directory]/modules/system/html.tpl.php
+<body> : [core project directory]/modules/system/page.tpl.php
+How regions are rendered : [core project directory]/modules/system/region.tpl.php
+How nodes are laid out : [core project directory]/modules/node/node.tpl.php
+Refers to blocks : [core project directory]/modules/block/block.tpl.php
+Renders individual fields : [core project directory]/modules/field/theme/field.tpl.php
+*/
