@@ -1,0 +1,29 @@
+#page {
+    color: #424242;
+    text-align: center;
+}
+
+#header {
+    background-color: #34495e;
+    color: #fff;
+    padding: .5em;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+#content {
+    padding: 2em;
+}
+
+#footer {
+    background-color: #3498db;
+    padding: 1em;
+    margin: 2em;
+}
+
+h1#page-title.title {
+    font-size: 3em; 
+}
