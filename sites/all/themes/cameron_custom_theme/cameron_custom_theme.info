@@ -1,0 +1,6 @@
+name = Cameron Custom Theme
+Description = A custom theme built from scratch.
+core = 7.x
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/custom_theme_styles.css
+scripts[] = js/custom_theme_scripts.js

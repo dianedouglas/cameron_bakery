@@ -1,0 +1,23 @@
+body {
+  background-color: #c94c4c;
+}
+
+input, textarea, .breadcrumb {
+  background-color: #deeaee;
+}
+
+a {
+  color: #4cc98b;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.sidebar-header {
+  background-color: #4c4cc9;
+}
+
+.active {
+  background-color: #deeaee;
+}
