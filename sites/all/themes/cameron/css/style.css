@@ -5,15 +5,26 @@ h2 {
 
 h1 {
     font-size: 3em;;
+    text-shadow: 2px 2px white;
 }
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: papayawhip;
 }
 
 a:visited,
-a:active {
+a:active,
+a:link {
     text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #3B8DA8;
 }
 
 hgroup.with-logo {
@@ -25,7 +36,8 @@ hgroup.with-logo {
 
 #site-name {
     font-size: 3em;
-    font-family: 'Molle', cursive;margin-top: 1em;
+    font-family: 'Molle', cursive;
+    margin-top: 1em;
 }
 
 #logo {
@@ -34,4 +46,25 @@ hgroup.with-logo {
 
 #site-slogan {
  font-size: 1.2rem;
+ padding-left: 10em;
+}
+
+/*Login Region*/
+#login {
+    float: right;
+}
+
+#sidebar-first {
+    float: left;
+    width: 15em;
+}
+
+#sidebar-second {
+    float: right;
+    width: 15em;
+}
+
+#content {
+    margin-left: 16em;
+    margin-right: 16em;
 }
