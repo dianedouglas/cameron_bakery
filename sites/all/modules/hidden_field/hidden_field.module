@@ -1,0 +1,4 @@
+<?php
+function hidden_field_form_alter (&$form, &$form_state, $form_id) {
+    $form['subject']['#access'] = 0; // hiding subject field
+}
