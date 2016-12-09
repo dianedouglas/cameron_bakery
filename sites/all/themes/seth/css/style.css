@@ -1,0 +1,23 @@
+body {
+    background-color: #0c66f7;
+    color: #faff6b;
+    text-align: center; 
+}
+#region-sidebar-first {
+  float: left;
+  display: inline;
+  position: relative;
+  width: 20%;
+}
+.field-name-field-photo2 {
+    width: 800px;
+    height: 370px;
+}
+.field-name-field-photo2 {
+    display: none;
+}
+a:hover{
+    background-color: black;
+    color:white;
+
+}

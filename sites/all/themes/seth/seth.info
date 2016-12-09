@@ -1,0 +1,11 @@
+name = Seth's theme
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = css/style.css
+scripts[] = js/scripts.js
+regions[coupon] = coupon
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[help] = Help
