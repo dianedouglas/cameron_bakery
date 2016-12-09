@@ -1,0 +1,5 @@
+name = Customize Comment Form
+description = Module used to customize the comment form for users
+package = Cameron Modules
+core = 7.x
+files[] = customize_comment.module
