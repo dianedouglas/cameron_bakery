@@ -1,0 +1,5 @@
+name = Comment Subject Hide
+description = Hides the subject line field on article comment form.
+package = Cameron Modules
+core = 7.x
+files[] = comment_subject_hide.module
