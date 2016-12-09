@@ -1,29 +1,68 @@
 #page {
-    color: #424242;
     text-align: center;
 }
 
-#header {
+div#header {
     background-color: #34495e;
     color: #fff;
-    padding: .5em;
+    padding: 1.5em;
+    margin: -1.25em;
+}
+
+#title {
+    font-family: monospace;
+}
+
+.cookie {
+    width: 100px;
 }
 
 a {
     text-decoration: none;
-    color: #666;
+    color: #bda27e;
 }
 
-#content {
+a.username {
+    color: #e67e22;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+    transition: 1s ease;
+}
+
+#navigation {
     padding: 2em;
 }
 
-#footer {
-    background-color: #3498db;
-    padding: 1em;
-    margin: 2em;
+#custom-navigation {
+    display: none;
+}
+
+#content.column {
+    padding: 2em;
+    margin-top: -1em;
+    margin-bottom: 3em;
 }
 
 h1#page-title.title {
-    font-size: 3em; 
+    font-size: 3em;
+}
+
+#site-slogan {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+#footer {
+    color: #fff;
+    background-color: #34495e;
+    padding: 2em;
+    margin: -1.25em;
+    height: 3em;
+}
+
+.content {
+    color: #424242;
 }
