@@ -22,6 +22,11 @@ body {
   padding: 0;
   color: #424242;
   background-color: #c0392b;
+  border: 2px solid #fff;
+}
+
+div.layout-3col.layout-swap {
+    text-align: center;
 }
 
 article,
@@ -39,11 +44,31 @@ summary {
   display: block;
 }
 
+.header__site-slogan {
+    color: #fff;
+    font-style: italic;
+}
+
+h1.header {
+    color: #c0392b;
+}
+
+.block.block-system {
+    color: #fff;
+    margin: .5em;
+}
+
 header.header {
     background-color: #424242;
     color: #fff;
     padding: 1em;
     margin: -1em;
+}
+
+img.header__logo-image {
+    width: 80px;
+    padding: .5em;
+    margin-top: .1em;
 }
 
 h2.block__title {
@@ -62,7 +87,22 @@ footer {
 
 aside.layout-3col__right-sidebar {
     margin-bottom: 2em;
+    text-decoration: none;
 }
+
+a.menu__link {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+    margin: 3em;
+}
+
 
 audio,
 canvas,
