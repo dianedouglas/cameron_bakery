@@ -1,0 +1,9 @@
+<?php
+
+function simple_contact_form_alter(&$form, &$form_state, $form_id) {
+    // $form['copy']['#access'] = 0;
+    echo '<pre>';
+    var_dump($form);
+    echo '</pre>';
+    exit;
+}
