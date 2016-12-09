@@ -27,6 +27,7 @@
 .layout-center,
 %layout-center {
   @include zen-apply-gutter-padding();
+  background-color: orange;
   margin: 0 auto;
 
   // We wrap the max-width declaration with zen-layout() so we can see the value

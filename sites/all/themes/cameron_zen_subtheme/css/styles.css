@@ -9,6 +9,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   min-height: 100%;
+  background-color: orange;
 }
 
 @media print {
@@ -21,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   color: #000;
-  background-color: #fff;
+  background-color: orange;
 }
 
 article,
@@ -688,6 +689,7 @@ th {
 .layout-center {
   padding-left: 20px;
   padding-right: 20px;
+  background-color: orange;
   margin: 0 auto;
   max-width: 1165px;
 }
@@ -791,6 +793,10 @@ th {
   margin-right: 32px;
 }
 
+.header {
+  background-color: #8B4513;
+}
+
 .header__logo {
   float: left;
   margin: 0 10px 0 0;
@@ -812,6 +818,7 @@ th {
 
 .header__site-name {
   margin: 0;
+  font-size: 45px;
 }
 
 .header__site-link:link, .header__site-link:visited {
@@ -1149,6 +1156,7 @@ span.field-label {
 .navbar,
 .main-navigation .links,
 .main-navigation .menu {
+  background-color: #CD853F;
   margin: 0;
   padding: 0;
   text-align: left;
@@ -1821,3 +1829,5 @@ tr.drag-previous {
 .tree-child-horizontal {
   background-position: -11px center;
 }
+
+/*# sourceMappingURL=styles.css.map */

@@ -12,6 +12,7 @@
 %header {
   @extend %clearfix;
 
+  background-color: #8B4513;
   // Wrapping link for logo.
   &__logo {
     float: left;
@@ -38,6 +39,7 @@
   &__site-name {
     @extend %h1;
     margin: 0;
+    font-size: 45px;
   }
 
   // The link around the name of the website.
