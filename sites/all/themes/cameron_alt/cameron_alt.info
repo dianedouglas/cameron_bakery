@@ -1,0 +1,6 @@
+name = Retro
+description = Surfing the web like it's 1989.
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = css/styles.css
+scripts[] = js/scripts.js

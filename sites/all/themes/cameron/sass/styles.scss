@@ -1,0 +1,188 @@
+// @file
+// The major stylesheet for this theme.
+//
+// We categorize our components by creating headings in this file. See the
+// description on the style guide home page for more information.
+
+
+// Colors and Sass
+//
+// Documentation for colors and Sass mixins and variables.
+//
+// Weight: -1
+//
+// Style guide: sass
+@import 'init';
+
+// Defaults
+//
+// These are the default base styles applied to HTML elements.
+//
+// Component classes can override these styles, but if no class applies a style
+// to an HTML element, these styles will be the ones displayed.
+//
+// Style guide: base
+
+// Ensure fonts get loaded first to minimize front-end performance impact.
+@import 'base/fonts';
+@import 'base/normalize';
+
+// Layouts
+//
+// The layout styling for major parts of the page that are included with the
+// theme. Note: some Panels layouts are included in other parts of the system
+// and are not documented.
+//
+// Style guide: layouts
+@import 'layouts/layout-3col/layout-3col';
+@import 'layouts/layout-center/layout-center';
+@import 'layouts/layout-swap/layout-swap';
+
+// Components
+//
+// Design components are reusable designs that can be applied using just the CSS
+// class names specified in the component.
+//
+// Weight: 1
+//
+// Style guide: components
+
+@import 'components/box/box';
+@import 'components/clearfix/clearfix';
+@import 'components/comment/comment';
+@import 'components/divider/divider';
+@import 'components/header/header';
+@import 'components/hidden/hidden';
+@import 'components/highlight-mark/highlight-mark';
+@import 'components/inline-links/inline-links';
+@import 'components/inline-sibling/inline-sibling';
+@import 'components/messages/messages';
+@import 'components/print-none/print-none';
+@import 'components/responsive-video/responsive-video';
+@import 'components/visually-hidden/visually-hidden';
+@import 'components/watermark/watermark';
+@import 'components/wireframe/wireframe';
+
+// Navigation
+//
+// Navigation components are specialized design components that are used for
+// page navigation.
+//
+// Weight: 2
+//
+// Style guide: navigation
+
+@import 'navigation/breadcrumb/breadcrumb';
+@import 'navigation/more-link/more-link';
+@import 'navigation/nav-menu/nav-menu';
+@import 'navigation/navbar/navbar';
+@import 'navigation/pager/pager';
+@import 'navigation/skip-link/skip-link';
+@import 'navigation/tabs/tabs';
+
+// Forms
+//
+// Form components are specialized design components that are applied to forms
+// or form elements.
+//
+// Weight: 3
+//
+// Style guide: forms
+
+@import 'forms/autocomplete/autocomplete';
+@import 'forms/button/button';
+@import 'forms/collapsible-fieldset/collapsible-fieldset';
+@import 'forms/form-item/form-item';
+@import 'forms/form-table/form-table';
+@import 'forms/progress-bar/progress-bar';
+@import 'forms/progress-throbber/progress-throbber';
+@import 'forms/resizable-textarea/resizable-textarea';
+@import 'forms/table-drag/table-drag';
+
+body {
+  background-color: #110c06;
+  color: #f5ca9a;
+}
+
+.layout-center {
+  background-color: #8d4a2a;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+a,
+a:visited {
+  color: #fefdfa;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+  text-decoration: underline;;
+}
+
+.header__site-name
+h1, {
+  color: #f5ca9a;
+}
+.header__site-link:link,
+.header__site-link:visited, {
+  color: #fefdfa;
+}
+
+.header__name-and-slogan {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+article {
+  border: 1px solid #f5ca9a;
+  border-radius: 2px;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  color: black;
+  background-color: #fdedc6;
+}
+article a, article a:visited {
+  color: #930000;
+}
+#block-views-image-block {
+  padding: 0;
+  border: 0;
+}
+.navbar {
+  background-color: #f4d077;
+}
+.navbar li{
+  padding-left: 9px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: center;
+  border-right: 1px solid #8d4a2a;
+}
+.navbar li .first {
+  border-left: 1px solid #8d4a2a;
+}
+.navbar .active {
+  background: #c9ac64;
+}
+.navbar a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.img-wide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+form, h1, .breadcrumb {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.tabs__tab {
+  border-radius: 1px;
+}
