@@ -5,6 +5,7 @@ stylesheets[all][] = css/style.css
 stylesheets[all][] = css/bootstrap.min.css
 scripts[] = js/scripts.js
 scripts[] = js/bootstrap.min.js
+scripts[] = js/jquery-3.1.1.min.js
 
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
