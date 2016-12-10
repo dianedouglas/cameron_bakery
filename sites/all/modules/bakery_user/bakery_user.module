@@ -10,9 +10,9 @@ function bakery_user_menu() {
 }
 
 function bakery_user_user_login(&$edit, $account) {
-    $_GET['destination'] = 'welcome';
+    $_GET['destination'] = 'welcome'; // send user to 'welcome page'
 }
 
 function welcome_user() {
-    return "<p>Welcome to Cameron's Bakery!</p>";
+    return "<p>Welcome to Cameron's Bakery!</p>"; // welcome message dispayed on 'welcome' page
 }
