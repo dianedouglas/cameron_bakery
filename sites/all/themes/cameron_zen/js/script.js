@@ -18,7 +18,17 @@
   Drupal.behaviors.my_custom_behavior = {
     attach: function (context, settings) {
 
-      // Place your code here.
+      $(document).ready(function() {
+          $('a').hover(function() {
+             $(this).addClass('animated pulse');
+          });
+          $('.header__logo').click(function() {
+             $(this).addClass('animated tada');
+          });
+          $('.header__site-link').click(function() {
+             $('.header__logo').addClass('animated tada');
+          });
+      });
 
     }
   };
