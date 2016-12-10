@@ -22,6 +22,12 @@
           $('a').hover(function() {
              $(this).addClass('animated pulse');
           });
+          $('h1').hover(function() {
+             $(this).addClass('animated pulse');
+          });
+          $('h2').hover(function() {
+             $(this).addClass('animated pulse');
+          });
           $('.header__logo').click(function() {
              $(this).addClass('animated tada');
           });
