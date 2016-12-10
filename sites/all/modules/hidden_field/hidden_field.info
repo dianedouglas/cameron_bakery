@@ -1,0 +1,5 @@
+name = Custom Comment Form
+description = Hide subject field in comment forms
+core = 7.x
+package = Cameron Modules
+files[] = hidden_field.module

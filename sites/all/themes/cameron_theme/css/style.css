@@ -1,0 +1,109 @@
+html {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(60, 35,19);
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+li {
+    list-style: none;
+}
+h2 {
+    color: #333;
+}
+#header {
+    overflow: auto;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#header li {
+    display: inline-flex;
+    float: right;
+    padding: 40px 30px;
+}
+
+#header a {
+    color: rgb(245,246,233);
+}
+
+#top {
+    background: url('http://www.healthline.com/hlcmsresource/images/News/091316_coffeems_BODY.jpg');
+    height: 350px;
+}
+
+#top h2 {
+    display: none;
+}
+
+#content {
+    background-color: rgb(251, 246, 240);
+    padding: 30px 40px;
+    margin-top: 40px;
+    width: 60%;
+    float: right;
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+#block-system-main > h2 {
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#node-3 > ul > li > a, #node-4 > ul > li.node-readmore.first > a {
+    background-color: rgb(151,27,28);
+    color: rgb(251, 246, 240) !important;
+    padding: 10px;
+}
+
+#announcements {
+    width: 25%;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: rgb(251, 246, 240);
+}
+
+
+tr.odd, tr.even {
+    background-color: rgb(251, 246, 240);
+    padding: 10px 0;
+}
+
+#footer {
+    background-color: black;
+    width: 140%;
+    right: 0;
+    left: 0;
+    padding: 30px 50px;
+    bottom: 0;
+    position: fixed;
+    margin-top: 450px;
+}
+
+#footer a {
+    color: rgb(245,246,233);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.hovered {
+    color: black;
+}
