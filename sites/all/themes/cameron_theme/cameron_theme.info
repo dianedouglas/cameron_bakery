@@ -1,5 +1,14 @@
 name = Cameron's Awesome Theme
+description = "A custom theme for Cameron"
 core = 7.x
 engine = phptemplate
+
 stylesheets[all][] = css/style.css
 scripts[] = js/scripts.js
+
+regions[header] = Header
+regions[top] = Page Top
+regions[content] = Content
+regions[announcements] = Announcements
+regions[footer] = Footer
+regions[help] = Help
