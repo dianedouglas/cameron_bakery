@@ -1,0 +1,51 @@
+$yellow: #FDEC54;
+$orange: #E24F1C;
+$white: #F4F6F7;
+$black: #101112;
+$gray: #928693;
+
+body > div.layout-center > header > nav {
+    margin-top: -20px;
+
+    li a {
+        color: $white;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+}
+
+.header, body > div.layout-center > div.layout-3col.layout-swap > div {
+    background: $orange;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+}
+
+/* left sidebar */
+#block-system-navigation {
+    background: $yellow;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+#search-block-form, .footer {
+    background: $gray;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+}

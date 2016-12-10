@@ -17,3 +17,6 @@ Students must fix the module, add their own custom module and a Zen sub-theme.
 * Create a user for the database: username = "cameron", password = "cameron"
 * Point browser to localhost
 * Site maintenance account info: username = "cameron", password = "cameron"
+* Site will greet users upon login
+* Subject field is hidden for all comment forms on articles posted to site
+* Two themes to choose from to apply to overall site
