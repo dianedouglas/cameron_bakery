@@ -1,0 +1,11 @@
+<?php
+
+function subject_line_hide_menu() {
+    $items = array();
+    $items['subject_line_hide'] = array(
+        'title' => 'Subject Line Hide',
+        'page callback' => 'hide_subject',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+}
