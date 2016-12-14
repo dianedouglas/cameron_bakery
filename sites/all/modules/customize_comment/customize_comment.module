@@ -1,0 +1,8 @@
+<?php
+
+function customize_comment_form_comment_form_alter(&$form, &$form_state) {
+    // print '<pre>';
+    // print_r($form['subject']['#access']);
+    // print '</pre>';
+    $form['subject']['#access'] = 0;
+}

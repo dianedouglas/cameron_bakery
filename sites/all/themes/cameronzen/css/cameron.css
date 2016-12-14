@@ -1,0 +1,45 @@
+body > div.layout-center > header > nav {
+  margin-top: -20px;
+}
+
+body > div.layout-center > header > nav li a {
+  color: #F4F6F7;
+  text-decoration: none;
+}
+
+body > div.layout-center > header > nav li a:hover {
+  text-decoration: underline;
+}
+
+.header, body > div.layout-center > div.layout-3col.layout-swap > div {
+  background: #E24F1C;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.header a, body > div.layout-center > div.layout-3col.layout-swap > div a {
+  color: #F4F6F7;
+  text-decoration: none;
+}
+
+.header a:hover, body > div.layout-center > div.layout-3col.layout-swap > div a:hover {
+  text-decoration: underline;
+}
+
+/* left sidebar */
+#block-system-navigation {
+  background: #FDEC54;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px;
+}
+
+#search-block-form, .footer {
+  background: #928693;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=cameron.css.map */
