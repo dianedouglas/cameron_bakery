@@ -2,12 +2,11 @@
 
 ##### Epicodus Drupal Code Review 3
 
-#### By Diane Douglas
+#### By April Peng (forked from Diane Douglas)
 
 ## Description
 
-This is a basic fictional website for a bakery, which comes with a buggy custom module.
-Students must fix the module, add their own custom module and a Zen sub-theme.
+This is a basic fictional website for a bakery. The site greets users upon login. Users will notice that the comment subject line is not an option. Cameron has two themes to choose for the look of his overall site.
 
 ## Setup
 
@@ -17,6 +16,3 @@ Students must fix the module, add their own custom module and a Zen sub-theme.
 * Create a user for the database: username = "cameron", password = "cameron"
 * Point browser to localhost
 * Site maintenance account info: username = "cameron", password = "cameron"
-* Site will greet users upon login
-* Subject field is hidden for all comment forms on articles posted to site
-* Two themes to choose from to apply to overall site
