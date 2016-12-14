@@ -1,0 +1,5 @@
+name = Custom Comments
+description = Modifies the "new comment" form.
+core = 7.x
+package = Cameron Modules
+files[] = custom_comment.module
