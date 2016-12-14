@@ -1,0 +1,4 @@
+name = Hide Subject in Article Comment
+description = Hide the subject line in the article comment form
+package = Martin Cartledge's Module
+core = 7.x

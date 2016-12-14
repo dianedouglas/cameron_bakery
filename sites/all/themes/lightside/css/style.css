@@ -1,0 +1,90 @@
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans|Ubuntu+Condensed" rel="stylesheet">
+
+#page {
+    text-align: center;
+}
+
+p, label, input, textarea {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+div#header {
+    background-color: #34495e;
+    color: #fff;
+    padding: 1.5em;
+    margin: -1.25em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#title {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cookie {
+    width: 100px;
+}
+
+h1#site-name:hover {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: #bda27e;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a.username {
+    color: #e67e22;
+}
+
+h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 1.1em;
+    transition: 1s ease;
+}
+
+div#navigation {
+    padding: 2em;
+    color: #424242;
+}
+
+#custom-navigation {
+    display: none;
+}
+
+#content.column {
+    padding: 2em;
+    margin-top: -1em;
+    margin-bottom: 3em;
+    font-family: 'Droid Serif', serif;
+}
+
+h1#page-title.title {
+    font-size: 3em;
+}
+
+#site-name {
+    font-size: 3em;
+}
+
+#site-slogan {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+#footer {
+    color: #fff;
+    background-color: #34495e;
+    padding: 2em;
+    margin: -1.25em;
+    height: 3em;
+}
+
+#footer.content {
+    color: #fff;
+}

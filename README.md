@@ -2,7 +2,7 @@
 
 ##### Epicodus Drupal Code Review 3
 
-#### By Diane Douglas
+#### By Martin Cartledge
 
 ## Description
 
@@ -17,3 +17,20 @@ Students must fix the module, add their own custom module and a Zen sub-theme.
 * Create a user for the database: username = "cameron", password = "cameron"
 * Point browser to localhost
 * Site maintenance account info: username = "cameron", password = "cameron"
+
+## Known Bugs
+
+_None_
+
+## Support and contact details
+[Click to Email Me](mailto:martincartledge@icloud.com)
+
+## Technologies Used
+
+Drupal 7, phpMyAdmin
+
+## License
+
+GPL-2.0
+
+Copyright (c) 2016 *Martin Cartledge*
