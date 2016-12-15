@@ -1,0 +1,31 @@
+<?php
+
+class BakeryUserTests extends DrupalWebTestCase {
+
+    public static function getInfo() {
+        return array(
+            'name' => 'Bakery User Tests',
+            'description' => 'Tests for the Bakery User module.',
+            'group' => 'Tests',
+        );
+    }
+
+    public function setUp() {
+        parent::setUp(array('bakery_user'));
+    }
+
+    public function testLoginWelcome() {
+        $user = $this->drupalCreateAuthenticatedUser();
+        $this->drupalLogin($user);
+        $this->assertText("Welcome to Cameron's Bakery!", 'The user was redirected.');
+    }
+
+    public function drupalCreateAuthenticatedUser(array $permissions = array()) {
+        $roles = user_roles();
+        $index = array_search('authenticated', $roles);
+        $user = $this->drupalCreateUser($permissions);
+        $user->roles[$index] = 'authenticated';
+        return user_save($user);
+    }
+
+}
