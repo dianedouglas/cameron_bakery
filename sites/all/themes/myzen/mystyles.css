@@ -1,0 +1,33 @@
+a, a:link  {
+  color: red;
+  text-decoration: none;
+}
+a {
+text-decoration: underline;
+}
+/*.even p{
+  border: solid gray;
+  border-radius: 4px;
+}*/
+body {
+  background-color: #abcafc;
+  /*text-align: center;*/
+}
+
+.header img {
+  width: 150px;
+  height: 150px;
+}
+.header {
+background: -webkit-gradient(linear, center top, center bottom, from(#917c4d), to(#ffffff));
+background: -webkit-linear-gradient(red, white);
+background: -moz-linear-gradient(red, white);
+background: -o-linear-gradient(red, white);
+background: -ms-linear-gradient(red, white);
+background: linear-gradient(red, white);
+
+}
+span {
+  color: white;
+  
+}

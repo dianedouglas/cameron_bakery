@@ -1,0 +1,5 @@
+name = Hide Subject
+description = Hides the subject line in articles
+package = My Modules
+core = 7.x
+files[] = hide_subject.module

@@ -1,0 +1,50 @@
+body {
+  background-image: url('http://blog.hdwallsource.com/wp-content/uploads/2014/12/bread-wallpapers-37334-38192-hd-wallpapers.jpg');
+  /*margin-left: 10%;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+
+}
+
+a, a:link  {
+
+  text-decoration: none;
+}
+
+a, a:link:hover  {
+  color: red;
+  text-decoration: underline;;
+}
+
+
+span {
+
+  align-items: center;
+}
+
+#site-name span{
+  position: relative;
+  margin-left: 50%;
+
+}
+#site-slogan {
+  margin-left: 50%;
+}
+
+#logo img {
+  height: 150px;
+  width: 150px;
+  margin-left: 50%;
+}
+
+.well {
+  margin: 30px;
+  padding: 10%;
+  background-color: white;
+  opacity: .7;
+  border: solid black;
+}
+
+.content
