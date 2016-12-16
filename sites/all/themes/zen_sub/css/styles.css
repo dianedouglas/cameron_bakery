@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: 100%;
+  font-size: 80%;
   line-height: 1.5em;
   font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
   -ms-text-size-adjust: 100%;
@@ -20,8 +20,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: #000;
 }
 
 article,
@@ -97,6 +97,14 @@ a:hover {
   a[href^='#']:after {
     content: '';
   }
+}
+
+.header__site-link, span {
+  color: #fff;
+}
+
+.header__logo, img {
+  background-color: #fff;
 }
 
 h1,
