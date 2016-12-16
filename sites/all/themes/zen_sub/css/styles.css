@@ -60,10 +60,6 @@ template,
   display: none;
 }
 
-.navbar {
-  color: blue;
-}
-
 a {
   color: #0072b9;
   -webkit-text-decoration-skip: objects;
@@ -74,7 +70,7 @@ a {
 }
 
 a:active {
-  color: blue;
+  color: #c00;
 }
 
 a:active:not(.button) {
@@ -111,7 +107,7 @@ a:hover {
   background-color: #fff;
 }
 
-.menu_link, a {
+.menu_item, a {
   color: blue;
 }
 
@@ -1159,7 +1155,7 @@ span.field-label {
 
 .nav-menu__link.is-active, .nav-menu__link--is-active,
 .menu a.active {
-  color: #000;
+  color: #0072b9;
 }
 
 .navbar,
@@ -1168,7 +1164,6 @@ span.field-label {
   margin: 0;
   padding: 0;
   text-align: left;
-  color: blue;
 }
 
 [dir="rtl"] .navbar,
@@ -1187,7 +1182,6 @@ span.field-label {
   padding: 0 10px 0 0;
   list-style-type: none;
   list-style-image: none;
-  color: blue;
 }
 
 [dir="rtl"] .navbar__item, [dir="rtl"]
@@ -1196,7 +1190,6 @@ span.field-label {
 .main-navigation [dir="rtl"] .menu li {
   float: right;
   padding: 0 0 0 10px;
-  color: blue;
 }
 
 .pager {
