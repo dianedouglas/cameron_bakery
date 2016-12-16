@@ -5,3 +5,14 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+li{
+  font-size: 1em;
+}
+
+
+#name-and-slogan {
+  font-family: 'Baloo Thambi', cursive;
+  font-size: 3em;
+  text-align: center;
+}
