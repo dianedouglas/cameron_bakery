@@ -8,11 +8,14 @@ body{
 
 li{
   font-size: 2em;
+  list-style: none;
+  text-align: center;
 }
 
 p{
-  font-size: 1em;
-  color: lightgray;
+  font-size: 2em;
+  color: black;
+  text-align: center;
 }
 
 #name-and-slogan {
@@ -23,6 +26,7 @@ p{
 
 a{
   color: #629dfc;
+  text-align: center;
 }
 
 #site_name, h1{
@@ -32,6 +36,29 @@ a{
   background-color: opacity 40, orange;
 }
 
+#edit-search-block-form--2, input {
+  text-align: center;
+}
+
 span{
   color: lightgray;
+  text-align: center;
+}
+
+.content{
+  text-align: center;
+}
+
+#block-system-navigation {
+  text-align: center;
+}
+
+.breadcrumb {
+  text-align: center;
+  display: none;
+}
+
+#secondary-menu, div {
+  text-align: center;
+  margin-bottom: 1em;
 }
