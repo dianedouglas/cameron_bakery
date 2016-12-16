@@ -7,12 +7,31 @@ body{
 }
 
 li{
-  font-size: 1em;
+  font-size: 2em;
 }
 
+p{
+  font-size: 1em;
+  color: lightgray;
+}
 
 #name-and-slogan {
   font-family: 'Baloo Thambi', cursive;
   font-size: 3em;
   text-align: center;
+}
+
+a{
+  color: #629dfc;
+}
+
+#site_name, h1{
+  font-family: 'Baloo Thambi', cursive;
+  font-size: 2em;
+  text-align: center;
+  background-color: opacity 40, orange;
+}
+
+span{
+  color: lightgray;
 }
