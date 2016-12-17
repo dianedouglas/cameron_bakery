@@ -50,6 +50,7 @@ span{
 
 .content{
   text-align: center;
+  diplay: hidden;
 }
 
 #block-system-navigation {
