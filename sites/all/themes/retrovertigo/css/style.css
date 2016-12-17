@@ -14,13 +14,13 @@ li{
 
 p{
   font-size: 2em;
-  color: black;
+  color: white;
   text-align: center;
 }
 
 #name-and-slogan {
   font-family: 'Baloo Thambi', cursive;
-  font-size: 3em;
+  font-size: 4em;
   text-align: center;
 }
 
@@ -33,7 +33,10 @@ a{
   font-family: 'Baloo Thambi', cursive;
   font-size: 2em;
   text-align: center;
-  background-color: opacity 40, orange;
+}
+
+#site_slogan, div {
+  color: white;
 }
 
 #edit-search-block-form--2, input {
@@ -41,7 +44,7 @@ a{
 }
 
 span{
-  color: lightgray;
+  color: white;
   text-align: center;
 }
 
@@ -51,6 +54,7 @@ span{
 
 #block-system-navigation {
   text-align: center;
+  color: white;
 }
 
 .breadcrumb {
@@ -61,4 +65,15 @@ span{
 #secondary-menu, div {
   text-align: center;
   margin-bottom: 1em;
+}
+
+.last leaf active-trail, a {
+  color: #629dfc;
+}
+
+h1 {
+  color: white;
+}
+.active-trail.active, li {
+  color: #629dfc;
 }

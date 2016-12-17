@@ -14,5 +14,6 @@ function bakery_user_user_login(&$edit, $account) {
 }
 
 function welcome_user() {
-    return "<p>Welcome to Cameron's Bakery!</p>";
+    return
+    "<p>Welcome to Cameron's Bakery!</p>";
 }
