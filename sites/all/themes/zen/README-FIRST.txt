@@ -31,7 +31,7 @@ a base theme.
 So how do you create a theme with Zen?
 
 The Zen theme includes the Zen base theme as well as a starter theme called
-"STARTERKIT". You shouldn't modify any of the CSS or PHP files in the zen/
+"zenmod". You shouldn't modify any of the CSS or PHP files in the zen/
 folder; but instead you should create a sub-theme of zen and put it in a folder
 outside of the root zen/ folder.
 
@@ -44,7 +44,7 @@ Installation
   in this document.
 
 Building a theme with Zen
-  See the STARTERKIT/README.txt file for full instructions.
+  See the zenmod/README.txt file for full instructions.
 
 Theme .info file
   Your sub-theme's .info file holds the basic information about your theme that
@@ -85,4 +85,4 @@ INSTALLATION
     Themes heading with links on how to create your own sub-theme. You can
     optionally make Zen the default theme.
 
- 4. Now build your own sub-theme by reading the STARTERKIT/README.txt file.
+ 4. Now build your own sub-theme by reading the zenmod/README.txt file.

@@ -1,5 +1,5 @@
 // This script is used by the MAINTAINERS to generate the CSS files from the
-// STARTERKIT's Sass files. It's a copy of STARTERKIT/gulpfile.s with a
+// zenmod's Sass files. It's a copy of zenmod/gulpfile.s with a
 // few lines added to the very bottom.
 
 'use strict';
@@ -263,5 +263,5 @@ gulp.task('clean:css', function() {
 
 
 // Overrides for the Zen base theme version of this file.
-options.sass.includePaths.unshift(path.resolve('../STARTERKIT') + '/sass');
+options.sass.includePaths.unshift(path.resolve('../zenmod') + '/sass');
 gulp.task('default', ['styles:production']);

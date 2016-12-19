@@ -93,22 +93,22 @@ function drush_zen($machine_name = NULL, $name = NULL) {
     return drush_set_error('ZEN_DESTINATION_NOT_FOUND', dt('The directory "!directory" was not found.', array('!directory' => dirname($subtheme_path))));
   }
 
-  // Ensure the STARTERKIT directory exists.
-  $starterkit_path = drush_normalize_path(drush_get_context('DRUSH_DRUPAL_ROOT') . '/' . drupal_get_path('theme', 'zen') . '/STARTERKIT');
-  if (!is_dir($starterkit_path)) {
+  // Ensure the zenmod directory exists.
+  $zenmod_path = drush_normalize_path(drush_get_context('DRUSH_DRUPAL_ROOT') . '/' . drupal_get_path('theme', 'zen') . '/zenmod');
+  if (!is_dir($zenmod_path)) {
     if (FALSE) {
       // Allow localize.drupal.org to pick up the string to translate.
-      t('The STARTERKIT directory was not found in "!directory"', array('!directory' => dirname($starterkit_path)));
+      t('The zenmod directory was not found in "!directory"', array('!directory' => dirname($zenmod_path)));
     }
-    return drush_set_error('ZEN_STARTERKIT_NOT_FOUND', dt('The STARTERKIT directory was not found in "!directory"', array('!directory' => dirname($starterkit_path))));
+    return drush_set_error('ZEN_zenmod_NOT_FOUND', dt('The zenmod directory was not found in "!directory"', array('!directory' => dirname($zenmod_path))));
   }
 
   // Make a fresh copy of the original starter kit.
-  drush_op('drush_copy_dir', $starterkit_path, $subtheme_path);
+  drush_op('drush_copy_dir', $zenmod_path, $subtheme_path);
 
   // Rename the .info file.
   $subtheme_info_file = $subtheme_path . '/' . $machine_name . '.info';
-  drush_op('rename', drush_normalize_path($subtheme_path . '/STARTERKIT.info.txt'), drush_normalize_path($subtheme_info_file));
+  drush_op('rename', drush_normalize_path($subtheme_path . '/zenmod.info.txt'), drush_normalize_path($subtheme_info_file));
 
   // Alter the contents of the .info file based on the command options.
   $alterations = array(
@@ -119,9 +119,9 @@ function drush_zen($machine_name = NULL, $name = NULL) {
   }
   drush_op('zen_file_str_replace', $subtheme_info_file, array_keys($alterations), $alterations);
 
-  // Replace all occurrences of 'STARTERKIT' with the machine name of our sub theme.
-  drush_op('zen_file_str_replace', $subtheme_path . '/theme-settings.php', 'STARTERKIT', $machine_name);
-  drush_op('zen_file_str_replace', $subtheme_path . '/template.php', 'STARTERKIT', $machine_name);
+  // Replace all occurrences of 'zenmod' with the machine name of our sub theme.
+  drush_op('zen_file_str_replace', $subtheme_path . '/theme-settings.php', 'zenmod', $machine_name);
+  drush_op('zen_file_str_replace', $subtheme_path . '/template.php', 'zenmod', $machine_name);
 
   // Notify user of the newly created theme.
   if (FALSE) {
