@@ -1,0 +1,5 @@
+name = My Module
+description = a module for removing subject lines
+package = Custom Modules
+core = 7.x
+files[] = mymodule.module
