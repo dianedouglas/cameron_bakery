@@ -2,12 +2,12 @@
 
 ##### Epicodus Drupal Code Review 3
 
-#### By Diane Douglas
+#### By Diane Douglas and Tim Bourgault
 
 ## Description
 
 This is a basic fictional website for a bakery, which comes with a buggy custom module.
-Students must fix the module, add their own custom module and a Zen sub-theme.
+I have fixed the custom module bakery_user so that it directs a user to the welcome page once they have signed in.  I have also created my  own custom module which excludes the subject line from any comments that users submit under an article.  Finally, I created my own custom theme called Retrovertigo which includes some JavaScript, and a Zen sub-theme that is a variation on the original Zen theme.
 
 ## Setup
 
@@ -17,3 +17,7 @@ Students must fix the module, add their own custom module and a Zen sub-theme.
 * Create a user for the database: username = "cameron", password = "cameron"
 * Point browser to localhost
 * Site maintenance account info: username = "cameron", password = "cameron"
+
+## Copyright
+
+* Open Source
