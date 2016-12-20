@@ -1,0 +1,5 @@
+name = Subject Line Hide
+description = Hides the subject field in all article submission forms.
+package = Cameron Modules
+core = 7.x
+files[] = subject_line_hide.module

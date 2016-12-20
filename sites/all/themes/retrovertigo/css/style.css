@@ -1,0 +1,80 @@
+body{
+  background-image: url(http://10832-presscdn-0-89.pagely.netdna-cdn.com/wp-content/uploads/2016/04/bread.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+li{
+  font-size: 2em;
+  list-style: none;
+  text-align: center;
+}
+
+p{
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+
+#name-and-slogan {
+  font-family: 'Baloo Thambi', cursive;
+  font-size: 4em;
+  text-align: center;
+}
+
+a{
+  color: #629dfc;
+  text-align: center;
+}
+
+#site_name, h1{
+  font-family: 'Baloo Thambi', cursive;
+  font-size: 2em;
+  text-align: center;
+}
+
+#site_slogan, div {
+  color: white;
+}
+
+#edit-search-block-form--2, input {
+  text-align: center;
+}
+
+span{
+  color: white;
+  text-align: center;
+}
+
+.content{
+  text-align: center;
+  diplay: hidden;
+}
+
+#block-system-navigation {
+  text-align: center;
+  color: white;
+}
+
+.breadcrumb {
+  text-align: center;
+  display: none;
+}
+
+#secondary-menu, div {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.last leaf active-trail, a {
+  color: #629dfc;
+}
+
+h1 {
+  color: white;
+}
+.active-trail.active, li {
+  color: #629dfc;
+}
