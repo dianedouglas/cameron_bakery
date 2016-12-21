@@ -1,0 +1,5 @@
+name = Subject Hide
+description = Hides Comments' Corresponding Subject Field
+package = Cameron Bakery
+core = 7.x
+files[] = subject_hide.module
