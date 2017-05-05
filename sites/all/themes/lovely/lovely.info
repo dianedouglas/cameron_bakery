@@ -1,4 +1,5 @@
 name = Lovely
 core = 7.x
 engine = phptemplate
+stylesheets[all][] = css/bootstrap.min.css
 stylesheets[all][] = css/style.css
