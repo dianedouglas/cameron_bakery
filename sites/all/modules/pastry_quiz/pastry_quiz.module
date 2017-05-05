@@ -32,7 +32,21 @@ function pastry_quiz_menu() {
 
     $items['gf_savory'] = array(
         'page callback' => 'drupal_get_form',
-        'page arguments' => array('gf_ham_cheese_form'),
+        'page arguments' => array('gf_savory_form'),
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['low_sweetness'] = array(
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('low_sweetness_quiz_form'),
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['high_sweetness'] = array(
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('high_sweetness_quiz_form'),
         'access callback' => TRUE,
         'type' => MENU_CALLBACK,
     );
@@ -142,6 +156,32 @@ function gf_choc_fruit_form_submit($form, &$form_state) {
 
 // ----- If not sweet and gluten-free -----
 
+function gf_savory_form() {
+    $form['meat_veggie'] = array(
+        '#title' => 'Vegatarian or not?',
+        '#type' => 'radios',
+        '#description' => t('Do you prefer meat, or a savory vegetable pastry?'),
+        '#options' => array(
+            'meat' => t('Meat'),
+            'veggie' => t('Savory Vegetable'),
+        ),
+        '#required' => TRUE,
+    );
+
+    $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => 'Submit',
+    );
+
+    return $form;
+}
+
+function gf_savory_form_submit($form, &$form_state) {
+    $savory = $form_state['values']['meat_veggie'];
+    $_SESSION['meat_veggie'] = $savory;
+    $form_state['redirect'] = 'quiz_results';
+}
+
 // ----- If not gluten free -----
 
 function sweetness_quiz_form() {
@@ -167,19 +207,89 @@ function sweetness_quiz_form() {
     return $form;
 }
 
-function sweetness_quiz_form_submit() {
+function sweetness_quiz_form_submit($form, &$form_state) {
     $sweetness = $form_state['values']['sweetness'];
     $_SESSION['sweetness'] = $sweetness;
 
-    if ($sweetness < 3 && $sweetness > 1) {
-        $form_state['redirect'] = 'low_sweetness_form';
+    if ($sweetness < 4 && $sweetness >= 1) {
+        $form_state['redirect'] = 'low_sweetness';
     } else {
-        $form_state['redirect'] = 'high_sweetness_form';
+        $form_state['redirect'] = 'high_sweetness';
     }
 }
 
+// ----- If not gluten-free and low sweetness
+
+function low_sweetness_quiz_form() {
+    $form['low_sweetness'] = array(
+        '#title' => 'Not so Sweet',
+        '#type' => 'radios',
+        '#description' => t('OK, you prefer a lightly-sweetened pastry. Do you prefer lots of ingredients, or a simple pastry such as a croissant?'),
+        '#options' => array(
+            'lots' => t('Lots of Ingredients'),
+            'simple' => t('A Simple Pastry'),
+        ),
+        '#required' => TRUE,
+    );
+
+    $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => 'Submit',
+    );
+
+    return $form;
+}
+
+function low_sweetness_quiz_form_submit($form, &$form_state) {
+    $ingredients = $form_state['values']['low_sweetness'];
+    $_SESSION['low_sweetness'] = $ingredients;
+    $form_state['redirect'] = 'quiz_results';
+}
+
+// ----- If not gluten-free and high sweetness
+
+function high_sweetness_quiz_form() {
+    $form['high_sweetness'] = array(
+        '#title' => 'Sweet',
+        '#type' => 'radios',
+        '#description' => t('You must have a sweet tooth. Do you like chocolates or fruits more in your pastries?'),
+        '#options' => array(
+            'chocolate' => t('Chocolates'),
+            'fruit' => t('Fruits'),
+        ),
+        '#required' => TRUE,
+    );
+
+    $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => 'Submit',
+    );
+
+    return $form;
+}
+
+function high_sweetness_quiz_form_submit($form, &$form_state) {
+    $gluten_choc = $form_state['values']['high_sweetness'];
+    $_SESSION['high_sweetness'] = $gluten_choc;
+    $form_state['redirect'] = 'quiz_results';
+}
+
+// ----- Success pages
+
 function quiz_success() {
+    $savory = $_SESSION['meat_veggie'];
     $chocolate = $_SESSION['gf_choc_fruit'];
+    $gluten_choc = $_SESSION['high_sweetness'];
+    $ingredients = $_SESSION['low_sweetness'];
+
+    switch ($savory) {
+        case 'meat':
+            return '<p>We have an excellent ham and cheese croissant waiting for you!</p>';
+        break;
+        case 'veggie':
+            return '<p>Our curry sweet potato stuffed pastry is out of this world!</p>';
+        break;
+    }
 
     switch ($chocolate) {
         case 'chocolate':
