@@ -1,0 +1,4 @@
+name = Ash's Theme from Sratch
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = css/style.css
