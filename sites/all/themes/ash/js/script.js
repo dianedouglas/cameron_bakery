@@ -17,11 +17,12 @@
   // To understand behaviors, see https://drupal.org/node/756722#behaviors
   Drupal.behaviors.my_custom_behavior = {
     attach: function (context, settings) {
-
-      $('body').load(function() {
-        $(this).fadeIn(2000);
+      $('h2').mouseover(function() {
+        $('body').addClass('clicked');
       });
-
+      $('h2').mouseleave(function() {
+        $('body').removeClass('clicked');
+      });
     }
   };
 

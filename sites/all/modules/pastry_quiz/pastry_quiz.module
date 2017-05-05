@@ -58,7 +58,7 @@ function pastry_quiz_menu() {
     for ($i = 0; $i < sizeof($results); $i++) { // Adds each outcome as a results page
         $items[$results[$i] . '_quiz_results'] = array(
             'title' => 'Your Results',
-            'page callback' => '' . $results[$i] . '_quiz_success',
+            'page callback' => $results[$i] . '_quiz_success',
             'access callback' => TRUE,
             'type' => MENU_CALLBACK,
         );

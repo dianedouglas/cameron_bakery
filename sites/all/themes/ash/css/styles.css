@@ -1842,3 +1842,7 @@ a:hover {
   color: #C70039;
   transition: 0.2s;
 }
+
+.clicked {
+  background-color: lightblue;
+}

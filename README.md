@@ -2,7 +2,7 @@
 
 ##### Epicodus Drupal Code Review 3
 
-#### By Diane Douglas
+#### By Ash Laidlaw
 
 ## Description
 
@@ -17,3 +17,7 @@ Students must fix the module, add their own custom module and a Zen sub-theme.
 * Create a user for the database: username = "cameron", password = "cameron"
 * Point browser to localhost
 * Site maintenance account info: username = "cameron", password = "cameron"
+
+## Goals
+
+The purpose of this project is to clone an existing repo, and to fix any bugs and add functionality.
