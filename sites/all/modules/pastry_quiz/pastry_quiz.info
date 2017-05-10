@@ -1,0 +1,5 @@
+name = Pastry Quiz
+description = Get people buzzing about pastries.
+package = Cameron Modules
+core = 7.x
+files[] = pastry_quiz.module

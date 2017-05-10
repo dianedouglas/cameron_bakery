@@ -1,0 +1,23 @@
+body {
+  background-color: lightgrey;
+  font-family: 'Comic Sans MS', serif;
+}
+
+#logo img {
+  height: 100px;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: red;
+  transition: 0.5s;
+}
+
+#navigation {
+  text-align: center;
+}
