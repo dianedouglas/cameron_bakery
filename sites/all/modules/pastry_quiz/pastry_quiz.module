@@ -70,22 +70,22 @@ function pastry_quiz_menu() {
 // ----- Question 1 (Are you fluten-free?) -----
 
 function gluten_quiz_form() {
-  $form['gluten'] = array(
-      '#title' => 'Are you gluten intolerant?',
-      '#type' => 'radios',
-      '#options' => array(
-          1 => t('Yes'),
-          0 => t('No'),
-      ),
-      '#required' => TRUE,
-  );
+    $form['gluten'] = array(
+        '#title' => 'Are you gluten intolerant?',
+        '#type' => 'radios',
+        '#options' => array(
+            1 => t('Yes'),
+            0 => t('No'),
+        ),
+        '#required' => TRUE,
+    );
 
-  $form['submit'] = array(
-          '#type' => 'submit',
-          '#value' => 'Submit',
-  );
+    $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => 'Submit',
+    );
 
-  return $form;
+    return $form;
 }
 
 function gluten_quiz_form_submit($form, &$form_state) {
@@ -296,40 +296,40 @@ function one_quiz_success() {
 }
 
 function two_quiz_success() {
-  $chocolate = $_SESSION['gf_choc_fruit'];
+    $chocolate = $_SESSION['gf_choc_fruit'];
 
-  switch ($chocolate) {
-      case 'chocolate':
-          return '<p>Sounds like you want a gluten-free chocolate croissant!</p>';
-      break;
-      case 'fruit':
-          return '<p>Sounds like you want a gluten-free blueberry danish!</p>';
-      break;
+    switch ($chocolate) {
+        case 'chocolate':
+            return '<p>Sounds like you want a gluten-free chocolate croissant!</p>';
+        break;
+        case 'fruit':
+            return '<p>Sounds like you want a gluten-free blueberry danish!</p>';
+        break;
   }
 }
 
 function three_quiz_success() {
-  $gluten_choc = $_SESSION['high_sweetness'];
+    $gluten_choc = $_SESSION['high_sweetness'];
 
-  switch ($gluten_choc) {
-      case 'chocolate':
-          return '<p>Sounds like you want a delicious salted chocolate cookie!</p>';
-      break;
-      case 'fruit':
-          return '<p>Our apple cinnamon muffin may be perfect for you!</p>';
-      break;
-  }
+    switch ($gluten_choc) {
+        case 'chocolate':
+            return '<p>Sounds like you want a delicious salted chocolate cookie!</p>';
+        break;
+        case 'fruit':
+            return '<p>Our apple cinnamon muffin may be perfect for you!</p>';
+        break;
+    }
 }
 
 function four_quiz_success() {
-  $ingredients = $_SESSION['low_sweetness'];
+    $ingredients = $_SESSION['low_sweetness'];
 
-  switch ($ingredients) {
-      case 'lots':
-          return '<p>Our blackberry and raspberry cheese danish with powdered sugar sounds perfect!</p>';
-      break;
-      case 'simple':
-          return '<p>Perhaps a simple croissant will do the trick!</p>';
-      break;
-  }
+    switch ($ingredients) {
+        case 'lots':
+            return '<p>Our blackberry and raspberry cheese danish with powdered sugar sounds perfect!</p>';
+        break;
+        case 'simple':
+            return '<p>Perhaps a simple croissant will do the trick!</p>';
+        break;
+    }
 }
