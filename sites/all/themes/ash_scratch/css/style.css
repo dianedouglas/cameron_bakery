@@ -17,3 +17,7 @@ a:hover {
   color: red;
   transition: 0.5s;
 }
+
+#navigation {
+  text-align: center;
+}
