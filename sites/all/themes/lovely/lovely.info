@@ -1,0 +1,14 @@
+name = Lovely
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/style.css
+
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[content] = Content
+regions[help] = Help
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[footer] = Footer
+regions[highlighted] = Highlighted
