@@ -148,7 +148,7 @@ function quiz_success() {
   if ($gluten == 'no' && $sweet == 'yes') {
     return '<p>get a donut!</p>';
   } elseif ($gluten == 'yes' && $fruit == 'yes') {
-    return '<p>get some fruit from us!</p>';
+    return '<p>get some fruit cakes from us!</p>';
   } else {
     return "<p>cool! we've got stuff for you too!/p>";
   }
