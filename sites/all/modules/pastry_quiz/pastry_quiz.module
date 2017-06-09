@@ -58,16 +58,16 @@ function quiz_form() {
 }
 
 function start_form() {
-    // $form['gluten'] = array(
-    //     '#title' => 'Gluten Intollerance',
-    //     '#type' => 'radios',
-    //     '#description' => t('Are you gluten intollerant?'),
-    //     '#options' => array(
-    //         t('Yes'),
-    //         t('No'),
-    //     ),
-    //     '#required' => TRUE,
-    // );
+    $form['decision'] = array(
+        '#title' => 'What would you like to eat',
+        '#type' => 'radios',
+        '#description' => t('Would you like to take a quiz to find out what to eat today?'),
+        '#options' => array(
+            'yes' => 'Yes',
+            'no' =>'No',
+        ),
+        '#required' => TRUE,
+    );
 
     $form['submit'] = array(
         '#type' => 'submit',
@@ -87,7 +87,14 @@ function quiz_success() {
 }
 
 function start_form_submit($form, &$form_state) {
-  $form_state['redirect'] = 'quiz_question_1';
+  $proceed = $form_state['values']['decision'];
+  if ($proceed == 'yes')
+  {
+    $form_state['redirect'] = 'quiz_question_1';
+  }
+  else {
+    $form_state['redirect'] = 'quiz_end';
+  }
 }
 
 function quiz_form_submit($form, &$form_state) {
