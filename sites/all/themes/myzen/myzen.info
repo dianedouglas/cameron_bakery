@@ -12,7 +12,7 @@
 ; page at admin/appearance.
 
 screenshot  = screenshot.png
-name        = Zen Sub-theme Starter Kit
+name        = Minh's My Zen
 description = Read the <a href="https://drupal.org/node/873778">online docs</a> or the included README.txt on how to create a theme with Zen.
 
 
@@ -54,6 +54,7 @@ stylesheets[all][] = node.css
 
 ; Then we add our own stylesheet.
 stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/mystyle.css
 
 ; If you wish to use conditional stylesheets, you should install the
 ; conditional stylesheets module: https://drupal.org/project/conditional_styles
@@ -64,8 +65,7 @@ stylesheets[all][] = css/styles.css
 
 
 ; Optionally add some JavaScripts to your theme.
-
-;scripts[] = js/script.js
+scripts[] = js/script.js
 
 
 

@@ -1,0 +1,12 @@
+.layout-center .header {
+  background-color: #b082b0;
+  font-family: Georgia,Serif;
+}
+
+.layout-3col__right-content h1 {
+  background-color: #e09fe0;
+  background-repeat: repeat-x;
+  text-align: right;
+  color: #7662c7;
+}
+
