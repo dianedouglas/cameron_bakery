@@ -14,9 +14,16 @@ function pastry_quiz_menu() {
         'type' => MENU_NORMAL_ITEM,
     );
 
+    $items['quiz_end'] = array(
+        'title' => 'Thank you',
+        'page callback' => 'end_quiz',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+
     $items['quiz_question_1'] = array(
         'page callback' => 'drupal_get_form',
-        'page arguments' => array('quiz_form'),
+        'page arguments' => array('quiz_form_1'),
         'access callback' => TRUE,
         'type' => MENU_CALLBACK,
     );
@@ -30,7 +37,8 @@ function pastry_quiz_menu() {
 
     return $items;
 }
-function quiz_form() {
+
+function quiz_form_1() {
   $form['gluten'] = array(
       '#title' => 'Gluten Intollerance',
       '#type' => 'radios',
@@ -51,16 +59,16 @@ function quiz_form() {
 }
 
 function start_form() {
-    // $form['gluten'] = array(
-    //     '#title' => 'Gluten Intollerance',
-    //     '#type' => 'radios',
-    //     '#description' => t('Are you gluten intollerant?'),
-    //     '#options' => array(
-    //         t('Yes'),
-    //         t('No'),
-    //     ),
-    //     '#required' => TRUE,
-    // );
+    $form['decision'] = array(
+        '#title' => 'Would you like to know what to eat today?',
+        '#type' => 'radios',
+        '#description' => t('Do you want to take this quiz?'),
+        '#options' => array(
+            'yes' => 'Yes',
+            'no' => 'No',
+        ),
+        '#required' => TRUE,
+    );
 
     $form['submit'] = array(
         '#type' => 'submit',
@@ -80,10 +88,23 @@ function quiz_success() {
 }
 
 function start_form_submit($form, &$form_state) {
-  $form_state['redirect'] = 'quiz_question_1';
+  $proceed = $form_state['values']['decision'];
+  if ($proceed == 'yes')
+  {
+    $form_state['redirect'] = 'quiz_question_1';
+  }
+  else {
+    $form_state['redirect'] = 'quiz_end';
+  }
 }
 
-function quiz_form_submit($form, &$form_state) {
+
+function end_quiz() {
+    return "<p>Thank you! Come take the quiz any time</p>";
+}
+
+
+function quiz_form_1_submit($form, &$form_state) {
   $form['gluten']['default_value'] = variable_get('comment_preview', 1);
   $gluten = $form_state['values']['gluten'];
   $_SESSION['gluten'] = $gluten;

@@ -1,16 +1,19 @@
 <?php
 function bakery_user_menu() {
     $items['welcome'] = array(
-        'title' = 'Hi There!',
-        'page callback' => 'welcome_user'
+      // 'title' = 'Hi There!', <-- syntax error
+        'title' => 'Hi There!',
+      //  'page callback' => 'welcome_user' <--- missing comma
+        'page callback' => 'welcome_user',
         'access callback' => TRUE,
         'type' => MENU_CALLBACK,
     );
     return $items;
 }
 
-function bakery_user_login(&$edit, $account) {
-    $_GET['destination'] = 'welcome_user';
+// function bakery_user_login(&$edit, $account) { <--- remove parameters
+function bakery_user_login() {
+    $_GET['destination'] = 'welcome';
 }
 
 function welcome_user() {
