@@ -1,0 +1,114 @@
+/* --------------------------- */
+/* color css */
+/* --------------------------- */
+header#navbar.navbar-fixed-top.affix,
+header#navbar.navbar-inverse,
+header#navbar.navbar-default,
+header#navbar .dropdown-menu,
+header#navbar  .navbar-toggle .icon-bar  {
+  background-color: #4e2e28;
+}
+header#navbar.navbar-fixed-top.affix a,
+header#navbar.navbar-fixed-top.affix li a,
+header#navbar.navbar-fixed-top.affix .navbar-nav li a,
+header#navbar.navbar-inverse a,
+header#navbar.navbar-inverse li a,
+header#navbar.navbar-inverse .navbar-nav li a,
+header#navbar .dropdown-menu a,
+header#navbar .dropdown-menu,
+header#navbar .navbar-nav > li > a {
+  color: #ffffff;
+}
+body.front header#navbar.navbar-fixed-top.affix-top .navbar-nav > li > a,
+body.front header#navbar.navbar-static-top .navbar-nav>li>a,
+body.front header#navbar.navbar-static-top.navbar-inverse .navbar-nav>li>a,
+.header-brown-content .main-title-first,
+.header-brown-content .main-title-second {
+  color: #4e2e28;
+}
+.header-brown-content  .main-desc,
+header#navbar #navigation ul > li .active,
+header#navbar .navbar-nav > li > a:focus, 
+header#navbar .navbar-nav > li > a:hover {
+  color:#171717;
+}
+header#navbar  .navbar-toggle {
+  border-color: #ffffff;
+  background: #ffffff;
+}
+header#navbar .navbar-nav > li > a:focus, 
+header#navbar .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover,
+header#navbar .dropdown-menu a {
+  background-color: transparent;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: transparent;
+}
+@media (max-width: 767px) {
+  body.front header#navbar.navbar-static-top ul,
+  body.front header#navbar.navbar-fixed-top.affix-top ul{
+    background-color: #4e2e28;
+  }
+  body.front header#navbar.navbar-static-top a,
+  body.front header#navbar.navbar-static-top .navbar-nav>li>a, 
+  body.front header#navbar.navbar-static-top.navbar-inverse .navbar-nav>li>a,
+  body.front header#navbar.navbar-fixed-top.affix-top a,
+  body.front header#navbar.navbar-fixed-top.affix-top .navbar-nav>li>a, 
+  body.front header#navbar.navbar-fixed-top.navbar-inverse.affix-top .navbar-nav>li>a,
+  body.front header#navbar.navbar-static-top ul,
+  body.front header#navbar.navbar-fixed-top.affix-top ul  {
+    color: #ffffff;
+  }
+}
+
+
+/* --------------------------- */
+/* color css */
+/* --------------------------- */
+.content-light-orange .btn-orange,
+.content-light-orange,
+.content-light-orange .content-text p {
+  color: #4c4c4c;
+}
+.content-light-orange h1,
+.content-light-orange h2,
+.content-light-orange h3,
+.content-light-orange h4,
+.content-light-orange h5,
+.content-light-orange h6 {
+  color: #e9573e;
+
+}
+.content-light-orange .btn-orange {
+  border-color: #e9573e;
+}
+
+
+
+/* --------------------------- */
+/* color css */
+/* --------------------------- */
+footer#footer {
+  background-color: #e84c3d;
+}
+footer#footer .footer-menu ul li a:hover,
+footer#footer .footer-menu ul li a:focus {
+  background-color: transparent;
+}
+footer#footer .follow-link-wrapper{
+  background-color: #ec7c70;
+}
+footer#footer,
+footer#footer .footer-menu ul li a,
+footer#footer .follow-link-wrapper a:before{
+  color: #ffffff;
+}
+footer#footer .follow-link-wrapper a:hover:before {
+  color: #e84c3d;
+}
+
+

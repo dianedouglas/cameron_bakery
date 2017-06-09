@@ -1,0 +1,6 @@
+<ul class="links nav">
+  <li class="first leaf"><a href="#" title="Home">Home</a></li>
+  <li class="leaf"><a href="#" title="Services">Services</a></li>
+  <li class="leaf"><a href="#" title="Company">Company</a></li>
+  <li class="last leaf"><a href="#" title="Contacts">Contacts</a></li>
+</ul>

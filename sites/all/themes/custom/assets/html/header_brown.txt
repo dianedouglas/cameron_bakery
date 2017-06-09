@@ -1,0 +1,10 @@
+<section class="home-slideshow header-brown-content" id = "header-brown-content">
+  <div class = "main-block container">
+    <div class = "main-block-inner">
+      <div class = "col-sm-12 main-title-first text-center">MORNING FIRST</div>
+      <div class = "col-sm-12 main-title-second text-center">COFFEE</div>
+      <p class = "col-sm-12 main-desc text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <div class = "col-sm-12 main-image-wrap text-center"></div>
+    </div>
+  </div>
+</section>

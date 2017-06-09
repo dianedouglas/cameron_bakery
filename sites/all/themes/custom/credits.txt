@@ -1,0 +1,13 @@
+Image credits : All the images are taken from following site
+  http://picjumbo.com/
+  https://unsplash.com/grid
+
+Code  
+  Specal thanks to https://www.drupal.org/u/markcarver for creating wonderfull 
+  theme https://www.drupal.org/project/bootstrap, without him, cmsbots would take 
+  long time. We shamelessly copied lot of code from his theme.
+
+Fonts :
+  Fontawesome and google fonts
+
+And more to come

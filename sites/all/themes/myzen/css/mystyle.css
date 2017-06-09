@@ -28,3 +28,8 @@ article {
 form {
   text-align: center;
 }
+
+#new_region {
+  float:right;
+  height: 200px;
+}
