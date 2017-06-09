@@ -1,0 +1,34 @@
+/* --------------------------- */
+/* responsive css */
+/* --------------------------- */
+@media (max-width: 768px) { 
+  .content-light-orange .button-list {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+/* --------------------------- */
+/* CSS RESPONSIVE */
+/* --------------------------- */
+@media (max-width: 767px) {
+  footer#footer .follow-link-wrapper {
+    width: 60px;
+    padding-top: 15px;
+    height: 60px;
+  }
+  footer#footer .footer-social .block-content {
+    float: none;
+    padding-bottom:90px;
+  }
+  footer#footer .footer-menu ul li {
+    display: inline-block;
+  }
+  footer#footer .footer-menu ul li a {
+    font-size: 1.3em;
+  }
+}
+
+
