@@ -18,7 +18,7 @@ function pastry_quiz_menu() {
         'title' => 'Thank you',
         'page callback' => 'end_quiz',
         'access callback' => TRUE,
-        'type' => MENU_NORMAL_ITEM,
+        'type' => MENU_CALLBACK,
     );
 
     $items['quiz_question_1'] = array(
@@ -95,6 +95,11 @@ function start_form_submit($form, &$form_state) {
   else {
     $form_state['redirect'] = 'quiz_end';
   }
+}
+
+function end_quiz()
+{
+  return '<p>Thank you, come back and take the quiz any time</p>';
 }
 
 function quiz_form_submit($form, &$form_state) {
